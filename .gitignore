@@ -18,3 +18,7 @@ dialog_work/logs/
 
 # Respaldo de archivos originales generado por el instalador
 backup_en/
+
+# HarmonyTools (descargado por patch.sh o copiado a mano)
+HarmonyTools.exe
+Harmony-Tools/

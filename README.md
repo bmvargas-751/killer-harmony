@@ -38,6 +38,26 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
 
 ---
 
+## 🐧 Instalación en Linux / SteamOS (Steam Deck, Legion Go, etc.)
+
+En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instalador de Windows, pero de forma nativa: solo `HarmonyTools.exe` se ejecuta con Wine o, si no tienes Wine (como en SteamOS), con el **Proton** que ya trae Steam. No hace falta instalar nada en el sistema.
+
+1. Entra al **Modo Escritorio** y descarga o clona este repositorio.
+2. Asegúrate de tener algún Proton instalado en Steam (por ejemplo **Proton Experimental**, en la biblioteca, categoría *Herramientas*). Si ya jugaste Danganronpa V3 en Linux, ya lo tienes.
+3. Abre **Konsole** en la carpeta del parche y ejecuta:
+   ```bash
+   chmod +x patch.sh
+   ./patch.sh
+   ```
+4. Si no encuentra `HarmonyTools.exe` en la carpeta del parche, el script ofrece descargarlo de su [repositorio oficial](https://github.com/redssu/Harmony-Tools/releases). También puedes copiarlo tú en la carpeta del parche.
+5. El script detecta el juego en tus bibliotecas de Steam (también en la tarjeta SD); presiona `Enter` para usar la ruta detectada. Luego sigue los mismos pasos que en Windows.
+
+> La primera vez Proton prepara un entorno propio para el parche (en `~/.local/share/killer-harmony`), por lo que la extracción puede tardar un poco más en empezar. Si quieres usar un Proton o Wine concreto, puedes indicarlo con las variables `PROTON=/ruta/a/proton` o `WINE=/ruta/a/wine`.
+
+> Si algo sale mal, desde Steam puedes usar *Propiedades → Archivos instalados → Verificar integridad de los archivos* para recuperar los archivos originales del juego.
+
+---
+
 ## ℹ️ Información sobre las Versiones
 
 * **Versión v0.1**:
