@@ -15,3 +15,13 @@ dialog_work/
 
 # Logs generados por fix_clt_spaces
 dialog_work/logs/
+
+# Respaldo de archivos originales generado por el instalador
+backup_en/
+
+# Python
+__pycache__/
+
+# HarmonyTools (descargado por patch.sh o copiado a mano)
+HarmonyTools.exe
+Harmony-Tools/

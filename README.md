@@ -1,8 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.2
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.3
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
+
+> **Fork v2.3**: esta copia incluye corrección de erratas, un instalador más seguro y soporte para Linux / SteamOS. Mira las [novedades de la v2.3](#-novedades-de-la-v23-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -26,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v1.2**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v2.3**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -38,6 +40,26 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
 
 ---
 
+## 🐧 Instalación en Linux / SteamOS (Steam Deck, Legion Go, etc.)
+
+En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instalador de Windows, pero de forma nativa: solo `HarmonyTools.exe` se ejecuta con Wine o, si no tienes Wine (como en SteamOS), con el **Proton** que ya trae Steam. No hace falta instalar nada en el sistema.
+
+1. Entra al **Modo Escritorio** y descarga o clona este repositorio.
+2. Asegúrate de tener algún Proton instalado en Steam (por ejemplo **Proton Experimental**, en la biblioteca, categoría *Herramientas*). Si ya jugaste Danganronpa V3 en Linux, ya lo tienes.
+3. Abre **Konsole** en la carpeta del parche y ejecuta:
+   ```bash
+   chmod +x patch.sh
+   ./patch.sh
+   ```
+4. Si no encuentra `HarmonyTools.exe` en la carpeta del parche, el script ofrece descargarlo de su [repositorio oficial](https://github.com/redssu/Harmony-Tools/releases). También puedes copiarlo tú en la carpeta del parche.
+5. El script detecta el juego en tus bibliotecas de Steam (también en la tarjeta SD); presiona `Enter` para usar la ruta detectada. Luego sigue los mismos pasos que en Windows.
+
+> La primera vez Proton prepara un entorno propio para el parche (en `~/.local/share/killer-harmony`), por lo que la extracción puede tardar un poco más en empezar. Si quieres usar un Proton o Wine concreto, puedes indicarlo con las variables `PROTON=/ruta/a/proton` o `WINE=/ruta/a/wine`.
+
+> Si algo sale mal, desde Steam puedes usar *Propiedades → Archivos instalados → Verificar integridad de los archivos* para recuperar los archivos originales del juego.
+
+---
+
 ## ℹ️ Información sobre las Versiones
 
 * **Versión v0.1**:
@@ -45,6 +67,29 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
 * **Versiones más recientes (v1.0 y posteriores)**:
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
+
+### 🆕 Novedades de la v2.3 (fork)
+
+Esta versión es un fork del [parche original](https://github.com/ManuelCMS/killer-harmony) con estos cambios:
+
+* **Corrección de erratas (460 líneas)**: se revisaron todos los textos de la versión más reciente contra un diccionario de español y se corrigieron, una por una, las erratas que se le pasaron a la traducción:
+  * Letras cambiadas, faltantes o sobrantes (`acompñamiento`, `duriante`, `santurario`, `pisicna`, `veredcito`...).
+  * Palabras pegadas (`ahoramismo`, `estáactuando`, `evidenciaen`...).
+  * Tildes y diéresis (`huír`, `crímen`, `pónte`, `vergenza`...).
+  * Verbos mal conjugados (`abstenimos`, `hicista`, `entendrás`, `veniste`...).
+  * Se respetaron a propósito los tartamudeos, las palabras cortadas, los juegos de palabras, la jerga y la forma de hablar de cada personaje.
+  * La versión v0.1 no se modificó.
+* **Instalador más seguro (`patch.ps1`)**:
+  * Si falla la extracción de un CPK, la instalación se detiene **sin borrar** los archivos originales del juego (antes los borraba igual).
+  * Si falta solo alguno de los CPK, los demás se extraen en lugar de borrarse sin extraer.
+  * Se comprueba que la carpeta del parche exista antes de tocar el juego, y se informan los errores de copia en vez de indicar siempre "éxito".
+  * La detección de la carpeta de diálogos (`wrd_script`) ya no se confunde con carpetas que dejó un parche anterior.
+* **Instalador para Linux / SteamOS (`patch.sh`)**, *experimental*: consulta la sección de [Linux](#-instalación-en-linux--steamos-steam-deck-legion-go-etc).
+* **Herramientas para editar los textos (`tools/`)**:
+  * `drv3text.py`: extrae los textos de los `.SPC` a un archivo de texto (`dump`) y aplica correcciones (`apply`), sin necesidad de Harmony Tools.
+  * `aplicar_erratas.py` + `correcciones/erratas.tsv`: lista de erratas (`texto_erróneo<TAB>texto_correcto`). Para corregir una errata nueva, agrega una línea y ejecuta `python3 tools/aplicar_erratas.py tools/correcciones/erratas.tsv`.
+
+> **Pendiente**: todavía quedan en inglés algunos textos de la galería (los mensajes de Monokuma y el casino) y los nombres de algunos eventos.
 
 ---
 ## Cómo contribuir al proyecto
@@ -60,3 +105,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
+* Fork v2.3: corrección de erratas, mejoras del instalador e instalador para Linux / SteamOS.
