@@ -1,0 +1,406 @@
+# Erratas de la traduccion (latest). Formato: texto_erroneo<TAB>texto_correcto
+# - Una regla en minusculas tambien corrige sus variantes Capitalizada y MAYUSCULAS.
+# - Solo se reemplaza la palabra completa (no dentro de otras palabras).
+# - Se aplica con: tools/aplicar_erratas.py tools/correcciones/erratas.tsv
+
+# --- Letras cambiadas, faltantes o sobrantes ---
+abilidad	habilidad
+acompñamiento	acompañamiento
+actualiizados	actualizados
+afriman	afirman
+agradble	agradable
+amenzante	amenazante
+ansisosa	ansiosa
+apagueb	apaguen
+arruniaría	arruinaría
+avivava	avivaba
+ayudamre	ayudarme
+ayudaráía	ayudaría
+blancaa	blanca
+buchos	bichos
+burjo	brujo
+cabezasos	cabezazos
+callaa	callas
+captadp	captado
+cargaó	cargó
+castrófica	catastrófica
+causea	causa
+cballeros	caballeros
+ciudadanoa	ciudadana
+colocqué	coloqué
+comparió	compartió
+conentración	concentración
+confudió	confundió
+confuncí	confundí
+conpu	compu
+considereq	considere
+consientidos	consentidos
+consiguido	conseguido
+consistío	consistió
+continurar	continuar
+conviertida	convertida
+cooperamo	cooperamos
+creles	crueles
+cryó	creyó
+cuchila	cuchilla
+dabido	sabido
+ded	de
+dedcidle	decidle
+dedl	del
+dedrribar	derribar
+definitivmante	definitivamente
+definitva	definitiva
+defintiva	definitiva
+defintivo	definitivo
+defnitivo	definitivo
+dehabilitar	deshabilitar
+demasaida	demasiada
+derrana	derrama
+descrubrir	descubrir
+descubieron	descubrieron
+deseperación	desesperación
+deshinibida	desinhibida
+desonciertan	desconciertan
+desperó	despertó
+detner	detener
+devuélbanme	devuélvanme
+diciendoe	diciendo
+difficultad	dificultad
+dormmido	dormido
+dulwe	dulce
+duriante	durante
+encargamre	encargarme
+enegrecido	ennegrecido
+enfrfentarlos	enfrentarlos
+enredadedras	enredaderas
+entendrás	entenderás
+entineda	entienda
+entoncecs	entonces
+equipamento	equipamiento
+esbiros	esbirros
+escúpleo	escúpelo
+esrá	está
+estadfadora	estafadora
+esterlar	estelar
+estrañas	extrañas
+ests	esta
+esuchó	escuchó
+evacución	evacuación
+floclore	folclore
+fuea	fue
+fueraza	fuerza
+habierta	abierta
+himilko	Himiko
+imeginen	imaginen
+imporara	importara
+imporible	imposible
+inconcevible	inconcebible
+inicó	inició
+inimos	vinimos
+inputil	inútil
+insensibile	insensible
+insginia	insignia
+insgnias	insignias
+instructiones	instrucciones
+interfierencias	interferencias
+juguetenado	jugueteando
+kibougmaine	Kibougamine
+kirum	Kirumi
+letero	letrero
+lingística	lingüística
+llamste	llamaste
+llevantar	levantar
+lugat	lugar
+malechor	malhechor
+maneoseadores	manoseadores
+manetner	mantener
+mencionárterlo	mencionártelo
+metalíca	metálica
+mientiendo	mintiendo
+mimso	mismo
+mismísmo	mismísimo
+mmalinterpretar	malinterpretar
+molestida	molestia
+molestémolos	molestémoslos
+monkuma	Monokuma
+monotar	Monotaro
+mononopad	Monopad
+murrieron	murieron
+muucho	mucho
+ncontraste	encontraste
+nostoros	nosotros
+nostros	nosotros
+obetnido	obtenido
+obivamente	obviamente
+obivo	obvio
+ocrrió	ocurrió
+ocultsimo	ocultismo
+opcíón	opción
+orquestrado	orquestado
+orquestrando	orquestando
+orquestrar	orquestar
+ozesnos	oseznos
+paraa	para
+pareche	parece
+pareción	pareció
+parpaedeo	parpadeo
+patéricos	patéticos
+peligroa	peligro
+perobabilidad	probabilidad
+persuadiendos	persuadiendo
+pienese	piense
+pisicna	piscina
+plam	Plan
+pordía	podría
+portunidad	oportunidad
+posibile	posible
+prefrencia	preferencia
+pregunstaste	preguntaste
+preparanos	prepararnos
+preparía	prepararía
+preprara	prepara
+prese	preste
+prisón	prisión
+probrar	probar
+proviniente	proveniente
+pueberto	puberto
+puediera	pudiera
+puntitaa	puntita
+pusto	puso
+quedabass	quedabas
+quee	que
+querdármelo	quedármelo
+querete	quererte
+quq	que
+raguños	rasguños
+ralmente	realmente
+realida	realidad
+referes	refieres
+refrescarmer	refrescarme
+rendirmos	rendirnos
+resisitió	resistió
+respeecta	respecta
+respero	respeto
+reveleador	revelador
+rompien	rompían
+rrealmente	realmente
+sabisdo	sabido
+santurario	santuario
+sguir	seguir
+shuich	Shuichi
+siguea	sigue
+sirviena	sirvienta
+siénese	siéntese
+sobresfuerces	sobreesfuerces
+tencuidado	ten cuidado
+todps	todos
+tonero	torneo
+traciende	trasciende
+tratse	tratase
+tsmugi	Tsumugi
+uns	una
+utela	tutela
+vececs	veces
+veoo	veo
+verdads	verdad
+veredcito	veredicto
+videdomotivo	videomotivo
+videonotivo	videomotivo
+vienesd	vienes
+vieniendo	viniendo
+vivs	viva
+von	con
+voyeourismo	voyeurismo
+vueno	bueno
+vverduras	verduras
+vvamos	vamos
+iniciative	iniciativa
+
+# --- Palabras pegadas ---
+ahoramismo	ahora mismo
+añadidoa	añadido a
+aúnmejor	aún mejor
+buscómatar	buscó matar
+elcuerpo	el cuerpo
+élsupiera	él supiera
+esla	es la
+evidenciaen	evidencia en
+haceralgo	hacer algo
+mismotablón	mismo tablón
+nobiliarioes	nobiliario es
+piezade	pieza de
+títulode	título de
+trucoscon	trucos con
+detela	de tela
+aTenko	a Tenko
+quéte	qué te
+
+# --- Tildes y dieresis ---
+absténte	abstente
+aciérten	acierten
+actua	actúa
+actúar	actuar
+ahogárte	ahogarte
+algúnos	algunos
+apareceran	aparecerán
+aqui	aquí
+asi	así
+avergenzas	avergüenzas
+averigemos	averigüemos
+besuquéandose	besuqueándose
+calmate	cálmate
+casí	casi
+castigame	castígame
+cállanse	cállense
+cómos	cómo
+confíar	confiar
+confíemos	confiemos
+crímen	crimen
+dejemoslo	dejémoslo
+dejáme	déjame
+dejénlo	déjenlo
+desnúdemonos	desnudémonos
+despiérten	despierten
+dáme	dame
+dános	danos
+dáte	date
+déjanmelo	déjenmelo
+dénse	dense
+dés	des
+dínos	dinos
+diós	dios
+dósis	dosis
+emision	emisión
+encontraramos	encontráramos
+encontre	encontré
+entrémos	entremos
+escúchen	escuchen
+estan	están
+estára	estará
+estó	esto
+estóico	estoico
+éstá	está
+excavaciónes	excavaciones
+facilmente	fácilmente
+fenomeno	fenómeno
+físicoculturismo	fisicoculturismo
+guíar	guiar
+hablémos	hablemos
+habria	habría
+haciéndo	haciendo
+hagámos	hagamos
+házlo	hazlo
+házlos	hazlos
+házte	hazte
+hipotésis	hipótesis
+huímos	huimos
+huír	huir
+impreción	impresión
+incluída	incluida
+insinuas	insinúas
+interes	interés
+jovenes	jóvenes
+leiste	leíste
+levantámos	levantamos
+limpiate	límpiate
+malgastándo	malgastando
+manténte	mantente
+matandome	matándome
+mentalizandome	mentalizándome
+miralas	míralas
+muñon	muñón
+omitieramos	omitiéramos
+padré	padre
+pais	país
+páneles	paneles
+pásando	pasando
+percataramos	percatáramos
+ponéos	poneos
+pónte	ponte
+póngamonos	pongámonos
+póngamos	pongamos
+prepárandose	preparándose
+pudieramos	pudiéramos
+quédemonos	quedémonos
+refutalo	refútalo
+refutála	refútala
+reimos	reímos
+relajate	relájate
+reporténse	repórtense
+reuna	reúna
+salámos	salimos
+sonriendome	sonriéndome
+soportenlo	sopórtenlo
+sucedio	sucedió
+tambaléandose	tambaleándose
+tambié	también
+tranquilizate	tranquilízate
+ustéd	usted
+vamonos	vámonos
+vergenza	vergüenza
+virgenes	vírgenes
+véis	veis
+comencémos	comencemos
+
+# --- Conjugaciones mal formadas ---
+abstenimos	abstuvimos
+comienzamos	comenzamos
+comienzó	comenzó
+confiesaré	confesaré
+corrije	corrige
+elegiera	eligiera
+elegió	eligió
+eligido	elegido
+emperoraste	empeoraste
+enamoraía	enamoraría
+entiendos	entiendo
+exudía	exudaba
+hicista	hiciste
+reorganizé	reorganicé
+seguría	seguiría
+transportarté	transporté
+tosé	tosí
+veniste	viniste
+apretan	aprietan
+digos	digo
+dicee	dices
+sabí	sabía
+
+# --- Correcciones de frase completa (texto literal exacto) ---
+=Sí,aspi es.	Sí, así es.
+=cáda—	cadá—
+=¿Q-Aué pasaría?	¿Q-Qué pasaría?
+=discusi[on	discusión
+=Kibo está siend ocontrolado	Kibo está siendo controlado
+=Deber+ias	Deberías
+=No tengo ide de	No tengo idea de
+=Tal vez fue qen esa época	Tal vez fue en esa época
+=hasta quí llegué	hasta aquí llegué
+=en su mano entía	en su mano tenía
+=¡Wow! ¿¡Tienes caño derebral	¡Wow! ¿¡Tienes daño cerebral
+=hacía mí a toda velocidad	hacia mí a toda velocidad
+=y desmayó...	y se desmayó...
+=Una jaula de insector	Una jaula de insectos
+=piezas inborrables	piezas irrompibles
+=Culpable Incognisible	Culpable Incognoscible
+=No hya forma	No hay forma
+=¡Os a digo que	¡Os digo que
+=¡Mis habilidad en baloncesto	¡Mi habilidad en baloncesto
+=un\nlíbido fuerte	una\nlibido fuerte
+=Sentémos en algún lugar	Sentémonos en algún lugar
+=sigoestoy vivo	sigo vivo
+=Hay una razón p<or la que	Hay una razón por la que
+=Tienes muchas huevos	Tienes muchos huevos
+=AOS-MAS TARDE	AÑOS-MÁS TARDE
+=POBLACIN VIEJA	POBLACIÓN VIEJA
+=EJECUCIN EXTERIOR	EJECUCIÓN EXTERIOR
+=LA.MENTE-MAESTRA	LA-MENTE-MAESTRA
+=<CLT=cltSTRONG>ltimo Pianista	<CLT=cltSTRONG>Último Pianista
+=HDD. As requieren	HDD. Se requieren
+=No importa\nsi es se está confiando, o estáactuando...	No importa\nsi se está confiando, o está actuando...
+=Puedes comenzar casualy mejorar.	Puedes comenzar casualmente y mejorar.
+=me pareció rar...	me pareció rara...
+=¡Haría<CLT=size2>unamontón	¡Haría<CLT=size2>un montón
+=no pudieron conrecoger	no pudieron recoger
+=Sí. Parecía undergroundpassage.\nGontathoughtitmmaybeexit...	Sí. Parecía pasajesubterráneo.\nGontapensóqueeralasalida...
+=del estudiantes coucil	del consejo estudiantil
