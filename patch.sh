@@ -18,35 +18,11 @@ CARPETA_ACTUAL="latest" # Carpeta del parche para la version mas reciente
 VERSION_BASE="v0.1"     # Version anterior estable (nombre de carpeta y version)
 
 HARMONY_TOOLS_URL="https://github.com/redssu/Harmony-Tools/releases/download/v2.1.0/Harmony-Tools.zip"
-CARPETA_JUEGO="Danganronpa V3 Killing Harmony"
 CPK_FILES=(partition_data_win.cpk partition_data_win_us.cpk partition_resident_win.cpk)
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-if [[ -t 1 ]]; then
-    C_RED=$'\e[31m'; C_GREEN=$'\e[32m'; C_YELLOW=$'\e[33m'; C_CYAN=$'\e[36m'; C_GRAY=$'\e[90m'; C_OFF=$'\e[0m'
-else
-    C_RED=""; C_GREEN=""; C_YELLOW=""; C_CYAN=""; C_GRAY=""; C_OFF=""
-fi
-
-say()   { printf '%s%s%s\n' "$1" "$2" "$C_OFF"; }
-linea() { say "$C_CYAN" "============================================================"; }
-
-pausa_y_salir() {
-    local codigo="$1"
-    if [[ -t 0 ]]; then
-        echo
-        read -rp "Presiona Enter para salir" _
-    fi
-    exit "$codigo"
-}
-
-preguntar_si() {
-    # preguntar_si "<texto>" -> 0 si la respuesta es S/Y o vacia (por defecto S)
-    local resp
-    read -rp "$1" resp || resp="n"
-    [[ -z "$resp" || "$resp" =~ ^[sSyY] ]]
-}
+# shellcheck source=comun.sh
+source "$SCRIPT_DIR/comun.sh"
 
 # -------------------------------------------------------------------------
 # Utilidades de rutas (el juego corre en Proton, que ignora mayusculas/minusculas;
@@ -107,27 +83,6 @@ fusionar_directorio() {
             mv -f "$entrada" "$destino/${existente:-$base}" || return 1
         fi
     done
-}
-
-# -------------------------------------------------------------------------
-# Deteccion de Steam, Proton y el juego
-# -------------------------------------------------------------------------
-STEAM_ROOTS=()
-for raiz in "$HOME/.local/share/Steam" "$HOME/.steam/steam" "$HOME/.steam/root" \
-            "$HOME/.var/app/com.valvesoftware.Steam/.local/share/Steam"; do
-    [[ -d "$raiz/steamapps" ]] || continue
-    real="$(readlink -f "$raiz")"
-    [[ " ${STEAM_ROOTS[*]:-} " == *" $real "* ]] || STEAM_ROOTS+=("$real")
-done
-
-bibliotecas_steam() {
-    local raiz vdf
-    for raiz in "${STEAM_ROOTS[@]}"; do
-        printf '%s\n' "$raiz"
-        for vdf in "$raiz/steamapps/libraryfolders.vdf" "$raiz/config/libraryfolders.vdf"; do
-            [[ -f "$vdf" ]] && sed -n 's/^[[:space:]]*"path"[[:space:]]*"\(.*\)"[[:space:]]*$/\1/p' "$vdf"
-        done
-    done | sed 's/\\\\/\\/g' | awk '!visto[$0]++'
 }
 
 buscar_proton() {
@@ -484,6 +439,30 @@ else
     say "$C_YELLOW" "[!] No se detecto la carpeta de dialogos del juego; se usaran las rutas del parche tal cual."
 fi
 
+# Respaldo en la carpeta del juego (ver comun.sh)
+RESPALDO="$(carpeta_respaldo "$GAME_PATH")"
+if [[ "$VERSION_SELECCIONADA" == "$CARPETA_ACTUAL" ]]; then ETIQUETA_VERSION="$VERSION_ACTUAL"; else ETIQUETA_VERSION="$VERSION_BASE"; fi
+declare -A INSTALADOS=() AGREGADOS=()
+VERSION_PREVIA=""
+if leer_manifiesto "$RESPALDO/instalado.txt"; then
+    VERSION_PREVIA="$MAN_VERSION"
+    for r in "${MAN_ARCHIVOS[@]}"; do INSTALADOS["${r,,}"]="$r"; done
+    INSTALACION_ANTIGUA=0
+else
+    # Parche instalado con un instalador antiguo (sin lista de archivos): lo que hay puede no ser el original
+    (( ${#CPK_PRESENTES[@]} == 0 )) && INSTALACION_ANTIGUA=1 || INSTALACION_ANTIGUA=0
+fi
+leer_lista "$RESPALDO/agregados.txt" AGREGADOS
+SIN_ORIGINAL=0
+
+if [[ -n "$VERSION_PREVIA" && "$VERSION_PREVIA" != "$ETIQUETA_VERSION" ]]; then
+    if ! guardar_version "$RESPALDO" "$WIN_DIR" "$VERSION_PREVIA" "${MAN_ARCHIVOS[@]}"; then
+        say "$C_RED" "[ERROR] No se pudo guardar la copia de la version instalada."
+        say "$C_YELLOW" "No se realizo ningun cambio en los archivos del juego."
+        pausa_y_salir 1
+    fi
+fi
+
 COPIADOS=0
 ERRORES_COPIA=()
 for rel in "${PATCH_FILES[@]}"; do
@@ -499,14 +478,26 @@ for rel in "${PATCH_FILES[@]}"; do
     mapfile -t destinos < <(resolver_ci "$WIN_DIR" "$destino_rel")
     ok=1
     for destino in "${destinos[@]}"; do
-        # Respaldar el archivo original una sola vez en backup_en/ (al mismo nivel que las carpetas de version)
+        r="${destino#"$WIN_DIR"/}"
+        # Guardar el original del juego una sola vez (si el archivo no es de una instalacion anterior del parche)
         if [[ -f "$destino" ]]; then
-            respaldo="$SCRIPT_DIR/backup_en/${destino#"$WIN_DIR"/}"
-            if [[ ! -e "$respaldo" ]]; then
-                mkdir -p "$(dirname "$respaldo")" && cp -p "$destino" "$respaldo" || ok=0
+            if [[ -z "${INSTALADOS[${r,,}]:-}" && ! -f "$RESPALDO/original/$r" ]]; then
+                if [[ -f "$SCRIPT_DIR/backup_en/$r" ]]; then
+                    copiar_con_carpeta "$SCRIPT_DIR/backup_en/$r" "$RESPALDO/original/$r" || ok=0
+                elif (( ! INSTALACION_ANTIGUA )); then
+                    copiar_con_carpeta "$destino" "$RESPALDO/original/$r" || ok=0
+                else
+                    SIN_ORIGINAL=$(( SIN_ORIGINAL + 1 ))
+                fi
             fi
+        elif [[ -z "${INSTALADOS[${r,,}]:-}" ]]; then
+            AGREGADOS["${r,,}"]="$r"
         fi
-        mkdir -p "$(dirname "$destino")" && cp -f "$origen" "$destino" || ok=0
+        if (( ok )) && mkdir -p "$(dirname "$destino")" && cp -f "$origen" "$destino"; then
+            INSTALADOS["${r,,}"]="$r"
+        else
+            ok=0
+        fi
     done
 
     if (( ok )); then
@@ -518,7 +509,14 @@ for rel in "${PATCH_FILES[@]}"; do
     fi
 done
 
+escribir_manifiesto "$RESPALDO/instalado.txt" "$ETIQUETA_VERSION" "${INSTALADOS[@]}"
+escribir_lista "$RESPALDO/agregados.txt" AGREGADOS
+
 echo
+if (( SIN_ORIGINAL > 0 )); then
+    say "$C_YELLOW" "[!] $SIN_ORIGINAL archivos ya estaban modificados por un parche anterior sin respaldo."
+    say "$C_YELLOW" "    Para recuperar el juego original en ingles, usa 'Verificar integridad' en Steam."
+fi
 if (( ${#ERRORES_COPIA[@]} == 0 )); then
     say "$C_GREEN" "[+] Se aplicaron con exito $COPIADOS de $TOTAL_PATCH_FILES archivos del parche ($VERSION_SELECCIONADA)."
 else

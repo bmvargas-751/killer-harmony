@@ -40,6 +40,28 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
 
 ---
 
+## ↩️ Desinstalar o volver a una versión anterior
+
+Cada vez que instalas el parche, el instalador guarda un respaldo dentro de la carpeta del juego, en `killer-harmony-backup`:
+
+* Los archivos originales del juego (en inglés) que el parche reemplaza.
+* La lista de archivos que el parche agrega, para poder quitarlos.
+* Una copia de cada versión del parche que tenías instalada antes de cambiar a otra.
+
+Como el respaldo vive en la carpeta del juego, no se pierde si descargas una versión nueva del parche en otra carpeta. Si instalaste con un instalador antiguo (que guardaba el respaldo en `backup_en`, dentro de la carpeta del parche), se traslada automáticamente la próxima vez que instales.
+
+Para restaurar:
+
+1. Haz **doble clic en `restaurar.bat`** (en Linux / SteamOS: `./restaurar.sh`).
+2. Introduce la ruta del juego (o presiona `Enter` si se detectó sola).
+3. El script muestra la versión instalada y te deja elegir entre:
+   * **Juego original** (sin parche, en inglés).
+   * **Cualquier versión del parche** que hayas tenido instalada antes.
+
+> Al volver al juego original, este queda en inglés usando los archivos ya extraídos (los `.cpk` originales no se recuperan). Si prefieres volver exactamente al estado de Steam, o si no hay respaldo, usa *Propiedades → Archivos instalados → Verificar integridad de los archivos*.
+
+---
+
 ## 🐧 Instalación en Linux / SteamOS (Steam Deck, Legion Go, etc.)
 
 En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instalador de Windows, pero de forma nativa: solo `HarmonyTools.exe` se ejecuta con Wine o, si no tienes Wine (como en SteamOS), con el **Proton** que ya trae Steam. No hace falta instalar nada en el sistema.
