@@ -46,6 +46,8 @@ try {
     # Continuar normalmente si no es una consola interactiva estandar
 }
 
+. (Join-Path $PSScriptRoot "comun.ps1")
+
 function Show-Header {
     Clear-Host
     Write-Host "============================================================" -ForegroundColor Cyan
@@ -344,6 +346,28 @@ if ($carpetaWrdJuego) {
     Write-Host "[!] No se detecto la carpeta de dialogos del juego; se usaran las rutas del parche tal cual." -ForegroundColor Yellow
 }
 
+# Respaldo en la carpeta del juego (ver comun.ps1)
+$backupDir = Get-CarpetaRespaldo $gamePath
+$etiquetaVersion = if ($versionSeleccionada -eq $carpetaActual) { $versionActual } else { $versionBase }
+$manifiestoPrevio = Leer-Manifiesto (Join-Path $backupDir "instalado.txt")
+$agregados = Leer-Lista (Join-Path $backupDir "agregados.txt")
+$instalados = New-Object 'System.Collections.Generic.HashSet[string]' ([StringComparer]::OrdinalIgnoreCase)
+if ($manifiestoPrevio) { foreach ($r in $manifiestoPrevio.Archivos) { [void]$instalados.Add($r) } }
+# Parche instalado con un instalador antiguo (sin lista de archivos): lo que hay en el juego puede no ser el original
+$instalacionAntigua = (-not $manifiestoPrevio) -and $parche_previo_instalado
+$sinOriginal = 0
+
+if ($manifiestoPrevio -and $manifiestoPrevio.Version -ne $etiquetaVersion) {
+    try {
+        Guardar-Version $backupDir $winDir $manifiestoPrevio
+    } catch {
+        Write-Host "[ERROR] No se pudo guardar la copia de la version instalada: $_" -ForegroundColor Red
+        Write-Host "No se realizo ningun cambio en los archivos del juego." -ForegroundColor Yellow
+        Read-Host "Presiona Enter para salir"
+        exit 1
+    }
+}
+
 foreach ($file in $patchFiles) {
     # Obtener ruta relativa respecto a la carpeta 'win' del parche de la version elegida
     $relativePath = $file.FullName.Substring($patchSourceDir.Length).TrimStart('\', '/')
@@ -358,16 +382,22 @@ foreach ($file in $patchFiles) {
     $destinationSubDir = Split-Path $destinationFilePath -Parent
 
     try {
-        # Respaldar el archivo original una sola vez en backup_en\ (al mismo nivel que las carpetas de version)
+        $rel = $relativePath -replace '\\', '/'
+        # Guardar el original del juego una sola vez (si el archivo no es de una instalacion anterior del parche)
         if (Test-Path $destinationFilePath) {
-            $respaldo = Join-Path $PSScriptRoot (Join-Path "backup_en" $relativePath)
-            if (-not (Test-Path $respaldo)) {
-                $respaldoDir = Split-Path $respaldo -Parent
-                if (-not (Test-Path $respaldoDir)) {
-                    New-Item -ItemType Directory -Path $respaldoDir -Force -ErrorAction Stop | Out-Null
+            $original = Join-Path (Join-Path $backupDir "original") $rel
+            if (-not $instalados.Contains($rel) -and -not (Test-Path $original)) {
+                $legado = Join-Path (Join-Path $PSScriptRoot "backup_en") $relativePath
+                if (Test-Path $legado) {
+                    Copiar-Con-Carpeta $legado $original      # respaldo de un instalador anterior
+                } elseif (-not $instalacionAntigua) {
+                    Copiar-Con-Carpeta $destinationFilePath $original
+                } else {
+                    $sinOriginal++
                 }
-                Copy-Item -Path $destinationFilePath -Destination $respaldo -Force -ErrorAction Stop
             }
+        } elseif (-not $instalados.Contains($rel)) {
+            [void]$agregados.Add($rel)
         }
 
         # Asegurarse de que el subdirectorio de destino exista
@@ -377,6 +407,7 @@ foreach ($file in $patchFiles) {
 
         # Copiar y reemplazar
         Copy-Item -Path $file.FullName -Destination $destinationFilePath -Force -ErrorAction Stop
+        [void]$instalados.Add($rel)
         $copiedCount++
         Write-Host "  -> Instalado: $relativePath" -ForegroundColor DarkCyan
     } catch {
@@ -385,7 +416,14 @@ foreach ($file in $patchFiles) {
     }
 }
 
+Escribir-Manifiesto (Join-Path $backupDir "instalado.txt") $etiquetaVersion $instalados
+Escribir-Lista (Join-Path $backupDir "agregados.txt") $agregados
+
 Write-Host ""
+if ($sinOriginal -gt 0) {
+    Write-Host "[!] $sinOriginal archivos ya estaban modificados por un parche anterior sin respaldo." -ForegroundColor Yellow
+    Write-Host "    Para recuperar el juego original en ingles, usa 'Verificar integridad' en Steam." -ForegroundColor Yellow
+}
 if ($erroresCopia.Count -eq 0) {
     Write-Host "[+] Se aplicaron con exito $copiedCount de $totalPatchFiles archivos del parche ($versionSeleccionada)." -ForegroundColor Green
 } else {
