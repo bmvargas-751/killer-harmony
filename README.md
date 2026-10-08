@@ -1,10 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.3
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.4
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
 
-> **Fork v2.3**: esta copia incluye corrección de erratas, un instalador más seguro y soporte para Linux / SteamOS. Mira las [novedades de la v2.3](#-novedades-de-la-v23-fork).
+> **Fork v2.4**: esta copia incluye corrección de erratas y de palabras destacadas pegadas, un instalador más seguro y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v24-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -28,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v2.3**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v2.4**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -68,7 +68,13 @@ En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instala
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
 
-### 🆕 Novedades de la v2.3 (fork)
+### 🆕 Novedades de la v2.4 (fork)
+
+* **Palabras destacadas pegadas (capítulo 1)**: el juego no agrega espacios alrededor de las palabras resaltadas, por lo que textos como "delPianista Definitivosabe" aparecían pegados. Esto ya estaba corregido en los capítulos 2 a 6, pero faltaba el capítulo 1: se corrigieron **496 líneas**, incluidas las frases con cambio de tamaño de los debates.
+* **Puntuación**: comas dobles (`Shuichi,,`) y puntos suspensivos incompletos (`Jeje..`, `¡Kh..!`, o partidos por un salto de línea).
+* **Herramientas**: nuevo `tools/separar_etiquetas.py`, que agrega el espacio que falta junto a las etiquetas de formato, y soporte para reglas con expresiones regulares (`~`) en `erratas.tsv`.
+
+### Novedades de la v2.3 (fork)
 
 Esta versión es un fork del [parche original](https://github.com/ManuelCMS/killer-harmony) con estos cambios:
 
@@ -105,4 +111,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
-* Fork v2.3: corrección de erratas, mejoras del instalador e instalador para Linux / SteamOS.
+* Fork v2.3 / v2.4: corrección de erratas y de palabras destacadas pegadas, mejoras del instalador e instalador para Linux / SteamOS.
