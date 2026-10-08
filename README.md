@@ -1,10 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.4
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.5
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
 
-> **Fork v2.4**: esta copia incluye corrección de erratas y de palabras destacadas pegadas, un instalador más seguro y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v24-fork).
+> **Fork v2.5**: esta copia incluye corrección de erratas y de palabras destacadas pegadas, el menú de pausa traducido, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v25-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -28,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v2.4**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v2.5**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -37,6 +37,28 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
 
 > **¿Ya tienes un parche anterior instalado?**
 > Si los archivos `.cpk` originales ya no están presentes (porque fueron eliminados al aplicar un parche previo), el script lo detectará automáticamente y te preguntará si deseas omitir la extracción. Confirma con `S` (opción por defecto) y el instalador aplicará únicamente los nuevos archivos del parche sobre los datos ya extraídos, sin necesidad de volver a extraer nada.
+
+---
+
+## 🔄 Desinstalar o volver a una versión anterior
+
+Cada vez que instalas el parche, el instalador guarda un respaldo dentro de la carpeta del juego, en `killer-harmony-backup`:
+
+* Los archivos originales del juego (en inglés) que el parche reemplaza.
+* La lista de archivos que el parche agrega, para poder quitarlos.
+* Una copia de cada versión del parche que tenías instalada antes de cambiar a otra.
+
+Como el respaldo vive en la carpeta del juego, no se pierde si descargas una versión nueva del parche en otra carpeta. Si instalaste con un instalador antiguo (que guardaba el respaldo en `backup_en`, dentro de la carpeta del parche), se traslada automáticamente la próxima vez que instales.
+
+Para restaurar:
+
+1. Haz **doble clic en `restaurar.bat`** (en Linux / SteamOS: `./restaurar.sh`).
+2. Introduce la ruta del juego (o presiona `Enter` si se detectó sola).
+3. El script muestra la versión instalada y te deja elegir entre:
+   * **Juego original** (sin parche, en inglés).
+   * **Cualquier versión del parche** que hayas tenido instalada antes.
+
+> Al volver al juego original, este queda en inglés usando los archivos ya extraídos (los `.cpk` originales no se recuperan). Si prefieres volver exactamente al estado de Steam, o si no hay respaldo, usa *Propiedades → Archivos instalados → Verificar integridad de los archivos*.
 
 ---
 
@@ -68,7 +90,16 @@ En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instala
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
 
-### 🆕 Novedades de la v2.4 (fork)
+### 🆕 Novedades de la v2.5 (fork)
+
+* **Menú de pausa traducido**: los títulos del menú de pausa son imágenes, no texto. Ahora aparecen en español usando las letras del propio juego, con la misma fuente y el mismo brillo: SAVE → GUARDAR, LOAD → CARGAR, OPTION → OPCIONES, MAIN MENU → MENÚ PRINCIPAL, DRESS UP → PROBADOR y BACKLOG → REGISTRO.
+* **Restaurar** (`restaurar.bat` / `restaurar.sh`): vuelve al juego original o a cualquier versión del parche que hayas tenido instalada. Consulta [cómo restaurar](#-desinstalar-o-volver-a-una-versión-anterior).
+* **Respaldos dentro del juego**: el instalador ahora guarda los respaldos en `killer-harmony-backup`, dentro de la carpeta del juego, para que no se pierdan al descargar una versión nueva del parche. Los respaldos de instaladores anteriores (`backup_en`) se trasladan solos.
+* **Herramientas para las imágenes de la interfaz (`tools/`)**:
+  * `drv3srd.py`: exporta las texturas de los `.spc` a PNG e importa los PNG editados (deben conservar el tamaño original).
+  * `rotulos.py` + `rotulos/*.json`: genera rótulos en español recortando y combinando las letras de las texturas del juego.
+
+### Novedades de la v2.4 (fork)
 
 * **Palabras destacadas pegadas (capítulo 1)**: el juego no agrega espacios alrededor de las palabras resaltadas, por lo que textos como "delPianista Definitivosabe" aparecían pegados. Esto ya estaba corregido en los capítulos 2 a 6, pero faltaba el capítulo 1: se corrigieron **496 líneas**, incluidas las frases con cambio de tamaño de los debates.
 * **Puntuación**: comas dobles (`Shuichi,,`) y puntos suspensivos incompletos (`Jeje..`, `¡Kh..!`, o partidos por un salto de línea).
@@ -111,4 +142,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
-* Fork v2.3 / v2.4: corrección de erratas y de palabras destacadas pegadas, mejoras del instalador e instalador para Linux / SteamOS.
+* Fork v2.3 – v2.5: corrección de erratas y de palabras destacadas pegadas, traducción del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
