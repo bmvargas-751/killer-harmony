@@ -404,3 +404,11 @@ sabí	sabía
 =no pudieron conrecoger	no pudieron recoger
 =Sí. Parecía undergroundpassage.\nGontathoughtitmmaybeexit...	Sí. Parecía pasajesubterráneo.\nGontapensóqueeralasalida...
 =del estudiantes coucil	del consejo estudiantil
+
+# --- Puntuacion duplicada o incompleta ---
+=,,	,
+=,..Pero	...Pero
+=.\n.. 	...\n
+=sobrevivir..\n..Incluso	sobrevivir...\n...Incluso
+# Puntos suspensivos con solo dos puntos
+~(?<![.])\.\.(?![.])	...
