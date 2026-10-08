@@ -7,6 +7,7 @@ Uso:
 - Las reglas normales reemplazan palabras completas. Una regla en minusculas tambien
   corrige sus variantes Capitalizada y MAYUSCULAS.
 - Las reglas que empiezan con "=" reemplazan ese texto literal exacto ("\\n" = salto de linea).
+- Las reglas que empiezan con "~" son expresiones regulares (se aplican despues de las literales).
 - Muestra cada cambio, avisa de reglas que no encontraron nada y escribe los SPC
   usando drv3text (que verifica el texto original antes de escribir).
 """
@@ -21,7 +22,7 @@ LETRA = r"[^\W\d_]"
 
 
 def cargar_reglas(ruta):
-    literales, palabras = [], []
+    literales, regex, palabras = [], [], []
     with open(ruta, encoding="utf-8") as f:
         for n, linea in enumerate(f, 1):
             linea = linea.rstrip("\n")
@@ -33,9 +34,11 @@ def cargar_reglas(ruta):
             viejo, nuevo = partes
             if viejo.startswith("="):
                 literales.append((n, drv3text.unescape(viejo[1:]), drv3text.unescape(nuevo)))
+            elif viejo.startswith("~"):
+                regex.append((n, re.compile(viejo[1:]), drv3text.unescape(nuevo)))
             else:
                 palabras.append((n, viejo, nuevo))
-    return literales, palabras
+    return literales, regex, palabras
 
 
 def variantes(viejo, nuevo):
@@ -56,10 +59,14 @@ def compilar_palabras(palabras):
     return re.compile(rf"(?<!{LETRA})(?:{alternativas})(?!{LETRA})"), tabla
 
 
-def corregir(texto, literales, patron, tabla, usadas):
+def corregir(texto, literales, regex, patron, tabla, usadas):
     for n, viejo, nuevo in literales:
         if viejo in texto:
             texto = texto.replace(viejo, nuevo)
+            usadas.add(n)
+    for n, expr, nuevo in regex:
+        texto, cuenta = expr.subn(nuevo, texto)
+        if cuenta:
             usadas.add(n)
 
     def reemplazo(m):
@@ -83,7 +90,7 @@ def main(argv):
         print(__doc__)
         return 2
 
-    literales, palabras = cargar_reglas(args[0])
+    literales, regex, palabras = cargar_reglas(args[0])
     patron, tabla = compilar_palabras(palabras)
     usadas = set()
     cambios = []
@@ -95,7 +102,7 @@ def main(argv):
                 continue
             for _, elems in drv3text.StxFile(raw).tables:
                 for sid, texto in elems.items():
-                    nuevo = corregir(texto, literales, patron, tabla, usadas)
+                    nuevo = corregir(texto, literales, regex, patron, tabla, usadas)
                     if nuevo != texto:
                         cambios.append((spc_path, s.name, sid, texto, nuevo))
 
@@ -103,7 +110,7 @@ def main(argv):
         print(f"{os.path.basename(spc_path)} {sub}#{sid}")
         print(f"  - {drv3text.escape(viejo)}")
         print(f"  + {drv3text.escape(nuevo)}")
-    sin_uso = [n for n, *_ in literales + palabras if n not in usadas]
+    sin_uso = [n for n, *_ in literales + regex + palabras if n not in usadas]
     print(f"\n{len(cambios)} lineas modificadas.")
     if sin_uso:
         print(f"[!] Reglas sin coincidencias (lineas de {args[0]}): {sin_uso}")
