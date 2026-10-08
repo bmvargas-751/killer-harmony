@@ -1,0 +1,30 @@
+{
+  "descripcion": "Titulos del menu de pausa (Monopad > Sistema)",
+  "spc": "flash/techou/techou_system_US.spc",
+  "fuentes": [
+    ["flash/techou/techou_system_US.spc", "title_save_DXT1_US", "SAVE", 1.0],
+    ["flash/techou/techou_system_US.spc", "title_load_DXT1_US", "LOAD", 1.0],
+    ["flash/techou/techou_system_US.spc", "title_option_DXT1_US", "OPTION", 1.0],
+    ["flash/techou/techou_system_US.spc", "title_mainmenu_DXT1_US", "MAIN|MENU", 1.0],
+    ["flash/techou/techou_system_US.spc", "title_kisekae_DXT1_US", "DRESS UP", 0.893],
+    ["flash/techou/techou_system_US.spc", "title_backlog_DXT1_US", "BACKLOG", 0.893]
+  ],
+  "estilo": {
+    "nucleo_bajo": 0.35,
+    "brillo": [[3.5, 0.3], [7, 0.6]],
+    "alto": 27,
+    "espacio": 3,
+    "espacio_palabra": 8,
+    "ancho_max": 200,
+    "lineas_y": {"1": [50], "2": [30, 70]}
+  },
+  "tildes": {"Ú": "U"},
+  "textos": {
+    "title_save_DXT1_US": "GUARDAR",
+    "title_load_DXT1_US": "CARGAR",
+    "title_option_DXT1_US": "OPCIONES",
+    "title_mainmenu_DXT1_US": "MENÚ|PRINCIPAL",
+    "title_kisekae_DXT1_US": "PROBADOR",
+    "title_backlog_DXT1_US": "REGISTRO"
+  }
+}

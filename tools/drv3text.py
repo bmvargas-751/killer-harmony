@@ -118,6 +118,71 @@ def compress(raw):
     return bytes(out)
 
 
+def compress_rapido(raw):
+    """Compresion SPC valida pero mas rapida que compress() para archivos grandes (texturas).
+
+    Busca coincidencias con una tabla hash de 3 bytes. No produce los mismos bytes que V3Lib,
+    pero el resultado se descomprime igual (se verifica en portar_flash_demo.py).
+    """
+    n = len(raw)
+    out = bytearray()
+    cabezas = {}
+    pos = 0
+
+    def largo_comun(a, b, maximo):
+        if raw[a:a + maximo] == raw[b:b + maximo]:
+            return maximo
+        lo, hi = 0, maximo
+        while lo < hi:
+            mid = (lo + hi + 1) // 2
+            if raw[a:a + mid] == raw[b:b + mid]:
+                lo = mid
+            else:
+                hi = mid - 1
+        return lo
+
+    def registrar(p):
+        if p + 3 <= n:
+            lista = cabezas.setdefault(raw[p:p + 3], [])
+            lista.append(p)
+            if len(lista) > 8:
+                del lista[0]
+
+    while pos < n:
+        pos_flag = len(out)
+        out.append(0)
+        flag = 0
+        for bit in range(8):
+            if pos >= n:
+                break
+            mejor, dist_mejor = 0, 0
+            maximo = min(SPC_MAX_SEQ, n - pos)
+            if maximo >= 3:
+                for p in reversed(cabezas.get(raw[pos:pos + 3], ())):
+                    dist = pos - p
+                    if dist > SPC_WINDOW:
+                        break
+                    largo = largo_comun(p, pos, maximo)
+                    if largo > mejor:
+                        mejor, dist_mejor = largo, dist
+                        if largo == maximo:
+                            break
+            if mejor >= 3:
+                out += struct.pack("<H", (SPC_WINDOW - dist_mejor) | ((mejor - 2) << 10))
+                # Registrar solo el inicio y el final de la coincidencia (suficiente y mucho mas rapido)
+                registrar(pos)
+                for p in range(max(pos + 1, pos + mejor - 3), pos + mejor):
+                    registrar(p)
+                pos += mejor
+            else:
+                flag |= 1 << bit
+                out.append(raw[pos])
+                registrar(pos)
+                pos += 1
+        out[pos_flag] = _REV[flag]
+    return bytes(out)
+
+
 class SpcFile:
     def __init__(self, path):
         with open(path, "rb") as f:
