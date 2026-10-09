@@ -1,0 +1,64 @@
+{
+  "descripcion": "Resultados: N.o Juicio Escolar",
+  "spc": "flash/trial/t_resultt_img_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12,
+      "interlineado": 0.95
+    }
+  },
+  "textos": {
+    "t_resultt_img_case_tx_000_US": {
+      "usar": "serif",
+      "texto": "1.er Juicio Escolar",
+      "rotar": -8,
+      "espaciado": 0.06
+    },
+    "t_resultt_img_case_tx_001_US": {
+      "usar": "serif",
+      "texto": "2.º Juicio Escolar",
+      "rotar": -8,
+      "espaciado": 0.06
+    },
+    "t_resultt_img_case_tx_002_US": {
+      "usar": "serif",
+      "texto": "3.er Juicio Escolar",
+      "rotar": -8,
+      "espaciado": 0.06
+    },
+    "t_resultt_img_case_tx_003_US": {
+      "usar": "serif",
+      "texto": "4.º Juicio Escolar",
+      "rotar": -8,
+      "espaciado": 0.06
+    },
+    "t_resultt_img_case_tx_004_US": {
+      "usar": "serif",
+      "texto": "5.º Juicio Escolar",
+      "rotar": -8,
+      "espaciado": 0.06
+    },
+    "t_resultt_img_case_tx_005_US": {
+      "usar": "serif",
+      "texto": "6.º Juicio Escolar",
+      "rotar": -8,
+      "espaciado": 0.06
+    },
+    "t_resultt_img_skill_tx_US": {
+      "usar": "serif",
+      "texto": "BONO DE HABILIDAD",
+      "rotar": -3
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "descripcion": "Juicio: Se reanuda",
+  "spc": "flash/event/t_cutin_saikai_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "pincel_v": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1,
+      "vertical": true
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "serif_m": {
+      "fuente": "EBGaramond",
+      "peso": 600,
+      "espaciado": 0.03,
+      "condensar": 0.9
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12
+    }
+  },
+  "textos": {
+    "t_start_tx_US_saikai": {
+      "usar": "pincel_v",
+      "texto": "Se reanuda"
+    },
+    "t_start_saiban_tx_US_000": {
+      "usar": "pincel",
+      "texto": "Jui"
+    },
+    "t_start_saiban_tx_US_001": {
+      "usar": "pincel",
+      "texto": "cio"
+    },
+    "t_start_saiban_tx_US_002": {
+      "usar": "pincel",
+      "texto": "Esco"
+    },
+    "t_start_saiban_tx_US_003": {
+      "usar": "pincel",
+      "texto": "lar"
+    },
+    "t_start_saiban_tx_US_saikai_000_DXT1": {
+      "usar": "pincel",
+      "texto": "Jui"
+    },
+    "t_start_saiban_tx_US_saikai_001_DXT1": {
+      "usar": "pincel",
+      "texto": "cio"
+    },
+    "t_start_saiban_tx_US_saikai_002_DXT1": {
+      "usar": "pincel",
+      "texto": "Esco"
+    },
+    "t_start_saiban_tx_US_saikai_003_DXT1": {
+      "usar": "pincel",
+      "texto": "lar"
+    }
+  }
+}

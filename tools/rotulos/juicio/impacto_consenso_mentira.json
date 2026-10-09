@@ -1,0 +1,31 @@
+{
+  "descripcion": "Impacto: Consenso / Mentira",
+  "spc": "flash/trial/t_ef_ronpa_hit_tx_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12,
+      "interlineado": 0.95
+    }
+  },
+  "textos": {
+    "t_ef_ronpa_hit_tx_support_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Consenso"
+    },
+    "t_ef_ronpa_hit_tx_untrue_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Mentira"
+    }
+  }
+}

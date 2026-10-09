@@ -1,0 +1,33 @@
+{
+  "descripcion": "Cut-in: t_ronpa_cutin_ki-bo_US",
+  "spc": "flash/event/t_ronpa_cutin_ki-bo_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "pincel_v": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1,
+      "vertical": true
+    },
+    "pixel": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.05
+    }
+  },
+  "textos": {
+    "t_ronpa_lang_tx_US": {
+      "usar": "pincel",
+      "texto": "Refu|tado",
+      "interlineado": 0.8
+    },
+    "t_ronpa_lang_ef_tx_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Refu|tado",
+      "interlineado": 0.8
+    }
+  }
+}

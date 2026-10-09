@@ -1,0 +1,45 @@
+{
+  "descripcion": "Confrontacion Refutadora: Exito",
+  "spc": "flash/trial/t_hr_seri_clear_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12,
+      "interlineado": 0.95
+    }
+  },
+  "textos": {
+    "t_hr_seri_clear_tx_000_US": {
+      "usar": "pincel",
+      "texto": "Éxi",
+      "borde": 1,
+      "brillo": false,
+      "color_borde": [
+        70,
+        140,
+        230
+      ]
+    },
+    "t_hr_seri_clear_tx_001_US": {
+      "usar": "pincel",
+      "texto": "to",
+      "borde": 1,
+      "brillo": false,
+      "color_borde": [
+        70,
+        140,
+        230
+      ]
+    }
+  }
+}
