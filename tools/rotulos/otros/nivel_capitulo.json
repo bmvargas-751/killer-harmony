@@ -22,7 +22,19 @@
       "fuente": "EBGaramond",
       "peso": 600,
       "espaciado": 0.03,
-      "condensar": 0.9
+      "condensar": 0.9,
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "borde": 2,
+      "color_borde": [
+        0,
+        0,
+        0
+      ],
+      "brillo": false
     },
     "digital": {
       "fuente": "Rajdhani",
