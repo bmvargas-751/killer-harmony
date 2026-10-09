@@ -1,0 +1,16 @@
+{
+  "descripcion": "Monokuma oculto encontrado",
+  "spc": "flash/event/t_monokuma_get_US.spc",
+  "estilos": {
+    "pixel": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.05
+    }
+  },
+  "textos": {
+    "get_US_DXT1": {
+      "usar": "pixel",
+      "texto": "¡Monokuma oculto encontrado!"
+    }
+  }
+}

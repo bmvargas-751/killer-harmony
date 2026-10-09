@@ -1,0 +1,33 @@
+{
+  "descripcion": "Cut-in: t_vronpa_sansei_gokuhara_US",
+  "spc": "flash/event/t_vronpa_sansei_gokuhara_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "pincel_v": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1,
+      "vertical": true
+    },
+    "pixel": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.05
+    }
+  },
+  "textos": {
+    "t_ronpa_lang_US": {
+      "usar": "pincel",
+      "texto": "Con|sen|so",
+      "interlineado": 0.75
+    },
+    "t_ronpa_lang_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Con|sen|so",
+      "interlineado": 0.75
+    }
+  }
+}
