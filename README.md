@@ -1,10 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.5
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.6
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
 
-> **Fork v2.5**: esta copia incluye corrección de erratas y de palabras destacadas pegadas, el menú de pausa traducido, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v25-fork).
+> **Fork v2.6**: esta copia incluye corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v26-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -28,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v2.5**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v2.6**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -90,7 +90,33 @@ En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instala
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
 
-### 🆕 Novedades de la v2.5 (fork)
+### 🆕 Novedades de la v2.6 (fork)
+
+* **Términos unificados con Danganronpa 1 y 2**: los nombres de mecánicas y objetos ahora son los mismos que usan las traducciones al español de DR1 y DR2 (de [TranScene](https://tradusquare.es/grupos-de-traduccion/transcene/)), para que la saga se lea igual de un juego a otro. Se ajustaron los artículos cuando el término cambia de género ("el Archivo Monokuma" → "la Ficha Monokuma").
+* **Galería traducida**: el casino, las reglas y todos los segmentos del Teatro Monokuma, que seguían en inglés.
+* **Nombres de la galería**: eventos, videos y presentaciones de personajes. También se corrigieron nombres que habían quedado a medio traducir ("Why Irse the Inner Tube?", "What Kaito Izquierda Behind"...).
+* **Objetos del mapa**: los nombres que aparecen al apuntar a algo mientras exploras ("Door", "Blackboard"...) ahora están en español.
+* **Otros textos en inglés**: descripciones actualizadas de algunas pruebas, una habilidad, una entrada de la ficha de Himiko y una frase del Armamento Teorético contra Kaede.
+* **Herramientas**: nueva lista `tools/correcciones/terminos.tsv` con los cambios de términos, y las traducciones nuevas guardadas en `tools/correcciones/` para poder volver a aplicarlas.
+
+<details>
+<summary><b>Palabras que cambiaron en esta versión</b></summary>
+
+| Antes (v2.5) | Ahora (v2.6) | Veces | En inglés |
+|---|---|---:|---|
+| Debate Sin Freno | Debate Continuo | 130 | Non-Stop Debate |
+| Duelo de Refutación | Confrontación Refutadora | 24 | Rebuttal Showdown |
+| Argumento de Cierre | Clímax Lógico | 14 | Closing Argument |
+| Deducción de Ahorcado | Epifanía Anagrámica | 19 | Hangman's Gambit |
+| Monocoins | Medallas Monokuma | 40 | Monocoins |
+| Archivo Monokuma | Ficha Monokuma | 56 | Monokuma File |
+| Cuida Niños Definitiva | Cuidadora Definitiva | 18 | Ultimate Child Caregiver |
+| Balas de Verdad / Municiones de la Verdad | Municiones de Verdad | 12 | Truth Bullets |
+
+No cambiaron porque ya coincidían con DR1 y DR2: Juicio Escolar, Munición, Mente Maestra y Kibougamine.
+</details>
+
+### Novedades de la v2.5 (fork)
 
 * **Menú de pausa traducido**: los títulos del menú de pausa son imágenes, no texto. Ahora aparecen en español usando las letras del propio juego, con la misma fuente y el mismo brillo: SAVE → GUARDAR, LOAD → CARGAR, OPTION → OPCIONES, MAIN MENU → MENÚ PRINCIPAL, DRESS UP → PROBADOR y BACKLOG → REGISTRO.
 * **Restaurar** (`restaurar.bat` / `restaurar.sh`): vuelve al juego original o a cualquier versión del parche que hayas tenido instalada. Consulta [cómo restaurar](#-desinstalar-o-volver-a-una-versión-anterior).
@@ -126,7 +152,7 @@ Esta versión es un fork del [parche original](https://github.com/ManuelCMS/kill
   * `drv3text.py`: extrae los textos de los `.SPC` a un archivo de texto (`dump`) y aplica correcciones (`apply`), sin necesidad de Harmony Tools.
   * `aplicar_erratas.py` + `correcciones/erratas.tsv`: lista de erratas (`texto_erróneo<TAB>texto_correcto`). Para corregir una errata nueva, agrega una línea y ejecuta `python3 tools/aplicar_erratas.py tools/correcciones/erratas.tsv`.
 
-> **Pendiente**: todavía quedan en inglés algunos textos de la galería (los mensajes de Monokuma y el casino) y los nombres de algunos eventos.
+> **Pendiente**: algunos menús que son imágenes todavía están en inglés. Si encuentras uno, o cualquier texto sin traducir, [abre un ticket](https://github.com/bmvargas-751/killer-harmony/issues).
 
 ---
 ## Cómo contribuir al proyecto
@@ -142,4 +168,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
-* Fork v2.3 – v2.5: corrección de erratas y de palabras destacadas pegadas, traducción del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
+* Fork v2.3 – v2.6: corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
