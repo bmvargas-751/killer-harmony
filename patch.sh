@@ -13,7 +13,7 @@ set -uo pipefail
 # -------------------------------------------------------------------------
 # Versiones del parche disponibles
 # -------------------------------------------------------------------------
-VERSION_ACTUAL="v2.5"   # Numero de version mas reciente (solo para mostrar)
+VERSION_ACTUAL="v2.6"   # Numero de version mas reciente (solo para mostrar)
 CARPETA_ACTUAL="latest" # Carpeta del parche para la version mas reciente
 VERSION_BASE="v0.1"     # Version anterior estable (nombre de carpeta y version)
 
