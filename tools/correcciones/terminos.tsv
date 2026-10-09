@@ -1,0 +1,66 @@
+# Terminologia unificada con las traducciones de Danganronpa 1 y 2 (TranScene, tradusquare.es).
+# Mismo formato que erratas.tsv. Se aplica con:
+#   tools/aplicar_erratas.py tools/correcciones/terminos.tsv
+# Orden de aplicacion: literales (=), expresiones regulares (~) y palabras.
+# Las reglas ~ cambian tambien el articulo cuando el genero del termino cambia.
+# T = etiqueta de formato opcional entre el articulo y el termino, ej. "la<CLT=cltSTRONG> Cuida Niños".
+
+# --- Non-Stop Debate: Debate Sin Freno -> Debate Continuo ---
+~Debates Sin Freno	Debates Continuos
+~Debates\nSin Freno	Debates\nContinuos
+~Debates Sin\nFreno	Debates\nContinuos
+~Debate Sin Freno	Debate Continuo
+~DEBATE SIN FRENO	DEBATE CONTINUO
+
+# --- Rebuttal Showdown: Duelo de Refutación -> Confrontación Refutadora (cambia a femenino) ---
+=un debate uno a uno llamado<CLT=cltSTRONG> Duelo de Refutación	un debate uno a uno llamado<CLT=cltSTRONG> Confrontación Refutadora
+~\b([Uu])n((?:<[^>]+>)?\s*)Duelo de Refutación	\1na\2Confrontación Refutadora
+~\bel((?:<[^>]+>)?\s*)Duelo de Refutación	la\1Confrontación Refutadora
+~\bEl((?:<[^>]+>)?\s*)Duelo de Refutación	La\1Confrontación Refutadora
+~\b([Dd])el((?:<[^>]+>)?\s*)Duelo de Refutación	\1e la\2Confrontación Refutadora
+~\b([Ll])os((?:<[^>]+>)?\s*)Duelos de Refutación	\1as\2Confrontaciones Refutadoras
+~Duelos de Refutación	Confrontaciones Refutadoras
+~Duelo de Refutación	Confrontación Refutadora
+~DUELO DE REFUTACIÓN	CONFRONTACIÓN REFUTADORA
+
+# --- Closing Argument: Argumento de Cierre -> Clímax Lógico ---
+~Argumentos de Cierre	Clímax Lógicos
+~Argumento de Cierre	Clímax Lógico
+~ARGUMENTO DE CIERRE	CLÍMAX LÓGICO
+
+# --- Hangman's Gambit: Deducción de Ahorcado -> Epifanía Anagrámica ---
+~Deducción de Ahorcado	Epifanía Anagrámica
+~DEDUCCIÓN DE AHORCADO	EPIFANÍA ANAGRÁMICA
+
+# --- Monocoins -> Medallas Monokuma (femenino) ---
+=retirar un Monocoin insertado	retirar una Medalla Monokuma insertada
+=Cuantos más Monocoins	Cuantas más Medallas Monokuma
+~MONOCOINS	MEDALLAS MONOKUMA
+~Monocoins	Medallas Monokuma
+~Monocoin	Medalla Monokuma
+
+# --- Monokuma File: Archivo Monokuma -> Ficha Monokuma (cambia a femenino) ---
+=Archivo Monokuma 3<CLT=cltSYSTEM>" ha sido actualizado	Ficha Monokuma 3<CLT=cltSYSTEM>" ha sido actualizada
+=el Archivo Monokuma\nes correcto	la Ficha Monokuma\nes correcta
+=el Archivo Monokuma. Yo quería\nser el que lo pasara	la Ficha Monokuma. Yo quería\nser el que la pasara
+~\bel((?:<[^>]+>)?\s*)[Aa]rchivo Monokuma	la\1Ficha Monokuma
+~\bEl((?:<[^>]+>)?\s*)[Aa]rchivo Monokuma	La\1Ficha Monokuma
+~\b([Dd])el((?:<[^>]+>)?\s*)[Aa]rchivo Monokuma	\1e la\2Ficha Monokuma
+~\b([Aa])l((?:<[^>]+>)?\s*)[Aa]rchivo Monokuma	\1 la\2Ficha Monokuma
+~\b([Uu])n((?:<[^>]+>)?\s*)[Aa]rchivo Monokuma	\1na\2Ficha Monokuma
+~\b([Ee])ste((?:<[^>]+>)?\s*)[Aa]rchivo Monokuma	\1sta\2Ficha Monokuma
+~\b([Ll])os((?:<[^>]+>)?\s*)[Aa]rchivos Monokuma	\1as\2Fichas Monokuma
+~[Aa]rchivos Monokuma	Fichas Monokuma
+~[Aa]rchivo Monokuma	Ficha Monokuma
+~ARCHIVO MONOKUMA	FICHA MONOKUMA
+
+# --- Ultimate Child Caregiver: Cuida Niños Definitiva -> Cuidadora Definitiva ---
+=la\nverdadero <CLT=cltSTRONG> Cuida Niños Definitiva <CLT=cltNORMAL>	la\nverdadera <CLT=cltSTRONG> Cuidadora Definitiva<CLT=cltNORMAL>
+=Técnica<CLT=cltSTRONG> Definitiva<CLT=cltNORMAL> de Cuida Niños	Técnica<CLT=cltSTRONG> Definitiva<CLT=cltNORMAL> de Cuidadora
+~Cuida Niños(\s*(?:<[^>]+>)?\s*)Definitiv[oa]	Cuidadora\1Definitiva
+~\b([Uu])na cuida niños	\1na cuidadora
+~CUIDA NIÑOS	CUIDADORA
+
+# --- Truth Bullets: se mantiene "Munición de Verdad" (857 usos); se unifican las variantes ---
+~Balas de Verdad	Municiones de Verdad
+~Municiones de la Verdad	Municiones de Verdad
