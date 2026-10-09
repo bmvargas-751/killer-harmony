@@ -1,10 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.7
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.0
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
 
-> **Fork v2.7**: esta copia incluye corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v27-fork).
+> **Fork v3.0**: esta copia incluye los rótulos del juicio y de los capítulos traducidos, corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v30-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -28,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v2.7**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.0**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -90,7 +90,58 @@ En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instala
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
 
-### 🆕 Novedades de la v2.7 (fork)
+### 🆕 Novedades de la v3.0 (fork)
+
+* **Rótulos del juicio y de los capítulos traducidos**: las imágenes con texto que seguían en inglés ahora están en español, con el mismo tamaño, color y brillo que las originales (unas 150 pantallas):
+  * **Capítulos**: Días (a)típicos / Días atípicos, Capítulo N, los títulos de cada capítulo, Continuará, Supervivientes, FIN, la lista de capítulos y CAPÍTULO / ESCENA.
+  * **Inicio de cada fase**: Debate Continuo, Debate de Pánico Masivo, Confrontación Refutadora, Debate de Choque, Paseo Mental, Epifanía Anagrámica, Excavación Cerebral, Armamento Teorético y Clímax Lógico (con ¡EMPIEZA!).
+  * **Cut-ins**: Refutado, Objeción, Consenso, Perjurio, Ruptura, Refutación total, ¡Lo tengo!, Fin, ¡Golpe final!, ¡CORTE!, ¡Avanza! / ¡Retrocede!, Cruce de espadas, Éxito / Fallo.
+  * **Pantallas del juicio**: JUICIO ESCOLAR, Preparación del juicio, En sesión / Receso / ¡De pie! / Se reanuda, Elegir / Acusar / Decidir, Votación, Hora de Votar, Resultados, CASO N, N.º Juicio Escolar, Reintentar, Municiones de Verdad, Opción y más.
+* **Se quedan en inglés a propósito**: las palabras de los minijuegos y del casino (TIME, SCORE, COMBO, GO!!...), los kanji decorativos de los cut-ins y "Split Opinion" del Debate de Choque (sus letras están pintadas sobre recuadros decorados).
+* **Herramienta nueva `tools/rotulos_fuente.py`**: rehace rótulos en imagen con tipografías libres (OFL / Apache, se descargan solas y no se incluyen en el parche). Cada pantalla tiene su receta en `tools/rotulos/` (capítulos, fases, juicio, cut-ins, otros). Necesita Python con Pillow.
+
+> **Importante**: las animaciones de algunos títulos (por ejemplo Debate Continuo o Confrontación Refutadora) mueven las letras por trozos. Se repartió el texto en español en los mismos trozos, pero conviene revisarlas en el juego; si algo se ve desacomodado, [abre un ticket](https://github.com/bmvargas-751/killer-harmony/issues) con una captura.
+
+<details>
+<summary><b>Rótulos que cambiaron en esta versión</b></summary>
+
+| Antes (inglés, imagen) | Ahora (v3.0) |
+|---|---|
+| Daily Life / Deadly Life | Días (a)típicos / Días atípicos |
+| Chapter N / Prologue / Epilogue | Capítulo N / Prólogo / Epílogo |
+| To Be Continued / Surviving Members / END | Continuará / Supervivientes / FIN |
+| Ultimate Revival | Renacer Definitivo |
+| My Class Trial, Our Class Trial | Mi Juicio Escolar, nuestro Juicio Escolar |
+| A Thin Line Divides Heaven and Hell | Una delgada línea entre el cielo y el infierno |
+| Transfer Student From Beyond the Grave | Estudiante transferido desde el más allá |
+| Live and Let The Languid World Live | Vive y deja vivir al lánguido mundo |
+| Voyage Without Passion or Purpose | Viaje sin pasión ni propósito |
+| Goodbye Danganronpa | Adiós, Danganronpa |
+| Everyone's Killing Game Closing Ceremony | Ceremonia de clausura del juego de asesinato de todos |
+| Non-Stop Debate START! | Debate Continuo ¡EMPIEZA! |
+| Mass Panic Debate START! | Debate de Pánico Masivo ¡EMPIEZA! |
+| Rebuttal Showdown -Truth Blade- | Confrontación Refutadora -Filo de Verdad- |
+| Debate Scrum START! | Debate de Choque ¡EMPIEZA! |
+| Psyche Taxi / Hangman's Gambit / Mind Mine / Argument Armament | Paseo Mental / Epifanía Anagrámica / Excavación Cerebral / Armamento Teorético |
+| Closing Argument Start! | Clímax Lógico ¡Empieza! |
+| Counter / Argue / Consent / Perjury | Refutado / Objeción / Consenso / Perjurio |
+| Break / Full Counter / GOT IT / End | Ruptura / Refutación total / ¡Lo tengo! / Fin |
+| Final Blow! / SLASH / Advance! / Retreat! | ¡Golpe final! / ¡CORTE! / ¡Avanza! / ¡Retrocede! |
+| Blade Lock / Success / Fail | Cruce de espadas / Éxito / Fallo |
+| Agree / Lie | Consenso / Mentira |
+| CLASS TRIAL / Court Preparation / In Session | JUICIO ESCOLAR / Preparación del juicio / En sesión |
+| Intermission / ALL RISE! / Resume | Receso / ¡De pie! / Se reanuda |
+| Select / Accuse / Spot Selection / Decide | Elegir / Acusar / Elegir lugar / Decidir |
+| Voting / Voting Time / Results / No Votes / ATTENTION | Votación / Hora de Votar / Resultados / Sin votos / ATENCIÓN |
+| CASE N / Rank / Nth Class Trial / SKILL BONUS / Retry | CASO N / Rango / N.º Juicio Escolar / BONO DE HABILIDAD / Reintentar |
+| Truth Bullets / status / Answer / Confirm Opinion | Municiones de Verdad / estado / Opción / Confirmar opinión |
+| Confessing / Obtained Hidden Monokuma! | Confesando / ¡Monokuma oculto encontrado! |
+| Select Difficulty / CHAPTER / SCENE | Elige la dificultad / CAPÍTULO / ESCENA |
+
+No cambió ningún término del texto en esta versión.
+</details>
+
+### Novedades de la v2.7 (fork)
 
 * **Segunda revisión de términos**: se compararon los nombres con el parche de la demo de V3 de [V3ducciones](https://tradusquare.es/proyectos/danganronpa-v3/) y con DR1/DR2. Se cambiaron los títulos de Ryoma y Kirumi, los nombres de las fases del capítulo y se unificaron los Filos de Verdad (antes se mezclaba con "Espada de Verdad").
 * **Restos de términos viejos**: 12 líneas que la v2.6 no cambió porque el término estaba partido en dos renglones ("Archivo / Monokuma", "Cuida / Niños"...).
@@ -178,7 +229,7 @@ Esta versión es un fork del [parche original](https://github.com/ManuelCMS/kill
   * `drv3text.py`: extrae los textos de los `.SPC` a un archivo de texto (`dump`) y aplica correcciones (`apply`), sin necesidad de Harmony Tools.
   * `aplicar_erratas.py` + `correcciones/erratas.tsv`: lista de erratas (`texto_erróneo<TAB>texto_correcto`). Para corregir una errata nueva, agrega una línea y ejecuta `python3 tools/aplicar_erratas.py tools/correcciones/erratas.tsv`.
 
-> **Pendiente**: algunos menús que son imágenes todavía están en inglés. Si encuentras uno, o cualquier texto sin traducir, [abre un ticket](https://github.com/bmvargas-751/killer-harmony/issues).
+> **Pendiente**: algunos menús que son imágenes (fuera del juicio) todavía están en inglés. Si encuentras uno, o cualquier texto sin traducir, [abre un ticket](https://github.com/bmvargas-751/killer-harmony/issues).
 
 ---
 ## Cómo contribuir al proyecto
@@ -194,4 +245,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
-* Fork v2.3 – v2.7: corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
+* Fork v2.3 – v3.0: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
