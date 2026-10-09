@@ -1,10 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.6
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v2.7
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
 
-> **Fork v2.6**: esta copia incluye corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v26-fork).
+> **Fork v2.7**: esta copia incluye corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v27-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -28,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v2.6**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v2.7**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -90,7 +90,33 @@ En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instala
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
 
-### 🆕 Novedades de la v2.6 (fork)
+### 🆕 Novedades de la v2.7 (fork)
+
+* **Segunda revisión de términos**: se compararon los nombres con el parche de la demo de V3 de [V3ducciones](https://tradusquare.es/proyectos/danganronpa-v3/) y con DR1/DR2. Se cambiaron los títulos de Ryoma y Kirumi, los nombres de las fases del capítulo y se unificaron los Filos de Verdad (antes se mezclaba con "Espada de Verdad").
+* **Restos de términos viejos**: 12 líneas que la v2.6 no cambió porque el término estaba partido en dos renglones ("Archivo / Monokuma", "Cuida / Niños"...).
+* **Correcciones de interfaz**:
+  * Las descripciones de dificultad decían "Para débiles de mente" y "Para mancos"; ahora dicen lo que dice el original ("Para quienes quieren disfrutar la historia").
+  * Nombres de habilidades que no coincidían con su descripción (Foco Extraordinario / Foco Amenazante) y errores de redacción en otras.
+  * Botones del casino que seguían en inglés (BET, MAX BET → APOSTAR, APOSTAR TODO).
+  * "Ver Manual de Estudiante" → "Ver Monopad" antes del juicio, y otros detalles.
+  * Los juegos del casino se llaman igual en todo el juego (¡CAZADOR DE TESOROS! Monolith, AGARRÓN DE SALMÓN, Tragaperras MonoMono).
+* **Herramientas**: nueva lista `tools/correcciones/interfaz.tsv` con las correcciones de interfaz.
+
+<details>
+<summary><b>Palabras que cambiaron en esta versión</b></summary>
+
+| Antes (v2.6) | Ahora (v2.7) | Veces | En inglés |
+|---|---|---:|---|
+| Tenista Pro Definitivo | Tenista Definitivo | 32 | Ultimate Tennis Pro |
+| Mucama Definitiva / mucama | Sirvienta Definitiva / sirvienta | 45 | Ultimate Maid / maid |
+| Vida Diaria / Vida Mortal (menús) | Días (a)típicos / Días atípicos | 5 | Daily Life / Deadly Life |
+| Espada de Verdad / Filo de la Verdad | Filo de Verdad | 29 | Truth Blade |
+| AGARRÓN DE SALMÓN, ¡CAZADOR DE TESOROS! y Tragaperras MonoMono en la galería y el mapa (estaban en inglés) | Igual que en el resto del parche | 22 | Casino games |
+
+"Días (a)típicos" es el término de las traducciones de DR1 y DR2. Para los Filos de Verdad no se usó "Vaina" (DR2) porque esa palabra ya aparece en el capítulo 3 con su sentido literal (la vaina de la katana).
+</details>
+
+### Novedades de la v2.6 (fork)
 
 * **Términos unificados con Danganronpa 1 y 2**: los nombres de mecánicas y objetos ahora son los mismos que usan las traducciones al español de DR1 y DR2 (de [TranScene](https://tradusquare.es/grupos-de-traduccion/transcene/)), para que la saga se lea igual de un juego a otro. Se ajustaron los artículos cuando el término cambia de género ("el Archivo Monokuma" → "la Ficha Monokuma").
 * **Galería traducida**: el casino, las reglas y todos los segmentos del Teatro Monokuma, que seguían en inglés.
@@ -168,4 +194,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
-* Fork v2.3 – v2.6: corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
+* Fork v2.3 – v2.7: corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
