@@ -1,0 +1,41 @@
+{
+  "descripcion": "Juicio: titulos de seleccion (Select / Accuse / Spot Selection)",
+  "spc": "flash/trial/t_sub_title_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12,
+      "interlineado": 0.95
+    }
+  },
+  "textos": {
+    "t_sub_class_DXT1_US": {
+      "usar": "digital",
+      "texto": "JUICIO|ESCOLAR"
+    },
+    "t_sub_title_jinbutu_US": {
+      "usar": "serif",
+      "texto": "Elegir"
+    },
+    "t_sub_title_kuro_US": {
+      "usar": "serif",
+      "texto": "Acusar",
+      "color_inicial": "auto"
+    },
+    "t_sub_title_spot_US": {
+      "usar": "serif",
+      "texto": "Elegir|lugar",
+      "interlineado": 0.8
+    }
+  }
+}

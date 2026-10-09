@@ -1,11 +1,43 @@
 {
   "_nota": "Fuentes libres (OFL / Apache 2.0) de Google Fonts. Se descargan solas a tools/rotulos/fuentes/ y no se distribuyen con el parche: solo se usan para dibujar los rotulos.",
-  "EBGaramond": {"archivo": "EBGaramond[wght].ttf", "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ebgaramond/EBGaramond%5Bwght%5D.ttf"},
-  "CormorantGaramond": {"archivo": "CormorantGaramond[wght].ttf", "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/CormorantGaramond%5Bwght%5D.ttf"},
-  "CourierPrime": {"archivo": "CourierPrime-Regular.ttf", "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/CourierPrime-Regular.ttf"},
-  "CourierPrimeBold": {"archivo": "CourierPrime-Bold.ttf", "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/CourierPrime-Bold.ttf"},
-  "KaushanScript": {"archivo": "KaushanScript-Regular.ttf", "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/kaushanscript/KaushanScript-Regular.ttf"},
-  "PermanentMarker": {"archivo": "PermanentMarker-Regular.ttf", "url": "https://raw.githubusercontent.com/google/fonts/main/apache/permanentmarker/PermanentMarker-Regular.ttf"},
-  "CaveatBrush": {"archivo": "CaveatBrush-Regular.ttf", "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/caveatbrush/CaveatBrush-Regular.ttf"},
-  "MarckScript": {"archivo": "MarckScript-Regular.ttf", "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/marckscript/MarckScript-Regular.ttf"}
+  "EBGaramond": {
+    "archivo": "EBGaramond[wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ebgaramond/EBGaramond%5Bwght%5D.ttf"
+  },
+  "CormorantGaramond": {
+    "archivo": "CormorantGaramond[wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/CormorantGaramond%5Bwght%5D.ttf"
+  },
+  "CourierPrime": {
+    "archivo": "CourierPrime-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/CourierPrime-Regular.ttf"
+  },
+  "CourierPrimeBold": {
+    "archivo": "CourierPrime-Bold.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/CourierPrime-Bold.ttf"
+  },
+  "KaushanScript": {
+    "archivo": "KaushanScript-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/kaushanscript/KaushanScript-Regular.ttf"
+  },
+  "PermanentMarker": {
+    "archivo": "PermanentMarker-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/apache/permanentmarker/PermanentMarker-Regular.ttf"
+  },
+  "CaveatBrush": {
+    "archivo": "CaveatBrush-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/caveatbrush/CaveatBrush-Regular.ttf"
+  },
+  "MarckScript": {
+    "archivo": "MarckScript-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/marckscript/MarckScript-Regular.ttf"
+  },
+  "Rajdhani": {
+    "archivo": "Rajdhani-SemiBold.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/rajdhani/Rajdhani-SemiBold.ttf"
+  },
+  "RajdhaniMedium": {
+    "archivo": "Rajdhani-Medium.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/rajdhani/Rajdhani-Medium.ttf"
+  }
 }

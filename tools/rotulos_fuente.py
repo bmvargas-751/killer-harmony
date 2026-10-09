@@ -59,9 +59,11 @@ OPCIONES = {
     "caja": None,            # [x0, y0, x1, y1] para forzar la caja del texto
     "brillo": "auto",        # false | radio en px | "auto" (si el original tiene halo)
     "fuerza_brillo": 1.0,
-    "color_brillo": None,
+    "color_brillo": "auto",  # [r, g, b] | "auto" (color del halo del original) | None (color del texto)
+    "borde": 0,              # borde fino de otro color alrededor del texto, en px
+    "color_borde": "auto",   # [r, g, b] | "auto" (color del halo del original)
     "contorno": 0,           # grosor de contorno en px
-    "color_contorno": [0, 0, 0],
+    "color_contorno": None,  # por defecto, el color del texto (sirve para engrosar el trazo)
     "fondo": "auto",         # "negro" | "transparente" | "auto" (como el original)
     "umbral": 150,           # luminancia que cuenta como trazo al medir el original
 }
@@ -95,24 +97,50 @@ def cargar_fuente(nombre, tam, peso=None):
 # ---------------------------------------------------------------------------
 # Medir el original
 # ---------------------------------------------------------------------------
+def es_transparente(img):
+    h = img.getchannel("A").histogram()
+    return h[255] < img.width * img.height * 0.5
+
+
 def luminancia(img):
     """Lo que cuenta como tinta: el alfa si la textura es transparente; si no, la luminancia."""
-    if img.getextrema()[3][0] < 255:
+    if es_transparente(img):
         return img.getchannel("A")
     return img.convert("L")
 
 
 def medir(img, umbral):
     lum = luminancia(img)
+    umbral = min(umbral, int(lum.getextrema()[1] * 0.6))
     todo = lum.point(lambda v: 255 if v > 24 else 0).getbbox()
     nucleo = lum.point(lambda v: 255 if v > umbral else 0).getbbox() or todo
     return nucleo, todo
+
+
+def color_halo(img, nucleo, todo):
+    """Color del brillo: los pixeles mas saturados de luminancia media alrededor del trazo."""
+    datos = [p for p in img.convert("RGBA").crop(todo).getdata() if p[3] > 60 and 40 < max(p[:3]) < 250]
+    if not datos:
+        return None
+    datos.sort(key=lambda p: (max(p[:3]) - min(p[:3])) * p[3], reverse=True)
+    top = datos[:max(1, len(datos) // 20)]
+    c = tuple(sum(p[i] for p in top) // len(top) for i in range(3))
+    return c if max(c) - min(c) > 40 else None
 
 
 def color_trazo(img, caja):
     datos = [p for p in img.convert("RGBA").crop(caja).getdata() if p[3] > 128]
     if not datos:
         return (255, 255, 255)
+    if es_transparente(img):  # transparente: el color de relleno es el mas frecuente
+        cubos = {}
+        for p in datos:
+            if p[3] > 230:
+                k = (p[0] >> 5, p[1] >> 5, p[2] >> 5)
+                cubos.setdefault(k, []).append(p)
+        if cubos:
+            grupo = max(cubos.values(), key=len)
+            return tuple(sum(p[i] for p in grupo) // len(grupo) for i in range(3))
     datos.sort(key=lambda p: max(p[:3]) * p[3], reverse=True)
     top = datos[:max(1, len(datos) // 40)]
     return tuple(sum(p[i] for p in top) // len(top) for i in range(3))
@@ -130,14 +158,14 @@ def dibujar_texto(texto, op, color, tam=160):
     for linea in lineas:
         if op["vertical"]:
             alto_letra = int((asc + desc) * 0.82)
-            lienzo = Image.new("RGBA", (tam * 3, alto_letra * (len(linea) + 1)), (0, 0, 0, 0))
+            lienzo = Image.new("RGBA", (tam * 3, alto_letra * (len(linea) + 1)), tuple(color) + (0,))
             d = ImageDraw.Draw(lienzo)
             for i, c in enumerate(linea):
                 col = op["color_inicial"] if (i == 0 and op["color_inicial"]) else color
                 d.text((tam * 1.5, alto_letra * i + asc), c, font=f, fill=tuple(col) + (255,), anchor="ms")
         else:
             ancho = int(sum(f.getlength(c) for c in linea) + op["espaciado"] * tam * len(linea)) + tam
-            lienzo = Image.new("RGBA", (ancho, (asc + desc) * 2), (0, 0, 0, 0))
+            lienzo = Image.new("RGBA", (ancho, (asc + desc) * 2), tuple(color) + (0,))
             d = ImageDraw.Draw(lienzo)
             x = tam // 2
             for i, c in enumerate(linea):
@@ -158,17 +186,17 @@ def dibujar_texto(texto, op, color, tam=160):
     if op["vertical"]:
         sep = int(tam * op["interlineado"] * 0.5)
         total = sum(i.width for i in imgs) + sep * (len(imgs) - 1)
-        out = Image.new("RGBA", (total, max(i.height for i in imgs)), (0, 0, 0, 0))
+        out = Image.new("RGBA", (total, max(i.height for i in imgs)), tuple(color) + (0,))
         x = 0
         for i in imgs:
-            out.paste(i, (x, 0), i)
+            out.alpha_composite(i, (x, 0))
             x += i.width + sep
     else:
         paso = int((asc + desc) * op["interlineado"])
-        out = Image.new("RGBA", (max(i.width for i in imgs), paso * (len(imgs) - 1) + imgs[-1].height), (0, 0, 0, 0))
+        out = Image.new("RGBA", (max(i.width for i in imgs), paso * (len(imgs) - 1) + imgs[-1].height), tuple(color) + (0,))
         for n, i in enumerate(imgs):
             x = {"centro": (out.width - i.width) // 2, "izquierda": 0, "derecha": out.width - i.width}[op["alinear"]]
-            out.paste(i, (x, n * paso), i)
+            out.alpha_composite(i, (x, n * paso))
     if op["rotar"]:
         out = out.rotate(op["rotar"], resample=Image.BICUBIC, expand=True)
     caja = out.getbbox()
@@ -176,10 +204,20 @@ def dibujar_texto(texto, op, color, tam=160):
 
 
 def contorno(capa, grosor, color):
+    con_margen = Image.new("RGBA", (capa.width + grosor * 2, capa.height + grosor * 2), capa.getpixel((0, 0))[:3] + (0,))
+    con_margen.paste(capa, (grosor, grosor))
+    capa = con_margen
     alfa = capa.getchannel("A").filter(ImageFilter.MaxFilter(grosor * 2 + 1))
     borde = Image.new("RGBA", capa.size, tuple(color) + (0,))
     borde.putalpha(alfa)
     return Image.alpha_composite(borde, capa)
+
+
+def pegar(destino, img, pos):
+    """Pega `img` (RGBA) sobre `destino` transparente sin oscurecer los bordes."""
+    capa = Image.new("RGBA", destino.size, (0, 0, 0, 0))
+    capa.paste(img, pos)
+    return Image.alpha_composite(destino, capa)
 
 
 def rehacer(orig, texto, op):
@@ -192,7 +230,10 @@ def rehacer(orig, texto, op):
         op = dict(op, color_inicial=max(izq.getdata(), key=lambda p: max(p) - min(p)))
     img = dibujar_texto(texto, op, color)
     if op["contorno"]:
-        img = contorno(img, max(1, op["contorno"] * 4), op["color_contorno"])  # a escala del dibujo (x4 aprox)
+        img = contorno(img, max(1, op["contorno"] * 4), op["color_contorno"] or color)  # a escala del dibujo (x4 aprox)
+    if op["borde"]:
+        cb = color_halo(orig, nucleo, todo) if op["color_borde"] == "auto" else op["color_borde"]
+        img = contorno(img, max(1, op["borde"] * 4), cb or (255, 255, 255))
     alto = op["alto"] or (caja[3] - caja[1]) * op["escala_alto"]
     esc = alto / img.height
     ancho_max = op["ancho_max"] or min(W - 16, (caja[2] - caja[0]) * op["escala_ancho"])
@@ -201,8 +242,8 @@ def rehacer(orig, texto, op):
     img = img.resize((max(1, round(img.width * esc)), max(1, round(img.height * esc))), Image.LANCZOS)
     cx, cy = (caja[0] + caja[2]) / 2, (caja[1] + caja[3]) / 2
     x = {"centro": cx - img.width / 2, "izquierda": caja[0], "derecha": caja[2] - img.width}[op["alinear"]]
-    capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    capa.paste(img, (int(round(x)), int(round(cy - img.height / 2))), img)
+    capa = Image.new("RGBA", (W, H), tuple(color) + (0,))
+    capa.paste(img, (int(round(x)), int(round(cy - img.height / 2))))
 
     brillo = op["brillo"]
     if brillo == "auto":
@@ -210,8 +251,9 @@ def rehacer(orig, texto, op):
         brillo = exceso if exceso > 2 else False
     if brillo:
         base = capa
-        if op["color_brillo"]:
-            base = Image.new("RGBA", capa.size, tuple(op["color_brillo"]) + (0,))
+        color_b = color_halo(orig, nucleo, todo) if op["color_brillo"] == "auto" else op["color_brillo"]
+        if color_b:
+            base = Image.new("RGBA", capa.size, tuple(color_b) + (0,))
             base.putalpha(capa.getchannel("A"))
         halo = Image.new("RGBA", capa.size, (0, 0, 0, 0))
         for r, k in ((brillo * 0.5, 0.9), (brillo, 0.7), (brillo * 2, 0.5)):
@@ -222,7 +264,7 @@ def rehacer(orig, texto, op):
 
     fondo = op["fondo"]
     if fondo == "auto":
-        fondo = "negro" if orig.getextrema()[3][0] == 255 else "transparente"
+        fondo = "transparente" if es_transparente(orig) else "negro"
     if fondo == "negro":
         return Image.alpha_composite(Image.new("RGBA", (W, H), (0, 0, 0, 255)), capa)
     return capa

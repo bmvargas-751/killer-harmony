@@ -1,0 +1,28 @@
+{
+  "descripcion": "Debate de Choque: Confirmar opinion",
+  "spc": "flash/trial/t_scrum_check_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12,
+      "interlineado": 0.95
+    }
+  },
+  "textos": {
+    "t_scrum_check_tx_000_DXT1_US": {
+      "usar": "serif",
+      "texto": "Confirmar opinión",
+      "espaciado": 0.06
+    }
+  }
+}

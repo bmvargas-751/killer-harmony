@@ -1,0 +1,35 @@
+{
+  "descripcion": "Estado",
+  "spc": "flash/trial/t_status_base_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12,
+      "interlineado": 0.95
+    }
+  },
+  "textos": {
+    "t_status_tx_US": {
+      "usar": "digital",
+      "texto": "estado",
+      "espaciado": 0.4,
+      "rotar": 8
+    },
+    "t_status_tx_koko_US": {
+      "usar": "digital",
+      "texto": "estado",
+      "espaciado": 0.4,
+      "rotar": 8
+    }
+  }
+}

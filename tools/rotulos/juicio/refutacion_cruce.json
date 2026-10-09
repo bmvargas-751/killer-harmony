@@ -1,0 +1,59 @@
+{
+  "descripcion": "Confrontacion Refutadora: Cruce de espadas",
+  "spc": "flash/trial/t_hr_seri_cutin_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12,
+      "interlineado": 0.95
+    }
+  },
+  "textos": {
+    "t_hr_seri_cutin_tx_000_US": {
+      "usar": "pincel",
+      "texto": "Cru",
+      "borde": 1
+    },
+    "t_hr_seri_cutin_tx_001_US": {
+      "usar": "pincel",
+      "texto": "ce de",
+      "borde": 1
+    },
+    "t_hr_seri_cutin_tx_002_US": {
+      "usar": "pincel",
+      "texto": "Espa",
+      "borde": 1
+    },
+    "t_hr_seri_cutin_tx_003_US": {
+      "usar": "pincel",
+      "texto": "das",
+      "borde": 1
+    },
+    "t_hr_seri_cutin_tx_ef_000_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Cru"
+    },
+    "t_hr_seri_cutin_tx_ef_001_DXT1_US": {
+      "usar": "pincel",
+      "texto": "ce de"
+    },
+    "t_hr_seri_cutin_tx_ef_002_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Espa"
+    },
+    "t_hr_seri_cutin_tx_ef_003_DXT1_US": {
+      "usar": "pincel",
+      "texto": "das"
+    }
+  }
+}
