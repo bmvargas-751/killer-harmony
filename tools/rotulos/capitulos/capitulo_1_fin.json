@@ -1,0 +1,86 @@
+{
+  "descripcion": "Capitulo 1: final",
+  "spc": "flash/event/chapter_1_end_US.spc",
+  "estilos": {
+    "sub": {
+      "fuente": "EBGaramond",
+      "peso": 420,
+      "espaciado": 0.14,
+      "condensar": 0.85,
+      "brillo": false,
+      "color": [
+        236,
+        236,
+        236
+      ]
+    },
+    "shou": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "vertical": true,
+      "brillo": 3,
+      "color_brillo": [
+        0,
+        0,
+        0
+      ]
+    },
+    "titulo": {
+      "fuente": "EBGaramond",
+      "peso": 600,
+      "condensar": 0.74,
+      "espaciado": 0.03,
+      "interlineado": 0.92,
+      "brillo": 4,
+      "fuerza_brillo": 1.3
+    },
+    "titulo_v": {
+      "fuente": "EBGaramond",
+      "peso": 600,
+      "condensar": 1.0,
+      "espaciado": 0,
+      "interlineado": 0.92,
+      "brillo": 4,
+      "fuerza_brillo": 1.3,
+      "vertical": true
+    },
+    "continua": {
+      "fuente": "CourierPrime",
+      "espaciado": 0.3,
+      "caja": [
+        78,
+        27,
+        947,
+        102
+      ],
+      "alto": 58,
+      "ancho_max": 800,
+      "brillo": 4,
+      "fuerza_brillo": 1.2
+    },
+    "supervivientes": {
+      "fuente": "EBGaramond",
+      "peso": 450,
+      "espaciado": 0.3,
+      "brillo": false
+    }
+  },
+  "textos": {
+    "continue_US_DXT1": {
+      "usar": "continua",
+      "texto": "Continuará"
+    },
+    "ikinokori_00_US_DXT1": {
+      "usar": "supervivientes",
+      "texto": "Supervivientes"
+    },
+    "shou_US": {
+      "usar": "shou",
+      "texto": "Capítulo 1"
+    },
+    "title_US_DXT1": {
+      "usar": "titulo",
+      "texto": "Mi Juicio|Escolar,|Nuestro Juicio|Escolar"
+    }
+  }
+}

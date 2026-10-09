@@ -1,0 +1,28 @@
+{
+  "descripcion": "Cut-in: t_kai_cutin_boushi_US",
+  "spc": "flash/event/t_kai_cutin_boushi_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "pincel_v": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1,
+      "vertical": true
+    },
+    "pixel": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.05
+    }
+  },
+  "textos": {
+    "t_kai_tx_US": {
+      "usar": "pincel",
+      "texto": "¡Lo|tengo!",
+      "interlineado": 0.8
+    }
+  }
+}

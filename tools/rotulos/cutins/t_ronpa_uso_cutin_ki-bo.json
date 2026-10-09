@@ -1,0 +1,33 @@
+{
+  "descripcion": "Cut-in: t_ronpa_uso_cutin_ki-bo_US",
+  "spc": "flash/event/t_ronpa_uso_cutin_ki-bo_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "pincel_v": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1,
+      "vertical": true
+    },
+    "pixel": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.05
+    }
+  },
+  "textos": {
+    "t_ronpa_uso_lang_US": {
+      "usar": "pincel",
+      "texto": "Per|jurio",
+      "interlineado": 0.9
+    },
+    "t_ronpa_uso_lang_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Per|jurio",
+      "interlineado": 0.9
+    }
+  }
+}

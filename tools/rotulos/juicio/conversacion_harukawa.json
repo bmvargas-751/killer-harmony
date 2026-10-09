@@ -1,0 +1,31 @@
+{
+  "descripcion": "Juicio: rotulo JUICIO ESCOLAR del debate",
+  "spc": "flash/trial/t_kaiwa_fl_harukawa_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12,
+      "interlineado": 0.95
+    }
+  },
+  "textos": {
+    "t_kaiwa_title_tx_US": {
+      "usar": "digital",
+      "texto": "JUICIO|ESCOLAR"
+    },
+    "t_kaiwa_title_tx_u_US": {
+      "usar": "digital",
+      "texto": "JUICIO|ESCOLAR"
+    }
+  }
+}

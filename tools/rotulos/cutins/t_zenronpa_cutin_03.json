@@ -1,0 +1,33 @@
+{
+  "descripcion": "Cut-in: t_zenronpa_cutin_03_US",
+  "spc": "flash/event/t_zenronpa_cutin_03_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "pincel_v": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1,
+      "vertical": true
+    },
+    "pixel": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.05
+    }
+  },
+  "textos": {
+    "t_zenronpa_tx_US": {
+      "usar": "pincel",
+      "texto": "Refutación|total",
+      "interlineado": 0.85
+    },
+    "t_zenronpa_tx_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Refutación|total",
+      "interlineado": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "descripcion": "Inicio de fase: Debate de Choque",
+  "spc": "flash/event/t_scrum_start_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.3
+    },
+    "tecno": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.02,
+      "condensar": 0.78
+    }
+  },
+  "textos": {
+    "t_scrum_start_tx_US": {
+      "usar": "tecno",
+      "texto": "Debate de Choque ¡EMPIEZA!",
+      "color_brillo": [
+        0,
+        140,
+        255
+      ]
+    },
+    "t_scrum_start_tx_ef_DXT1_US": {
+      "usar": "tecno",
+      "texto": "Debate de Choque ¡EMPIEZA!"
+    }
+  }
+}

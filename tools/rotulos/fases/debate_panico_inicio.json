@@ -1,0 +1,103 @@
+{
+  "descripcion": "Inicio de fase: Debate de Panico Masivo",
+  "spc": "flash/event/t_panic_start_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.3
+    },
+    "tecno": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.02,
+      "condensar": 0.78
+    }
+  },
+  "textos": {
+    "t_panic_start_tx_000_US": {
+      "usar": "pincel",
+      "texto": "De|bate",
+      "interlineado": 0.8
+    },
+    "t_panic_start_tx_001_US": {
+      "usar": "pincel",
+      "texto": "de",
+      "interlineado": 0.8
+    },
+    "t_panic_start_tx_002_US": {
+      "usar": "pincel",
+      "texto": "Pá",
+      "interlineado": 0.8
+    },
+    "t_panic_start_tx_003_US": {
+      "usar": "pincel",
+      "texto": "nico",
+      "interlineado": 0.8
+    },
+    "t_panic_start_tx_004_US": {
+      "usar": "pincel",
+      "texto": "Ma",
+      "interlineado": 0.8
+    },
+    "t_panic_start_tx_005_US": {
+      "usar": "pincel",
+      "texto": "sivo",
+      "interlineado": 0.8
+    },
+    "t_panic_start_tx_006_US": {
+      "usar": "pincel",
+      "texto": "¡EMPIE",
+      "interlineado": 0.8
+    },
+    "t_panic_start_tx_007_US": {
+      "usar": "pincel",
+      "texto": "ZA!",
+      "interlineado": 0.8
+    },
+    "t_panic_start_ef_tx_000_DXT1_US": {
+      "usar": "pincel",
+      "texto": "De|bate",
+      "interlineado": 0.8
+    },
+    "t_panic_start_ef_tx_001_DXT1_US": {
+      "usar": "pincel",
+      "texto": "de",
+      "interlineado": 0.8
+    },
+    "t_panic_start_ef_tx_002_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Pá",
+      "interlineado": 0.8
+    },
+    "t_panic_start_ef_tx_003_DXT1_US": {
+      "usar": "pincel",
+      "texto": "nico",
+      "interlineado": 0.8
+    },
+    "t_panic_start_ef_tx_004_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Ma",
+      "interlineado": 0.8
+    },
+    "t_panic_start_ef_tx_005_DXT1_US": {
+      "usar": "pincel",
+      "texto": "sivo",
+      "interlineado": 0.8
+    },
+    "t_panic_start_ef_tx_006_DXT1_US": {
+      "usar": "pincel",
+      "texto": "¡EMPIE",
+      "interlineado": 0.8
+    },
+    "t_panic_start_ef_tx_007_DXT1_US": {
+      "usar": "pincel",
+      "texto": "ZA!",
+      "interlineado": 0.8
+    }
+  }
+}

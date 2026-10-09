@@ -1,0 +1,45 @@
+{
+  "descripcion": "Confrontacion Refutadora: Fallo",
+  "spc": "flash/trial/t_hr_seri_fail_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12,
+      "interlineado": 0.95
+    }
+  },
+  "textos": {
+    "t_hr_seri_fail_tx_000_US": {
+      "usar": "pincel",
+      "texto": "Fa",
+      "borde": 1,
+      "brillo": false,
+      "color_borde": [
+        190,
+        40,
+        40
+      ]
+    },
+    "t_hr_seri_fail_tx_001_US": {
+      "usar": "pincel",
+      "texto": "llo",
+      "borde": 1,
+      "brillo": false,
+      "color_borde": [
+        190,
+        40,
+        40
+      ]
+    }
+  }
+}

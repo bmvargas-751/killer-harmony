@@ -1,0 +1,179 @@
+{
+  "descripcion": "Inicio de fase: Confrontacion Refutadora",
+  "spc": "flash/event/t_hanron_start_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.3
+    },
+    "tecno": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.02,
+      "condensar": 0.78
+    }
+  },
+  "textos": {
+    "t_hr_st_tx_000_US": {
+      "usar": "pincel",
+      "texto": "Confron"
+    },
+    "t_hr_st_tx_001_US": {
+      "usar": "pincel",
+      "texto": "tación"
+    },
+    "t_hr_st_tx_002_US": {
+      "usar": "pincel",
+      "texto": "Re"
+    },
+    "t_hr_st_tx_003_US": {
+      "usar": "pincel",
+      "texto": "fu"
+    },
+    "t_hr_st_tx_004_US": {
+      "usar": "pincel",
+      "texto": "ta"
+    },
+    "t_hr_st_tx_005_US": {
+      "usar": "pincel",
+      "texto": "do"
+    },
+    "t_hr_st_tx_006_US": {
+      "usar": "pincel",
+      "texto": "ra"
+    },
+    "t_hr_st_tx_007_US": {
+      "usar": "pincel",
+      "texto": "-Filo de"
+    },
+    "t_hr_st_tx_008_US": {
+      "usar": "pincel",
+      "texto": "Verdad-"
+    },
+    "t_hr_st_tx_000_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Confron"
+    },
+    "t_hr_st_tx_001_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "tación"
+    },
+    "t_hr_st_tx_002_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Re"
+    },
+    "t_hr_st_tx_003_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "fu"
+    },
+    "t_hr_st_tx_004_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "ta"
+    },
+    "t_hr_st_tx_005_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "do"
+    },
+    "t_hr_st_tx_006_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "ra"
+    },
+    "t_hr_st_tx_007_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "-Filo de"
+    },
+    "t_hr_st_tx_008_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Verdad-"
+    },
+    "t_hr_st_tx_lang_000_US": {
+      "usar": "pincel",
+      "texto": "Confrontación"
+    },
+    "t_hr_st_tx_lang_000_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Confrontación"
+    },
+    "t_hr_st_tx_lang_001_US": {
+      "usar": "pincel",
+      "texto": "Refutadora"
+    },
+    "t_hr_st_tx_lang_001_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Refutadora"
+    },
+    "t_hr_st_tx_lang_002_US": {
+      "usar": "pincel",
+      "texto": "-Filo de Verdad-"
+    },
+    "t_hr_st_tx_lang_002_ef_DXT1_US": {
+      "usar": "pincel",
+      "texto": "-Filo de Verdad-"
+    },
+    "t_hr_st_cut_tx_000_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Confrontación|Refutadora|-Filo de Verdad-",
+      "recorte_original": true,
+      "interlineado": 0.85
+    },
+    "t_hr_st_cut_tx_lang_000_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Confrontación|Refutadora|-Filo de Verdad-",
+      "recorte_original": true,
+      "interlineado": 0.85
+    },
+    "t_hr_st_cut_tx_001_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Confrontación|Refutadora|-Filo de Verdad-",
+      "recorte_original": true,
+      "interlineado": 0.85
+    },
+    "t_hr_st_cut_tx_lang_001_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Confrontación|Refutadora|-Filo de Verdad-",
+      "recorte_original": true,
+      "interlineado": 0.85
+    },
+    "t_hr_st_cut_tx_002_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Confrontación|Refutadora|-Filo de Verdad-",
+      "recorte_original": true,
+      "interlineado": 0.85
+    },
+    "t_hr_st_cut_tx_lang_002_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Confrontación|Refutadora|-Filo de Verdad-",
+      "recorte_original": true,
+      "interlineado": 0.85
+    },
+    "t_hr_st_cut_tx_003_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Confrontación|Refutadora|-Filo de Verdad-",
+      "recorte_original": true,
+      "interlineado": 0.85
+    },
+    "t_hr_st_cut_tx_lang_003_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Confrontación|Refutadora|-Filo de Verdad-",
+      "recorte_original": true,
+      "interlineado": 0.85
+    },
+    "t_hr_st_kaishi_tx_000_DXT1_US": {
+      "usar": "pincel",
+      "texto": "¡EMPIE"
+    },
+    "t_hr_st_kaishi_tx_001_DXT1_US": {
+      "usar": "pincel",
+      "texto": "ZA!"
+    },
+    "t_hr_st_kaishi_tx_lang_DXT1_US": {
+      "usar": "pincel",
+      "texto": "¡EMPIEZA!"
+    }
+  }
+}

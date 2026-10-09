@@ -1,0 +1,35 @@
+{
+  "descripcion": "Cut-in: t_ronpa_hanron_cutin_tojo_US",
+  "spc": "flash/event/t_ronpa_hanron_cutin_tojo_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "pincel_v": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1,
+      "vertical": true
+    },
+    "pixel": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.05
+    }
+  },
+  "textos": {
+    "t_ronpa_han_lang_US": {
+      "usar": "pincel",
+      "texto": "Obje|ción",
+      "rotar": 55,
+      "interlineado": 0.8
+    },
+    "t_ronpa_han_lang_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Obje|ción",
+      "rotar": 55,
+      "interlineado": 0.8
+    }
+  }
+}
