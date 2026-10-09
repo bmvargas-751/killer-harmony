@@ -74,7 +74,7 @@ def corregir(texto, literales, regex, patron, tabla, usadas):
         usadas.add(n)
         return nuevo
 
-    return patron.sub(reemplazo, texto)
+    return patron.sub(reemplazo, texto) if tabla else texto
 
 
 def main(argv):
