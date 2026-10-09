@@ -86,3 +86,15 @@ mucama	sirvienta
 ~Espada de Verdad	Filo de Verdad
 ~ESPADA DE VERDAD	FILO DE VERDAD
 ~(Corte de|Confirmar|Cilindro de) filo de Verdad	\1 Filo de Verdad
+
+# --- Restos de términos partidos por un salto de línea ---
+~Deducción(\n| )de(\n| )Ahorcado	Epifanía\1Anagrámica
+~Argumento de\nCierre	Clímax\nLógico
+=Balas de la\nVerdad o Filos de Verdad	Municiones de\nVerdad o Filos de Verdad
+=los Enfrentamientos de Refutación	las Confrontaciones Refutadoras
+=los Confrontaciones Refutadoras	las Confrontaciones Refutadoras
+=MUnición	Munición
+~el Archivo\nMonokuma	la Ficha\nMonokuma
+~Cuida\nNiños Definitiva	Cuidadora\nDefinitiva
+~Tenista\nPro Definitivo	Tenista\nDefinitivo
+=durante el tiempo de fiebre	durante la Fiebre de Ritmo
