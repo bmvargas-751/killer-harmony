@@ -64,3 +64,25 @@
 # --- Truth Bullets: se mantiene "Munición de Verdad" (857 usos); se unifican las variantes ---
 ~Balas de Verdad	Municiones de Verdad
 ~Municiones de la Verdad	Municiones de Verdad
+
+# ===== v2.7 =====
+# --- Ultimate Tennis Pro: Tenista Pro Definitivo -> Tenista Definitivo ---
+~Tenista Pro(?![a-záéíóú])	Tenista
+~TENISTA PRO(?![A-ZÁÉÍÓÚ])	TENISTA
+
+# --- Ultimate Maid: Mucama -> Sirvienta (mismo genero) ---
+=mucama genuinda	sirvienta genuina
+mucamas	sirvientas
+mucama	sirvienta
+
+# --- Daily Life / Deadly Life: Vida Diaria / Vida Mortal -> Días (a)típicos / Días atípicos (DR1/DR2) ---
+=Vida Escolar: Vida Diaria	Vida Escolar: Días (a)típicos
+=Vida Escolar: Vida Mortal	Vida Escolar: Días atípicos
+=Inicia desde Vida Mortal	Inicia desde Días atípicos
+
+# --- Truth Blades: se unifica en "Filo de Verdad" (Espada de Verdad / Filo de la Verdad) ---
+~Filos de la Verdad	Filos de Verdad
+~Filo de la Verdad	Filo de Verdad
+~Espada de Verdad	Filo de Verdad
+~ESPADA DE VERDAD	FILO DE VERDAD
+~(Corte de|Confirmar|Cilindro de) filo de Verdad	\1 Filo de Verdad
