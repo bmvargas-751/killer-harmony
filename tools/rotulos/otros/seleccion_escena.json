@@ -1,0 +1,39 @@
+{
+  "descripcion": "ESCENA",
+  "spc": "flash/title/title_chapter_scene_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "pincel_v": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1,
+      "vertical": true
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "serif_m": {
+      "fuente": "EBGaramond",
+      "peso": 600,
+      "espaciado": 0.03,
+      "condensar": 0.9
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12
+    }
+  },
+  "textos": {
+    "title_s_scene_US": {
+      "usar": "digital",
+      "texto": "ESCENA",
+      "espaciado": 0.05
+    }
+  }
+}

@@ -222,6 +222,9 @@ def pegar(destino, img, pos):
 
 def rehacer(orig, texto, op):
     W, H = orig.size
+    if not texto.strip() or medir(orig, op["umbral"])[1] is None:  # trozo vacio (o que sobra en espanol)
+        fondo = op["fondo"] if op["fondo"] != "auto" else ("transparente" if es_transparente(orig) else "negro")
+        return Image.new("RGBA", (W, H), (0, 0, 0, 255 if fondo == "negro" else 0))
     nucleo, todo = medir(orig, op["umbral"])
     caja = op["caja"] or nucleo
     color = op["color"] or color_trazo(orig, nucleo)

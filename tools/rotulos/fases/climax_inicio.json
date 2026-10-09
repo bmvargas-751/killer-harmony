@@ -1,0 +1,79 @@
+{
+  "descripcion": "Inicio de fase: Climax Logico",
+  "spc": "flash/event/t_climax_start_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "pincel_v": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1,
+      "vertical": true
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "serif_m": {
+      "fuente": "EBGaramond",
+      "peso": 600,
+      "espaciado": 0.03,
+      "condensar": 0.9
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12
+    }
+  },
+  "textos": {
+    "climax_00_US": {
+      "usar": "pincel",
+      "texto": "C"
+    },
+    "climax_01_US": {
+      "usar": "pincel",
+      "texto": "l"
+    },
+    "climax_02_US": {
+      "usar": "pincel",
+      "texto": "í"
+    },
+    "climax_03_US": {
+      "usar": "pincel",
+      "texto": "ma"
+    },
+    "climax_04_US": {
+      "usar": "pincel",
+      "texto": ""
+    },
+    "climax_05_US": {
+      "usar": "pincel",
+      "texto": "x"
+    },
+    "climax_06_US": {
+      "usar": "pincel",
+      "texto": ""
+    },
+    "climax_07_US": {
+      "usar": "pincel",
+      "texto": "Lógi"
+    },
+    "climax_08_US": {
+      "usar": "pincel",
+      "texto": "co",
+      "escala_alto": 0.6
+    },
+    "start_00_US": {
+      "usar": "pincel",
+      "texto": "¡Empie"
+    },
+    "start_01_US": {
+      "usar": "pincel",
+      "texto": "za!"
+    }
+  }
+}

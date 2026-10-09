@@ -1,0 +1,63 @@
+{
+  "descripcion": "Capitulo / Prologo / Epilogo / Extra / Demo",
+  "spc": "flash/adv/adv_chapter_level_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "pincel_v": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1,
+      "vertical": true
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.02
+    },
+    "serif_m": {
+      "fuente": "EBGaramond",
+      "peso": 600,
+      "espaciado": 0.03,
+      "condensar": 0.9
+    },
+    "digital": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.12
+    }
+  },
+  "textos": {
+    "chapter_chapter_US": {
+      "usar": "serif_m",
+      "texto": "Capítulo"
+    },
+    "chapter_epi_US": {
+      "usar": "serif_m",
+      "texto": "Epílogo"
+    },
+    "chapter_ex_US": {
+      "usar": "serif_m",
+      "texto": "Extra"
+    },
+    "chapter_pro_US": {
+      "usar": "serif_m",
+      "texto": "Prólogo"
+    },
+    "chapter_trial_US": {
+      "usar": "serif_m",
+      "texto": "Demo"
+    },
+    "kansatu_000_US": {
+      "usar": "serif",
+      "texto": "Ob"
+    },
+    "kansatu_001_US": {
+      "usar": "serif",
+      "texto": "ser|var",
+      "interlineado": 0.7
+    }
+  }
+}
