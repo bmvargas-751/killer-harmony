@@ -65,6 +65,8 @@ OPCIONES = {
     "contorno": 0,           # grosor de contorno en px
     "color_contorno": None,  # por defecto, el color del texto (sirve para engrosar el trazo)
     "fondo": "auto",         # "negro" | "transparente" | "auto" (como el original)
+    "desenfoque": 0,         # px: para las copias borrosas que usan las animaciones
+    "recorte_original": False,  # deja ver el texto solo donde el original tenia tinta (piezas cortadas)
     "umbral": 150,           # luminancia que cuenta como trazo al medir el original
 }
 
@@ -265,6 +267,11 @@ def rehacer(orig, texto, op):
             halo = Image.alpha_composite(halo, h)
         capa = Image.alpha_composite(halo, capa)
 
+    if op["desenfoque"]:
+        capa = capa.filter(ImageFilter.GaussianBlur(op["desenfoque"]))
+    if op["recorte_original"]:
+        mascara = luminancia(orig).point(lambda v: 255 if v > 24 else 0).filter(ImageFilter.MaxFilter(9))
+        capa.putalpha(ImageChops.multiply(capa.getchannel("A"), mascara))
     fondo = op["fondo"]
     if fondo == "auto":
         fondo = "transparente" if es_transparente(orig) else "negro"

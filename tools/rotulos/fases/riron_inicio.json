@@ -1,0 +1,45 @@
+{
+  "descripcion": "Inicio de fase: Armamento Teorético",
+  "spc": "flash/event/t_phase_start_riron_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.3
+    },
+    "tecno": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.02,
+      "condensar": 0.78
+    }
+  },
+  "textos": {
+    "t_start_riron_all_tx_US": {
+      "usar": "serif",
+      "texto": "Armamento Teorético ¡EMPIEZA!",
+      "espaciado": 0.25
+    },
+    "t_start_riron_tx_US": {
+      "usar": "pincel",
+      "texto": "Armamento|Teorético",
+      "interlineado": 0.8
+    },
+    "t_start_riron_tx_blur_US_DXT1": {
+      "usar": "pincel",
+      "texto": "Armamento|Teorético",
+      "interlineado": 0.8,
+      "desenfoque": 6
+    },
+    "t_start_riron_tx_ef_US_DXT1": {
+      "usar": "pincel",
+      "texto": "Armamento|Teorético",
+      "interlineado": 0.8,
+      "desenfoque": 14
+    }
+  }
+}

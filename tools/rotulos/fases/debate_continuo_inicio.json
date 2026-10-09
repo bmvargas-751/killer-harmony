@@ -1,0 +1,95 @@
+{
+  "descripcion": "Inicio de fase: Debate Continuo",
+  "spc": "flash/event/t_nonstop_start_US.spc",
+  "estilos": {
+    "pincel": {
+      "fuente": "KaushanScript",
+      "espaciado": 0.0,
+      "contorno": 1
+    },
+    "serif": {
+      "fuente": "EBGaramond",
+      "peso": 500,
+      "espaciado": 0.3
+    },
+    "tecno": {
+      "fuente": "Rajdhani",
+      "espaciado": 0.02,
+      "condensar": 0.78
+    }
+  },
+  "textos": {
+    "t_nonstop_tx_000_US": {
+      "usar": "pincel",
+      "texto": "De"
+    },
+    "t_nonstop_tx_s_001_US": {
+      "usar": "pincel",
+      "texto": "b"
+    },
+    "t_nonstop_tx_s_002_US": {
+      "usar": "pincel",
+      "texto": "a"
+    },
+    "t_nonstop_tx_s_003_US": {
+      "usar": "pincel",
+      "texto": "t"
+    },
+    "t_nonstop_tx_xs_004_US": {
+      "usar": "pincel",
+      "texto": "e"
+    },
+    "t_nonstop_tx_s_005_US": {
+      "usar": "pincel",
+      "texto": "Con"
+    },
+    "t_nonstop_tx_s_006_US": {
+      "usar": "pincel",
+      "texto": "ti"
+    },
+    "t_nonstop_tx_007_US": {
+      "usar": "pincel",
+      "texto": "nuo"
+    },
+    "t_nonstop_tx_a_000_DXT1_US": {
+      "usar": "pincel",
+      "texto": "De"
+    },
+    "t_nonstop_tx_a_s_001_DXT1_US": {
+      "usar": "pincel",
+      "texto": "b"
+    },
+    "t_nonstop_tx_a_s_002_DXT1_US": {
+      "usar": "pincel",
+      "texto": "a"
+    },
+    "t_nonstop_tx_a_003_DXT1_US": {
+      "usar": "pincel",
+      "texto": "t"
+    },
+    "t_nonstop_tx_a_s_004_DXT1_US": {
+      "usar": "pincel",
+      "texto": "e"
+    },
+    "t_nonstop_tx_a_005_DXT1_US": {
+      "usar": "pincel",
+      "texto": "Con"
+    },
+    "t_nonstop_tx_a_006_DXT1_US": {
+      "usar": "pincel",
+      "texto": "ti"
+    },
+    "t_nonstop_tx_a_007_DXT1_US": {
+      "usar": "pincel",
+      "texto": "nuo"
+    },
+    "t_nonstop_tx_l_000_US": {
+      "usar": "pincel",
+      "texto": "¡Empieza!"
+    },
+    "t_nonstop_tx_l_a_000_DXT1_US": {
+      "usar": "pincel",
+      "texto": "¡Empieza!"
+    }
+  }
+}
