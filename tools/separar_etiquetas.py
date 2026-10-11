@@ -39,7 +39,12 @@ def separar(texto):
         if not antes or not despues:
             continue
         x, y = antes[-1], despues[0]
-        if (latina(x) or x in CIERRE) and (latina(y) or y in APERTURA):
+        # Comillas rectas: con un numero par de comillas antes de la etiqueta,
+        # la que la toca por la izquierda cierra y la de la derecha abre.
+        par = antes.count('"') % 2 == 0
+        cierra = x in CIERRE or (x == '"' and par)
+        abre = y in APERTURA or (y == '"' and par)
+        if (latina(x) or cierra) and (latina(y) or abre):
             partes.append(" ")
     partes.append(texto[ultimo:])
     return "".join(partes)
