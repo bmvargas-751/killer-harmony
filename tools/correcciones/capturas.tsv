@@ -1,0 +1,10 @@
+# Correcciones de las capturas de la v3.3, traducidas desde el texto original en ingles.
+# Formato de drv3text.py apply: archivo, subarchivo, id, texto_viejo, texto_nuevo
+latest/win/wrd_script/007/chap1_text_US.spc	c01_039_017.stx	76	502 Y entonces, de repente... llegó el\nmomento.	<CLT=cltMIND>Y entonces, de repente... llegó el\nmomento.
+latest/win/wrd_script/007/chap1_text_US.spc	c01_040_019.stx	1	502 Pero no había ninguna señal de la mente\nmaestra.	<CLT=cltMIND>Pero no había ninguna señal de la mente\nmaestra.
+latest/win/wrd_script/007/chap2_text_US.spc	c02_102_103.stx	40	502 Pero... supongo que *pudo* haber actuado a\nnuestro favor por una vez.	<CLT=cltMIND>Pero... supongo que *pudo* haber actuado a\nnuestro favor por una vez.
+latest/win/wrd_script/007/chap2_text_US.spc	c02_213_000.stx	12	¡Lo siento! ¡Se me olvidó! ¡Definitivamente no\nme lo para hacer el juicio más interesante!	¡Perdón! ¡Lo olvidé! ¡De verdad no lo guardé en\nsecreto para hacer el juicio más interesante!
+latest/win/wrd_script/007/chap2_text_US.spc	c02_213_000.stx	74	Pensé que me quitaría la ropa para que Gonta\nestuviera demasiado nervioso para tocarme.	¡Pensé que me quitaría la ropa para que Gonta\nestuviera demasiado nervioso para tocarme!
+latest/win/wrd_script/007/chap2_text_US.spc	c02_219_000.stx	10	Sí, pero... ¡Gonta no haría eso!\n¡Los caballeros, no arrojen cadáveres!	Sí, pero... ¡Gonta no haría eso!\n¡Los caballeros no arrojan cadáveres!
+latest/win/game_resident/game_resident_US.spc	A-PresentSetumei.stx	13	Un helado diseñado para nunca derretirse.\nPuede an be carried around for a long time,\neven in summer. But it's so hard, ordinary\nspoons can't penetrate it.	Un helado diseñado para nunca derretirse.\nPuede llevarse por mucho tiempo, incluso en\nverano. Pero es tan duro que las cucharas\nnormales no pueden penetrarlo.
+latest/win/game_resident/game_resident_US.spc	A-PresentSetumei.stx	82	Una brújula que ignora los polos de la Tierra\ny en su lugar apunta a la persona amada\ndel dueño. one.\nImprescindible para acosadores.	Una brújula que ignora los polos de la Tierra\ny en su lugar apunta a la persona amada\ndel dueño.\nImprescindible para acosadores.
