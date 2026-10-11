@@ -174,6 +174,40 @@ No cambió ningún término del texto en esta versión.
 * **Herramientas**: nueva lista `tools/correcciones/interfaz.tsv` con las correcciones de interfaz.
 
 <details>
+<summary><b>Textos de la interfaz que se corrigieron</b></summary>
+
+Los botones aparecen entre corchetes, por ejemplo [△].
+
+| Antes (v2.6) | Ahora (v2.7) |
+|---|---|
+| En N respuesta(s) correctas más, el bloqueo será levantado. | Responde correctamente N vez/veces más para desbloquearlo. |
+| Foco Extraordinaria | Foco Extraordinario |
+| Aumenta un poco la concentración máxima. Efectiva durante todo el juicio escolar. No se puede combinar con Foco Amenazador. | Aumenta un poco la concentración máxima. Efectiva durante todo el juicio escolar. No se puede combinar con Foco Amenazante. |
+| La primera letra estará llenada desde el inicio. Efectiva durante la Epifanía Anagrámica V3.0. | La primera letra aparecerá desde el inicio. Efectiva durante la Epifanía Anagrámica V3.0. |
+| Se borraran piezas desde el comienzo. Efectiva durante Excavaciones Cerebrales. | Algunas piezas faltarán desde el comienzo. Efectiva durante Excavaciones Cerebrales. |
+| Ver Manual de Estudiante | Ver Monopad |
+| Unidos contra la mente maestra, Kokichi, los estudiantes deben sobrevivir a un Juicio Escolar sin conocer la identidad del asesino ni de Víctima. Este es el comienzo de un juicio impredecible... | Unidos contra la mente maestra, Kokichi, los estudiantes deben sobrevivir a un Juicio Escolar sin conocer la identidad del asesino ni de la víctima. Este es el comienzo de un juicio impredecible... |
+| Para débiles de mente. | Para quienes quieren disfrutar la historia. |
+| Penalizaciones más duras ¡pero más recompensas! | Penalizaciones más duras y más opciones, ¡pero más recompensas! |
+| Para mancos. | Menos acción, para quienes solo quieren disfrutar la historia. |
+| [□]Cambiar playback | [□]Cambiar reproducción |
+| [△]MAX BET | [△]APOSTAR TODO |
+| [Ｌ１] [Ｒ１]ＢＥＴ×１０ | [Ｌ１] [Ｒ１]APOSTAR x10 |
+| [Ｐ上下]ＢＥＴ | [Ｐ上下]APOSTAR |
+| [Ｐ上下]ＢＥＴ [Ｌ１] [Ｒ１]ＢＥＴ×１０ [△]MAX BET | [Ｐ上下]APOSTAR [Ｌ１] [Ｒ１]APOSTAR x10 [△]APOSTAR TODO |
+| ¡TREASURE HUNTER! MONOLITH. Es un juego de búsqueda de tesoros... | ¡CAZADOR DE TESOROS! Monolith. Es un juego de búsqueda de tesoros... |
+| ¡TREASURE HUNTER! MONOLITH Guía del cazador de tesoros | ¡CAZADOR DE TESOROS! Monolith Guía del cazador de tesoros |
+| ¡SALMON FISHING! Es un juego de pescar salmones. | ¡AGARRÓN DE SALMÓN! Es un juego de pescar salmones. |
+| ¡SALMON FISHING! Noche de salmones | ¡AGARRÓN DE SALMÓN! Noche de salmones |
+| MonoMono Slots... Parece un juego de tragamonedas. | Tragaperras MonoMono... Parece un juego de tragaperras. |
+| MonoMono Slots Cómo ganar en las tragamonedas | Tragaperras MonoMono Cómo ganar en las tragaperras |
+| TREASURE HUNTER! MONOLITH | ¡CAZADOR DE TESOROS! Monolith |
+| SALMON FISHING | AGARRÓN DE SALMÓN |
+| Tragamonedas MonoMono | Tragaperras MonoMono |
+</details>
+
+
+<details>
 <summary><b>Palabras que cambiaron en esta versión</b></summary>
 
 | Antes (v2.6) | Ahora (v2.7) | Veces | En inglés |
@@ -195,6 +229,806 @@ No cambió ningún término del texto en esta versión.
 * **Objetos del mapa**: los nombres que aparecen al apuntar a algo mientras exploras ("Door", "Blackboard"...) ahora están en español.
 * **Otros textos en inglés**: descripciones actualizadas de algunas pruebas, una habilidad, una entrada de la ficha de Himiko y una frase del Armamento Teorético contra Kaede.
 * **Herramientas**: nueva lista `tools/correcciones/terminos.tsv` con los cambios de términos, y las traducciones nuevas guardadas en `tools/correcciones/` para poder volver a aplicarlas.
+
+<details>
+<summary><b>Nombres de la galería que se tradujeron (eventos)</b></summary>
+
+| En inglés | En español |
+|---|---|
+| Invitation to Despair | Invitación a la desesperación |
+| Who Came Rolling In | Los que llegaron rodando |
+| Kidnapping | Secuestro |
+| Beginning of Despair | El comienzo de la desesperación |
+| 15 Friends | 15 amigos |
+| Despair Robot | Robot de la desesperación |
+| Re: Vida Escolar From 0 | Re: Vida Escolar Desde 0 |
+| Invitation to Despair Level 2 | Invitación a la desesperación nivel 2 |
+| Who Came Rolling In Again | Los que llegaron rodando otra vez |
+| Kaede's Story | La historia de Kaede |
+| Mysterious Device | Dispositivo misterioso |
+| The Sealed Academy | La academia sellada |
+| Hello Despair Robot! | ¡Hola, robot de la desesperación! |
+| Super Exisal Battle | Súper batalla de Exisals |
+| Punish the Monokuma God | Castigo al dios Monokuma |
+| Punish the Red Bear | Castigo al oso rojo |
+| Trial Explanation V3 | Explicación del juicio V3 |
+| Monokuma's Eyes V3 | Los ojos de Monokuma V3 |
+| Fight to Survive! | ¡Lucha por sobrevivir! |
+| The Killing Game Begins | Empieza el juego de asesinato |
+| Academy Rules | Reglas de la academia |
+| The Reliable Gonta! | ¡El confiable Gonta! |
+| Welcome to Despair | Bienvenidos a la desesperación |
+| You Want Despair Again!? | ¡¿Quieren desesperación otra vez?! |
+| Monokuma's Motive Videos | Los videos de motivación de Monokuma |
+| Monokuma Dead!? | ¡¿Monokuma muerto?! |
+| Spoil the Children | Malcriar a los niños |
+| Bowing Down | Reverencia |
+| Invitation to the Underground | Invitación al subterráneo |
+| Air Circulation! | ¡Ventilación! |
+| Sketch | Boceto |
+| Hidden Cameras! | ¡Cámaras ocultas! |
+| Guilt | Culpa |
+| Hand of Despair | La mano de la desesperación |
+| Slowly... | Poco a poco... |
+| Monokuma FIle | Ficha Monokuma |
+| Film Everything | Grabarlo todo |
+| Equivalent Exchange | Intercambio equivalente |
+| Murder! | ¡Asesinato! |
+| Everyone, Come Quick! | ¡Todos, vengan rápido! |
+| Ultimate Talent Academy | Academia de Talentos Definitivos |
+| Investigating the Photos | Investigando las fotos |
+| Rantaro Appears! | ¡Aparece Rantaro! |
+| Story of the Photos | La historia de las fotos |
+| Searching Rantaro | Buscando a Rantaro |
+| No Photography! | ¡Prohibido tomar fotos! |
+| Silent Elevator | El ascensor silencioso |
+| Secrets | Secretos |
+| Juicio Escolar Participant 1 | Participante del Juicio Escolar 1 |
+| Juicio Escolar Participant 2 | Participante del Juicio Escolar 2 |
+| Juicio Escolar Participant 3 | Participante del Juicio Escolar 3 |
+| Pasillo Sketch | Boceto del pasillo |
+| Using A Long Pole... | Usando una vara larga... |
+| Photo from Above | Foto desde arriba |
+| Shot Put Ball Route | La ruta de la bala de cañón |
+| Fight the Exisals! | ¡Lucha contra los Exisals! |
+| Believe in Me, Who Punched You! | ¡Cree en mí, que te golpeé! |
+| Kaede's Wish | El deseo de Kaede |
+| Killing Game Promotional Video | Video promocional del juego de asesinato |
+| Talent Annihilation | Aniquilación de talentos |
+| Mysterious Letters | Cartas misteriosas |
+| Fresh Start! | ¡Nuevo comienzo! |
+| Secret Items | Objetos secretos |
+| Attack on Shadow | Ataque a la sombra |
+| Mysterious Device B Side | Dispositivo misterioso lado B |
+| Kaito's Motive Video | El video de motivación de Kaito |
+| Monokubs Meal | La comida de los Monokubs |
+| Training Begins! | ¡Empieza el entrenamiento! |
+| Let's Build a Tower | Construyamos una torre |
+| What Is This Aura!? | ¡¿Qué es esta aura?! |
+| It's Gonta! | ¡Es Gonta! |
+| Kokichi's Surprise Attack | El ataque sorpresa de Kokichi |
+| Insect Meet and Greet | Encuentro con insectos |
+| Insect Meet and Greet LOL | Encuentro con insectos XD |
+| Kibo's Recording Device | La grabadora de Kibo |
+| Magic Show Opening! | ¡Comienza el show de magia! |
+| Magic Show Opening!! | ¡Comienza el show de magia!! |
+| Magic Show Opening!!! | ¡Comienza el show de magia!!! |
+| Magic Show Opening!!!! | ¡Comienza el show de magia!!!! |
+| Magic Show Opening!!!!! | ¡Comienza el show de magia!!!!! |
+| Disquiet on Stage | Inquietud en el escenario |
+| Go! Kibo! | ¡Adelante, Kibo! |
+| Secret Ficha Monokuma | Ficha Monokuma secreta |
+| Looking Down... | Mirando hacia abajo... |
+| Imagining Escape | Imaginando el escape |
+| Switching Bodies | Intercambio de cuerpos |
+| A Woman's Weapon | El arma de una mujer |
+| I Brought This Item | Traje este objeto |
+| Rope Magic | Magia con cuerda |
+| Edificio Principal Construction | Construcción del edificio principal |
+| Let's Do It Together! | ¡Hagámoslo juntos! |
+| Ropeway Magic | Magia de teleférico |
+| Kirumi's Motive Video | El video de motivación de Kirumi |
+| Burden | La carga |
+| Giving Up on Surviving | Renunciar a sobrevivir |
+| Ryoma's Motive Video | El video de motivación de Ryoma |
+| I WILL NOT DIE! | ¡NO VOY A MORIR! |
+| Public Execution!? | ¡¿Ejecución pública?! |
+| Why Irse the Inner Tube? | ¿Por qué el flotador? |
+| Deep Impact | Impacto profundo |
+| Social Upheaval | Agitación social |
+| Secret Items II | Objetos secretos II |
+| Tenko's Practice! Boys Edition | ¡La práctica de Tenko! Edición chicos |
+| Tenko's Practice! Girls Edition | ¡La práctica de Tenko! Edición chicas |
+| This Is My First Time... | Es mi primera vez... |
+| Ultimate Loss | Pérdida definitiva |
+| Maki's Super Fast Push-ups | Las lagartijas ultrarrápidas de Maki |
+| A Shocking Motive! | ¡Un motivo impactante! |
+| Mysteriously Changing Message | El mensaje que cambia misteriosamente |
+| God's Gift | Regalo de los dioses |
+| Student Council | Consejo estudiantil |
+| Training Together | Entrenando juntos |
+| God with Red Hair and Black Eyes | El dios de pelo rojo y ojos negros |
+| The Student Council's Authority | La autoridad del consejo estudiantil |
+| Ficha Monokuma For Trouble | Ficha Monokuma problemática |
+| Necronomicon | Necronomicón |
+| The Caged Dog Village | La aldea del perro enjaulado |
+| Ritual Preparation: Fate | Preparación del ritual: destino |
+| Ritual Preparation: Salt | Preparación del ritual: sal |
+| Ritual Preparation: Banquet | Preparación del ritual: banquete |
+| The Candle Disappears | La vela desaparece |
+| Caged Child | Niño enjaulado |
+| Burning Candle | Vela encendida |
+| Ritual: Grudge | Ritual: rencor |
+| Ritual: Favor | Ritual: favor |
+| Licking Licking | Lamer y lamer |
+| Additional Ficha Monokuma | Ficha Monokuma adicional |
+| Cursed!? | ¡¿Maldición?! |
+| Light from the Eyes! | ¡Luz de los ojos! |
+| Lockpicking Trick | El truco de la ganzúa |
+| A Cool See-saw | Un subibaja genial |
+| The Plotting Witch | La bruja conspiradora |
+| Recording Function! | ¡Función de grabación! |
+| Photo Just Before the Ritual | Foto justo antes del ritual |
+| Angie in the Spare Room | Angie en el cuarto de sobra |
+| Eternal Love | Amor eterno |
+| What Was Lost | Lo que se perdió |
+| Carry the Feeling | Llevar el sentimiento |
+| Like I'm Gonna Die Here... | Siento que voy a morir aquí... |
+| A Message from Rantaro | Un mensaje de Rantaro |
+| Additional Message | Mensaje adicional |
+| The Frying Pan is the Weapon! | ¡La sartén es el arma! |
+| Secret Items III | Objetos secretos III |
+| Tsumugi's Cabaret | El cabaret de Tsumugi |
+| The Cult | La secta |
+| Huge Space Abs | Abdominales espaciales enormes |
+| Crushing Punch! | ¡Puñetazo aplastante! |
+| Ultimate Child Caregiver...? | ¿Cuidadora Definitiva...? |
+| Life at the Orphanage | La vida en el orfanato |
+| Life as an Assassin | La vida de una asesina |
+| 3 at Night | Las 3 de la noche |
+| I Want to Talk | Quiero hablar |
+| Latest Technology | Tecnología de punta |
+| Mansion Map | Mapa de la mansión |
+| World Map | Mapa del mundo |
+| Parallel Universe Ficha Monokuma | Ficha Monokuma de un universo paralelo |
+| Strike the Fire | Golpe de fuego |
+| Login/Logout Record | Registro de entradas y salidas |
+| The Latest Technology Resurrected | La tecnología de punta resucitada |
+| Virtual World | Mundo Virtual |
+| Killing Game Busters | Cazadores del juego de asesinato |
+| Toilet Paper Murder | El asesinato del papel higiénico |
+| Usar the Paper | Usar el papel |
+| Kokichi's Insanity | La locura de Kokichi |
+| True Kokichi's Insanity | La verdadera locura de Kokichi |
+| Justice Punch! | ¡Puñetazo de justicia! |
+| It's Just a Cold... | Es solo un resfriado... |
+| An Ultimate Leader | Un Líder Definitivo |
+| This World Belongs to Me | Este mundo me pertenece |
+| Monokuma's Funeral | El funeral de Monokuma |
+| Secret Items IV | Objetos secretos IV |
+| Robot Body Experiment | Experimento con el cuerpo robótico |
+| Crossbow Assembly | Armando la ballesta |
+| Like Hell I'm Gonna Die Here... | Ni de broma voy a morir aquí... |
+| Annihilation Plan | Plan de aniquilación |
+| Assassination Skills Activate! | ¡Habilidades de asesina activadas! |
+| Gofer Project | Proyecto Gofer |
+| 16 High School Students | 16 estudiantes de preparatoria |
+| Launching the Ark | El lanzamiento del arca |
+| Academy Panorama | Panorama de la academia |
+| The View Outside | La vista del exterior |
+| The Mastermind Unmasked! | ¡La Mente Maestra desenmascarada! |
+| That's What You Call Despair! | ¡A eso le llaman desesperación! |
+| Kibougamine Panorama | Panorama de Kibougamine |
+| The Tragedy | La tragedia |
+| The Girl in Despair | La chica de la desesperación |
+| High School Despair Student | Estudiante de preparatoria de la desesperación |
+| The Despair Begins | Empieza la desesperación |
+| Future Foundation vs Remnants | Fundación del Futuro contra los Vestigios |
+| The Rebuilt Kibougamine | La Kibougamine reconstruida |
+| The Virus Spreads | El virus se propaga |
+| It's All Connected... | Todo está conectado... |
+| The Ultimate Despair has Arrived! | ¡Llegó la Desesperación Definitiva! |
+| Killing Game in Despair | Juego de asesinato en la desesperación |
+| A Man's Promise | Promesa de hombre |
+| Confusion Like Never Before | Una confusión como nunca antes |
+| Human Press | Prensa humana |
+| It's Punishment Time! | ¡Es la hora del castigo! |
+| Dubious Ficha Monokuma | Ficha Monokuma dudosa |
+| The Sneaking Magician | El mago sigiloso |
+| Hangar Layout | Plano del hangar |
+| Kaito's Rebellion | La rebelión de Kaito |
+| Assassinate the Remnants | Asesinar a los Vestigios |
+| In Order to Survive... | Para sobrevivir... |
+| Let's Put an End to This... | Pongamos fin a esto... |
+| The Real Kokichi | El verdadero Kokichi |
+| The Second Coming of the Cubs | El regreso de los Kubs |
+| Kibo's Awakening! | ¡El despertar de Kibo! |
+| Annihilated Academy | La academia aniquilada |
+| A Special Memory! | ¡Un recuerdo especial! |
+| Ultimate Despair! | ¡Desesperación Definitiva! |
+| What Kaito Izquierda Behind | Lo que Kaito dejó atrás |
+| Makoto's Vida Diaria | La vida diaria de Makoto |
+| Something to Focus on | Algo en qué concentrarse |
+| Kibo the Destroyer | Kibo el Destructor |
+| Killing Game Squad | Escuadrón del juego de asesinato |
+| The Ultimate War | La guerra definitiva |
+| Kibougamine Official Documents | Documentos oficiales de Kibougamine |
+| Memories with the Baby | Recuerdos con el bebé |
+| The Despair Incident | El incidente de la desesperación |
+| Kokichi's Motive Video | El video de motivación de Kokichi |
+| Writing on the Wall | Escrito en la pared |
+| The Fate of Humanity | El destino de la humanidad |
+| Fire the Rocket Launcher! | ¡Dispara el lanzacohetes! |
+| Ultimate Survivor | Superviviente Definitivo |
+| Our Hope | Nuestra esperanza |
+| What's Up!? The Exisals! | ¡¿Qué onda?! ¡Los Exisals! |
+| I Won't Let You Interfere! | ¡No dejaré que interfieras! |
+| Fire the Rockets! | ¡Disparen los cohetes! |
+| Survivor Perks | Ventajas del Superviviente |
+| Kibo vs The Exisals | Kibo contra los Exisals |
+| The Beginning of the End | El principio del fin |
+| Kibo's Eyes for Magnifying! | ¡Los ojos de aumento de Kibo! |
+| Kibo's Sharp Ears! | ¡El oído agudo de Kibo! |
+| The Case of Rantaro Amami | El caso de Rantaro Amami |
+| The Mastermind's Crime | El crimen de la Mente Maestra |
+| The Suspect's Actions | Las acciones del sospechoso |
+| Junko Enoshima has Arrived | Llegó Junko Enoshima |
+| The Neverending Migration | La migración sin fin |
+| A Laboratory in a Flask | Un laboratorio en un frasco |
+| The Charm of Danganronpa | El encanto de Danganronpa |
+| Past Danganronpas | Los Danganronpa anteriores |
+| New Danganronpa V3! | ¡El nuevo Danganronpa V3! |
+| Shuichi's Audition | La audición de Shuichi |
+| Kaede's Audition | La audición de Kaede |
+| Kaito's Audition | La audición de Kaito |
+| Memories of V3 | Recuerdos de V3 |
+| Inside Voices | Voces internas |
+| The Viewers' Eyes | Los ojos de los espectadores |
+| Victims of the Killing Game | Víctimas del juego de asesinato |
+| Kibo's Final Form | La forma final de Kibo |
+| Kaede's Nail Art | El arte de uñas de Kaede |
+| Kaito's Gambling Problem | El problema de apuestas de Kaito |
+| Faux Celebrity | Falsa celebridad |
+| A Man's Passion, Space Edition | La pasión de un hombre, edición espacial |
+| Maki and the Katana | Maki y la katana |
+| Himiko's Training | El entrenamiento de Himiko |
+| Monokuma & Monokubs TV Clip | Clip de TV de Monokuma y los Monokubs |
+| Kibo's Eyes! | ¡Los ojos de Kibo! |
+| Kibo's Ears! | ¡Los oídos de Kibo! |
+| Elevator to the Showdown | El ascensor al enfrentamiento |
+| Rantaro's Body Discovery | El hallazgo del cuerpo de Rantaro |
+| Kaede Akamatsu? | ¿Kaede Akamatsu? |
+| The Mastermind's Crimes | Los crímenes de la Mente Maestra |
+| 15 Trapped Students | 15 estudiantes atrapados |
+| The Death of Junko Enoshima | La muerte de Junko Enoshima |
+| Flashback Light Blackboard | Pizarrón de la Linterna Flashback |
+| Tsumugi's Flashback Light | La Linterna Flashback de Tsumugi |
+| Fabricated Memories | Recuerdos fabricados |
+| Fiction and Reality | Ficción y realidad |
+| Escape from Fiction | Escape de la ficción |
+| Beyond the Wall | Más allá del muro |
+| Hope or an Abyss? | ¿Esperanza o abismo? |
+| What Lies Ahead | Lo que nos espera |
+| The Final Scene | La escena final |
+| Love Across the Universe | Amor a través del universo |
+| Ultimate Intro: Shuichi Saihara | Presentación definitiva: Shuichi Saihara |
+| Ultimate Intro: Kaito Momota | Presentación definitiva: Kaito Momota |
+| Ultimate Intro: Ryoma Hoshi | Presentación definitiva: Ryoma Hoshi |
+| Ultimate Intro: Rantaro Amami | Presentación definitiva: Rantaro Amami |
+| Ultimate Intro: Gonta Gokuhara | Presentación definitiva: Gonta Gokuhara |
+| Ultimate Intro: Kokichi Ouma | Presentación definitiva: Kokichi Ouma |
+| Ultimate Intro: Korekiyo Shinguji | Presentación definitiva: Korekiyo Shinguji |
+| Ultimate Intro: K1-B0 | Presentación definitiva: K1-B0 |
+| Ultimate Intro: Kirumi Tojo | Presentación definitiva: Kirumi Tojo |
+| Ultimate Intro: Himiko Yumeno | Presentación definitiva: Himiko Yumeno |
+| Ultimate Intro: Maki Harukawa | Presentación definitiva: Maki Harukawa |
+| Ultimate Intro: Tenko Chabashira | Presentación definitiva: Tenko Chabashira |
+| Ultimate Intro: Tsumugi Shirogane | Presentación definitiva: Tsumugi Shirogane |
+| Ultimate Intro: Angie Yonaga | Presentación definitiva: Angie Yonaga |
+| Ultimate Intro: Miu Iruma | Presentación definitiva: Miu Iruma |
+| Ultimate Intro: Kaede Akamatsu | Presentación definitiva: Kaede Akamatsu |
+| Ultimate Intro: Monokuma | Presentación definitiva: Monokuma |
+| New Ultimate Intro: Junko Enoshima | Nueva presentación definitiva: Junko Enoshima |
+| Ultimate Intro: Hope Robot | Presentación definitiva: Hope Robot |
+| Monokuma Theater 1 (Cap. 1) | Teatro Monokuma 1 (Cap. 1) |
+| Monokuma Theater 2 (Cap. 1) | Teatro Monokuma 2 (Cap. 1) |
+| Monokuma Theater 3 (Cap. 1) | Teatro Monokuma 3 (Cap. 1) |
+| Monokuma Theater 4 (Cap. 2) | Teatro Monokuma 4 (Cap. 2) |
+| Monokuma Theater 5 (Cap. 2) | Teatro Monokuma 5 (Cap. 2) |
+| Monokuma Theater 6 (Cap. 2) | Teatro Monokuma 6 (Cap. 2) |
+| Monodam Theater 1 (Cap. 3) | Teatro Monodam 1 (Cap. 3) |
+| Monodam Theater 2 (Cap. 3) | Teatro Monodam 2 (Cap. 3) |
+| Monodam Theater 3 (Cap. 3) | Teatro Monodam 3 (Cap. 3) |
+| Monokuma Theater 7 (Cap. 4) | Teatro Monokuma 7 (Cap. 4) |
+| Monokuma Theater 8 (Cap. 4) | Teatro Monokuma 8 (Cap. 4) |
+| Monokuma Theater 9 (Cap. 5) | Teatro Monokuma 9 (Cap. 5) |
+| Monokuma Theater 10 (Cap. 5) | Teatro Monokuma 10 (Cap. 5) |
+| Monokuma Theater 11 (Cap. 5) | Teatro Monokuma 11 (Cap. 5) |
+| Monokuma Theater 12 (Cap. 5) | Teatro Monokuma 12 (Cap. 5) |
+| Monokuma Theater 4 (Cap. 1) | Teatro Monokuma 4 (Cap. 1) |
+| Monokuma Theater 7 (Cap. 2) | Teatro Monokuma 7 (Cap. 2) |
+| Monokuma Theater 1 (Cap. 3) | Teatro Monokuma 1 (Cap. 3) |
+| Monokuma Theater 2 (Cap. 3) | Teatro Monokuma 2 (Cap. 3) |
+| Monokuma Theater 9 (Cap. 4) | Teatro Monokuma 9 (Cap. 4) |
+| Monokuma Theater 13 (Cap. 5) | Teatro Monokuma 13 (Cap. 5) |
+| Monokuma & Monokubs Theater 1 | Teatro de Monokuma y los Monokubs 1 |
+| Monokuma & Monokubs Theater 2 | Teatro de Monokuma y los Monokubs 2 |
+| Monokuma & Monokubs Theater 3 | Teatro de Monokuma y los Monokubs 3 |
+| Monokuma & Monokubs Theater 4 | Teatro de Monokuma y los Monokubs 4 |
+| Monokuma & Monokubs Theater 5 | Teatro de Monokuma y los Monokubs 5 |
+</details>
+
+<details>
+<summary><b>Nombres de la galería que se tradujeron (videos)</b></summary>
+
+| En inglés | En español |
+|---|---|
+| Staff Roll | Créditos |
+| Promo Movie | Video promocional |
+| The Monokubs Arrive | Llegan los Monokubs |
+| The 16 Transform | La transformación de los 16 |
+| Epilogue | Epílogo |
+| Promo Movie Revisited | Video promocional revisitado |
+| Punishment: Der Flohwalzer | Castigo: Der Flohwalzer |
+| Punishment: Strand of Agony | Castigo: Hilo de agonía |
+| Punishment: Cultural Melting Pot | Castigo: Crisol cultural |
+| Punishment: Wild West Insecticide | Castigo: Insecticida del Viejo Oeste |
+| Punishment: Blast Off! 2do Ignition | Castigo: ¡Despegue! 2.ª ignición |
+| Punishment: Ultimate Annihilation | Castigo: Aniquilación definitiva |
+| The Suspect Arrives | Llega el sospechoso |
+| Rantaro's Body Discovery | El hallazgo del cuerpo de Rantaro |
+| Ryoma's Body Discovery | El hallazgo del cuerpo de Ryoma |
+| Angie's Body Discovery | El hallazgo del cuerpo de Angie |
+| Tenko's Body Discovery | El hallazgo del cuerpo de Tenko |
+| Miu's Body Discovery | El hallazgo del cuerpo de Miu |
+| Kaito's? Body Discovery | ¿El hallazgo del cuerpo de Kaito? |
+| Kokichi's Body Discovery | El hallazgo del cuerpo de Kokichi |
+| The Elevator Descends | El ascensor desciende |
+| Magic Key | Llave mágica |
+| The Barrier Falls | Cae la barrera |
+| Escape from the Academy | Escape de la academia |
+| The Door to the Future | La puerta al futuro |
+| K1-B0 Returns | El regreso de K1-B0 |
+| The End of Danganronpa | El fin de Danganronpa |
+| Trial Ground Transformation (Cap.1) | Transformación del Santuario del Juicio (Cap. 1) |
+| Trial Ground Transformation (Cap.2) | Transformación del Santuario del Juicio (Cap. 2) |
+| Trial Ground Transformation (Cap.3) | Transformación del Santuario del Juicio (Cap. 3) |
+| Trial Ground Transformation (Cap.4) | Transformación del Santuario del Juicio (Cap. 4) |
+| Trial Ground Transformation (Cap.5) | Transformación del Santuario del Juicio (Cap. 5) |
+| Trial Ground Transformation (Cap.6) | Transformación del Santuario del Juicio (Cap. 6) |
+| Kaede's Flashback Light | La Linterna Flashback de Kaede |
+| Monokuma Arrives | Llega Monokuma |
+| Shuichi's Flashback Light | La Linterna Flashback de Shuichi |
+| Cap. 5 Flashback Light | Linterna Flashback del Cap. 5 |
+| Remember | Recuerda |
+| K1-B0's Rampage | El arrebato de K1-B0 |
+| Vote: Cap.1 "Kaede Akamatsu" | Votación: Cap. 1 "Kaede Akamatsu" |
+| Vote: Cap. 2 "Kirumi Tojo" | Votación: Cap. 2 "Kirumi Tojo" |
+| Vote: Cap.3 "Korekiyo Shinguji" | Votación: Cap. 3 "Korekiyo Shinguji" |
+| Vote: Cap.4 "Gonta Gokuhara" | Votación: Cap. 4 "Gonta Gokuhara" |
+| Vote: Cap.5 "Kaito Momota" | Votación: Cap. 5 "Kaito Momota" |
+| Vote: Cap.6 "Tsumugi Shirogane" | Votación: Cap. 6 "Tsumugi Shirogane" |
+| Santuario del Juicio Elevator | Ascensor al Santuario del Juicio |
+| Ancient Passport | Pasaporte Antiguo |
+| Dragon Gem | Gema de Dragón |
+| Hexagon Crank | Manivela Hexagonal |
+| Ninja Scroll | Pergamino Ninja |
+| Golden Hammer | Martillo Dorado |
+| Levistone | Cristal de Volucita |
+| Octobrush | Cefalocepillo |
+| Academy Annihilation | Aniquilación de la academia |
+| Santuario del Juicio Elevator Cap. 6 | Ascensor al Santuario del Juicio Cap. 6 |
+| Recibidor Annihilation | Aniquilación del recibidor |
+| Patio Annihilation | Aniquilación del patio |
+| Virtual World Trip | Viaje al Mundo Virtual |
+| K1-B0 Attacks | K1-B0 ataca |
+</details>
+
+<details>
+<summary><b>Objetos del mapa que se tradujeron</b></summary>
+
+Los nombres que aparecen al apuntar a algo mientras exploras, en orden alfabético.
+
+| En inglés | En español |
+|---|---|
+| 1st Floor | 1er Piso |
+| 1st Floor Hallway | Pasillo del 1er Piso |
+| 2nd Floor | 2do Piso |
+| 3F Research Lab A ※Already removed | Laboratorio A del 3er Piso ※Ya eliminado |
+| 3F Research Lab B ※Already removed | Laboratorio B del 3er Piso ※Ya eliminado |
+| 3rd Floor | 3er Piso |
+| 4th Floor | 4to Piso |
+| 5.1ch Speaker | Altavoz 5.1 |
+| 5th Floor | 5to Piso |
+| A/V Room | Sala de Medios A/V |
+| Above the Bookcase | Encima del Librero |
+| Air Vent | Ventilación |
+| Alarm System | Sistema de Alarma |
+| Angie's Body | Cadáver de Angie |
+| Arranged Books | Libros Ordenados |
+| Back Bookcase | Librero del Fondo |
+| Back Door | Puerta Trasera |
+| Back of the Library | Fondo de la Biblioteca |
+| Back Sliding Door | Puerta Corrediza Trasera |
+| Backyard | Patio Trasero |
+| Balance Pole | Barra de Equilibrio |
+| Bar Set | Barra de Bar |
+| Barbed Wire | Alambre de Púas |
+| Barrier | Barrera |
+| Basement | Sótano |
+| Basketball Net | Canasta de Básquetbol |
+| Bathroom Door | Puerta del Baño |
+| Bathroom Window | Ventana del Baño |
+| Bed | Cama |
+| Behind the Stage | Detrás del Escenario |
+| Birdcage | Jaula de Pájaro |
+| Bit of Clothing | Trozo de Ropa |
+| Bits of Fabric | Trozos de Tela |
+| Black & White Door | Puerta Blanca y Negra |
+| Black Case | Estuche Negro |
+| Blackboard | Pizarrón |
+| Bloodstain | Mancha de Sangre |
+| Bloodstained Board | Tabla Ensangrentada |
+| Bloody Shot Put Ball | Bola de Peso Ensangrentada |
+| Bloody Sickle | Hoz Ensangrentada |
+| Bloody Tank | Tanque Ensangrentado |
+| Body Sawing Box | Caja para Serrar Personas |
+| Book | Libro |
+| Bookcase | Librero |
+| Bookshelf | Estante de Libros |
+| Box of Documents | Caja de Documentos |
+| Boys Bathroom | Baño de Chicos |
+| Broken Tank | Tanque Roto |
+| Bronze Dragon Statue | Estatua de Dragón de Bronce |
+| Bucket | Cubeta |
+| Bug Cage | Jaula de Insectos |
+| Bundled Cord | Cable Enrollado |
+| Cabinet 1 | Gabinete 1 |
+| Cable In | Entrada de Cable |
+| Cable Out | Salida de Cable |
+| Card Reader | Lector de Tarjetas |
+| Casino Area | Área de Casino |
+| Cauldron | Caldero |
+| Cave Wall | Pared de la Cueva |
+| CD Rack | Estante de CD |
+| Center Room | Sala Central |
+| Central Chair | Silla Central |
+| Chair | Silla |
+| Chandelier | Candelabro |
+| Chemicals Shelf | Estante de Químicos |
+| Child | Niño |
+| Classroom | Aula |
+| Classroom A | Aula A |
+| Classroom B | Aula B |
+| Classroom C | Aula C |
+| Clean Floor | Piso Limpio |
+| Cleaning Machine | Máquina de Limpieza |
+| Clock | Reloj |
+| Closed Curtain | Cortina Cerrada |
+| Closed Door | Puerta Cerrada |
+| Closed Window | Ventana Cerrada |
+| Closet | Clóset |
+| Closet Door | Puerta del Clóset |
+| Cloth | Tela |
+| Cluttered Books | Libros Desordenados |
+| Cockpit | Cabina |
+| Collected Evidence | Pruebas Reunidas |
+| Computer | Computadora |
+| Computer Room | Sala de Cómputo |
+| Crane | Grúa |
+| Crooked Floorboard | Tabla Torcida |
+| Crossbow | Ballesta |
+| Crossbow Arrow | Flecha de Ballesta |
+| Crystal Ball | Bola de Cristal |
+| Curled Up Tenko | Tenko Acurrucada |
+| Curtain | Cortina |
+| Cut Crosspiece | Travesaño Cortado |
+| Dealer Mask | Máscara de Crupier |
+| Desk | Escritorio |
+| Dining Hall | Comedor |
+| Dining Table | Mesa del Comedor |
+| Disposable Camera | Cámara Desechable |
+| Diving Board | Trampolín |
+| Documents | Documentos |
+| Dog Statue | Estatua de Perro |
+| Dog Statue on Iron Cage | Estatua de Perro sobre la Jaula |
+| Door | Puerta |
+| Door to Hallway | Puerta al Pasillo |
+| Dormitory | Dormitorio |
+| Down the Big Stairs | Bajando las Escaleras Grandes |
+| Drawer | Cajón |
+| Dried Blood | Sangre Seca |
+| Electric Barrier | Barrera Eléctrica |
+| Electrohammer | Electromartillo |
+| Emblem | Emblema |
+| End of Hallway | Final del Pasillo |
+| Entrance Door | Puerta de Entrada |
+| Exchange Counter | Caja de Cambio |
+| Exhibit Case | Vitrina |
+| Exisal Blue | Exisal Azul |
+| Exisal Green | Exisal Verde |
+| Exisal Pink | Exisal Rosa |
+| Exisal Red | Exisal Rojo |
+| Exisal Yellow | Exisal Amarillo |
+| Exit Signboard | Letrero de Salida |
+| Extravagant Door | Puerta Extravagante |
+| Fake Money | Dinero Falso |
+| Family | Familia |
+| Filming Set | Set de Filmación |
+| Firearms | Armas de Fuego |
+| Flashback Light | Linterna Flashback |
+| Floor | Piso |
+| Floor With Removed Floorboard | Piso sin una Tabla |
+| Folded Cloth | Tela Doblada |
+| Front Bookcase | Librero del Frente |
+| Front Door | Puerta Principal |
+| Front Double Doors | Puertas Dobles del Frente |
+| Futuristic Art | Arte Futurista |
+| Game Room | Sala de Juegos |
+| Geometric Pattern Door | Puerta con Diseño Geométrico |
+| Giant Door | Puerta Gigante |
+| Giant Studio Set | Set de Estudio Gigante |
+| Giant Vault | Bóveda Gigante |
+| Giant Wooden Doll | Muñeco de Madera Gigante |
+| Girls Bathroom | Baño de Chicas |
+| Glass | Vidrio |
+| Glass Bottle | Botella de Vidrio |
+| Glass Panel | Panel de Vidrio |
+| Globe | Globo Terráqueo |
+| Gold Leaf Katana | Katana Batida en Oro |
+| Grass | Pasto |
+| Guillotine | Guillotina |
+| Gym | Gimnasio |
+| Gym Window | Ventana del Gimnasio |
+| Half Broken Door | Puerta Medio Rota |
+| Hammer on Dolly | Martillo sobre Carretilla |
+| Handcuffs | Esposas |
+| Hangar Security Lamp | Lámpara de Seguridad del Hangar |
+| Hangar Shutter | Portón del Hangar |
+| Hanging Paper | Papel Colgado |
+| Hanging Scroll | Pergamino Colgante |
+| Hanging Wax Doll of Kaede | Efigie Colgada de Kaede |
+| Hanging Wax Doll of Kirumi | Efigie Colgada de Kirumi |
+| Hanging Wax Doll of Rantaro | Efigie Colgada de Rantaro |
+| Hanging Wax Doll of Ryoma | Efigie Colgada de Ryoma |
+| Helicopter | Helicóptero |
+| Helicopter Controller | Control del Helicóptero |
+| Hexagonal Protrusion | Saliente Hexagonal |
+| Hidden Monokuma No. 1 | Monokuma Oculto N.º 1 |
+| Hidden Monokuma No. 10 | Monokuma Oculto N.º 10 |
+| Hidden Monokuma No. 11 | Monokuma Oculto N.º 11 |
+| Hidden Monokuma No. 12 | Monokuma Oculto N.º 12 |
+| Hidden Monokuma No. 13 | Monokuma Oculto N.º 13 |
+| Hidden Monokuma No. 14 | Monokuma Oculto N.º 14 |
+| Hidden Monokuma No. 15 | Monokuma Oculto N.º 15 |
+| Hidden Monokuma No. 16 | Monokuma Oculto N.º 16 |
+| Hidden Monokuma No. 17 | Monokuma Oculto N.º 17 |
+| Hidden Monokuma No. 18 | Monokuma Oculto N.º 18 |
+| Hidden Monokuma No. 19 | Monokuma Oculto N.º 19 |
+| Hidden Monokuma No. 2 | Monokuma Oculto N.º 2 |
+| Hidden Monokuma No. 20 | Monokuma Oculto N.º 20 |
+| Hidden Monokuma No. 21 | Monokuma Oculto N.º 21 |
+| Hidden Monokuma No. 22 | Monokuma Oculto N.º 22 |
+| Hidden Monokuma No. 23 | Monokuma Oculto N.º 23 |
+| Hidden Monokuma No. 24 | Monokuma Oculto N.º 24 |
+| Hidden Monokuma No. 25 | Monokuma Oculto N.º 25 |
+| Hidden Monokuma No. 26 | Monokuma Oculto N.º 26 |
+| Hidden Monokuma No. 27 | Monokuma Oculto N.º 27 |
+| Hidden Monokuma No. 28 | Monokuma Oculto N.º 28 |
+| Hidden Monokuma No. 29 | Monokuma Oculto N.º 29 |
+| Hidden Monokuma No. 3 | Monokuma Oculto N.º 3 |
+| Hidden Monokuma No. 30 | Monokuma Oculto N.º 30 |
+| Hidden Monokuma No. 4 | Monokuma Oculto N.º 4 |
+| Hidden Monokuma No. 5 | Monokuma Oculto N.º 5 |
+| Hidden Monokuma No. 6 | Monokuma Oculto N.º 6 |
+| Hidden Monokuma No. 7 | Monokuma Oculto N.º 7 |
+| Hidden Monokuma No. 8 | Monokuma Oculto N.º 8 |
+| Hidden Monokuma No. 9 | Monokuma Oculto N.º 9 |
+| Hidden Passage Entrance | Entrada al Pasadizo Oculto |
+| Hidden Room | Habitación Secreta |
+| High Jump Bar | Barra de Salto Alto |
+| Hole | Agujero |
+| Hole in the Corner | Agujero en la Esquina |
+| Hole in the Floor | Agujero en el Piso |
+| Hologram | Holograma |
+| Hologram Display | Pantalla Holográfica |
+| Hurdle | Valla |
+| Hydraulic Press | Prensa Hidráulica |
+| Indirect Lighting | Luz Indirecta |
+| Innertube | Flotador |
+| Insect Specimens | Especímenes de Insectos |
+| Iron Cage | Jaula de Hierro |
+| Iron Cage Covering Something | Jaula de Hierro Cubriendo Algo |
+| Kaito Lab ※Already removed | Laboratorio de Kaito ※Ya eliminado |
+| Key | Llave |
+| Key Stand | Soporte de Llaves |
+| Keyhole | Cerradura |
+| Kitchen Entrance | Entrada a la Cocina |
+| Knife | Cuchillo |
+| Knives Hanging on the Wall | Cuchillos Colgados en la Pared |
+| Kokichi's Clothes | Ropas de Kokichi |
+| Ladder | Escalera de Mano |
+| Large Door | Puerta Grande |
+| Large Hole | Agujero Grande |
+| Large Round Door | Puerta Redonda Grande |
+| Large Water Tank | Tanque de Agua Grande |
+| Left Door | Puerta Izquierda |
+| Left Empty Room | Sala Vacía - Izquierda |
+| Left Room | Sala Izquierda |
+| Library | Biblioteca |
+| Light Panel | Panel de Luz |
+| Lighting | Iluminación |
+| Lit Candle | Vela Encendida |
+| Lock | Candado |
+| Locker | Casillero |
+| Love Suite | Suite del Amor |
+| Lump of Wax | Trozo de Cera |
+| Magic Circle | Círculo Mágico |
+| Manhole | Alcantarilla |
+| Manhole Cover | Tapa de Alcantarilla |
+| Manhole Cover Used for Reference | Tapa de Alcantarilla de Referencia |
+| Marker Stone | Piedra Marcadora |
+| Mat | Colchoneta |
+| Metal Cage | Jaula de Metal |
+| Metal Rods | Barras de Metal |
+| Middle Bookcase | Librero del Medio |
+| Middle Empty Room | Sala Vacía - Medio |
+| Modified Camera | Cámara Modificada |
+| Monokuma Statue | Estatua de Monokuma |
+| Monokuma USB | USB de Monokuma |
+| Monomono Machine | Máquina MonoMono |
+| Monomono Slot | Tragamonedas MonoMono |
+| Mountain of Weapons | Montaña de Armas |
+| Moving Bookcase | Estantería Móvil |
+| Moving Ladder | Escalera Móvil |
+| Music Stand | Atril |
+| Mysterious Letters | Cartas Misteriosas |
+| Mysterious Machine | Máquina Misteriosa |
+| Mysterious Monument | Monumento Misterioso |
+| Nameplate | Placa con Nombre |
+| Near Miu's Body | Cerca del Cadáver de Miu |
+| Near the Body | Cerca del Cadáver |
+| Near the Water Tank | Cerca del Tanque de Agua |
+| Neon Signboard | Letrero de Neón |
+| Ninja Statue | Estatua de Ninja |
+| Object 0 | Objeto 0 |
+| Object 1 | Objeto 1 |
+| Object 2 | Objeto 2 |
+| Object 3 | Objeto 3 |
+| Object 4 | Objeto 4 |
+| Object 5 | Objeto 5 |
+| Object 6 | Objeto 6 |
+| Object 7 | Objeto 7 |
+| Object 8 | Objeto 8 |
+| Object 9 | Objeto 9 |
+| Object with Indentation | Objeto con una Hendidura |
+| Open Door | Puerta Abierta |
+| Open Moving Bookcase | Estantería Móvil Abierta |
+| Open Window | Ventana Abierta |
+| Operation Panel | Panel de Control |
+| Organized Books | Libros Organizados |
+| Overgrown Grass | Pasto Crecido |
+| Painting Machine | Máquina de Pintura |
+| Passage Entrance | Entrada al Pasadizo |
+| Photographic Developer | Revelador Fotográfico |
+| Piranha Tank | Tanque de Pirañas |
+| Piranhas | Pirañas |
+| Planetarium Device | Proyector de Planetario |
+| Plants | Plantas |
+| Pod | Cápsula |
+| Pole Scaffold | Andamio de Tubos |
+| Pool | Piscina |
+| Pool Entrance | Entrada a la Piscina |
+| Pool of Blood | Charco de Sangre |
+| Poster Bucket | Cubeta del Póster |
+| Premium Exchange Counter | Caja de Cambio Premium |
+| Press Operation Panel | Panel de Control de la Prensa |
+| Projector | Proyector |
+| Puddle | Charco |
+| Rantaro's Body | Cadáver de Rantaro |
+| RC Helicopter | Helicóptero a Control Remoto |
+| Rear Sliding Door | Puerta Corrediza Trasera |
+| Right Door | Puerta Derecha |
+| Right Empty Room | Sala Vacía - Derecha |
+| Right Room | Sala Derecha |
+| Rocking Chair | Mecedora |
+| Rope | Cuerda |
+| Rotating Bed | Cama Giratoria |
+| Rubble | Escombros |
+| Ruined Magic Circle | Círculo Mágico Arruinado |
+| Rules | Reglas |
+| Rules Sign | Letrero de Reglas |
+| Russian Roulette Gun | Pistola de Ruleta Rusa |
+| Ryoma's Belongings | Pertenencias de Ryoma |
+| Ryoma's Body | Cadáver de Ryoma |
+| Saw | Sierra |
+| School Building | Edificio Principal |
+| School Building Window | Ventana del Edificio Principal |
+| School Store | Tienda Escolar |
+| Scoreboard | Marcador |
+| Screen | Pantalla |
+| Scroll | Pergamino |
+| Shelf | Estante |
+| Shot Put Ball | Bola de Peso |
+| Showcase | Vitrina |
+| Shower Room | Sala de Ducha |
+| Shrine of Judgment | Santuario del Juicio |
+| Shutter Operation Panel | Panel de Control del Portón |
+| Side of School Building | Costado del Edificio Principal |
+| Sink | Lavabo |
+| Sliding Door | Puerta Corrediza |
+| Small Bottle | Botellita |
+| Small Glass Bottles | Botellitas de Vidrio |
+| Small Table | Mesita |
+| Small Water Tank | Tanque de Agua Pequeño |
+| Sofa | Sofá |
+| Sofa A | Sofá A |
+| Sofa B | Sofá B |
+| Speakers | Altavoces |
+| Special Modified Camera | Cámara Modificada Especial |
+| Stage | Escenario |
+| Stage Staircase | Escaleras del Escenario |
+| Stairs | Escaleras |
+| Stairs to 1st Floor | Escaleras al 1er Piso |
+| Storage Room Door | Puerta del Almacén |
+| Supercar | Superauto |
+| Suspended Scaffold | Andamio Colgante |
+| Suspended Water Tank | Tanque de Agua Colgante |
+| Sword Stabbing Box | Caja de Espadas |
+| Table | Mesa |
+| Teacher's Desk | Escritorio del Profesor |
+| Tenko's Body | Cadáver de Tenko |
+| Tennis Net | Red de Tenis |
+| Terrace Door | Puerta de la Terraza |
+| Thick Metal Door | Puerta de Metal Gruesa |
+| Things on the Desk | Cosas sobre el Escritorio |
+| Timer | Temporizador |
+| Toilet | Inodoro |
+| Torn Power Cord | Cable de Corriente Roto |
+| Traces of Blood | Rastros de Sangre |
+| Trap | Trampa |
+| Trash Can | Bote de Basura |
+| Trashed Room | Habitación Destrozada |
+| Treasure Chest | Cofre del Tesoro |
+| Tree Root | Raíz de Árbol |
+| Ultimate ??? Lab | Laboratorio del ??? Definitivo |
+| Ultimate Aikido Master Lab | Laboratorio de la Maestra del Aikido Definitiva |
+| Ultimate Anthropologist Lab | Laboratorio del Antropólogo Definitivo |
+| Ultimate Anthropologist Lab (Rear) | Laboratorio del Antropólogo Definitivo (Fondo) |
+| Ultimate Artist Lab | Laboratorio de la Artista Definitiva |
+| Ultimate Artist Lab (Rear) | Laboratorio de la Artista Definitiva (Fondo) |
+| Ultimate Assassin Lab | Laboratorio de la Asesina Definitiva |
+| Ultimate Astronaut Lab | Laboratorio del Astronauta Definitivo |
+| Ultimate Cosplayer Lab | Laboratorio de la Cosplayer Definitiva |
+| Ultimate Detective Lab | Laboratorio del Detective Definitivo |
+| Ultimate Entomologist Lab | Laboratorio del Entomólogo Definitivo |
+| Ultimate Inventor Lab | Laboratorio de la Inventora Definitiva |
+| Ultimate Magician Lab | Laboratorio de la Maga Definitiva |
+| Ultimate Maid Lab | Laboratorio de la Mucama Definitiva |
+| Ultimate Pianist Lab | Laboratorio de la Pianista Definitiva |
+| Ultimate Robot Lab | Laboratorio del Robot Definitivo |
+| Ultimate Tennis Pro Lab | Laboratorio del Tenista Pro Definitivo |
+| Underground Stairs | Escaleras Subterráneas |
+| Utility Closet | Cuarto de Servicio |
+| Utility Closet Wall | Pared del Cuarto de Servicio |
+| Video Player | Reproductor de Video |
+| Video Rack | Estante de Videos |
+| Warehouse | Almacén |
+| Washing Machine | Lavadora |
+| Wax Doll of Kaede | Efigie de Cera de Kaede |
+| Wax Doll of Kirumi | Efigie de Cera de Kirumi |
+| Wax Doll of Rantaro | Efigie de Cera de Rantaro |
+| Wax Doll of Ryoma | Efigie de Cera de Ryoma |
+| Weapon Shelf | Estante de Armas |
+| White Cloth | Sábana Blanca |
+| White Cloth Over Something | Sábana Blanca Cubriendo Algo |
+| Window | Ventana |
+| Work Table | Mesa de Trabajo |
+| Workshop | Taller |
+| Yasuhiro's Body | Cadáver de Yasuhiro |
+</details>
+
+Los textos completos del casino, las reglas y el Teatro Monokuma (unas 300 líneas) están en `tools/correcciones/galeria.tsv`.
 
 <details>
 <summary><b>Palabras que cambiaron en esta versión</b></summary>
@@ -222,11 +1056,43 @@ No cambiaron porque ya coincidían con DR1 y DR2: Juicio Escolar, Munición, Men
   * `drv3srd.py`: exporta las texturas de los `.spc` a PNG e importa los PNG editados (deben conservar el tamaño original).
   * `rotulos.py` + `rotulos/*.json`: genera rótulos en español recortando y combinando las letras de las texturas del juego.
 
+<details>
+<summary><b>Rótulos que cambiaron en esta versión</b></summary>
+
+| Antes (inglés, imagen) | Ahora (v2.5) |
+|---|---|
+| SAVE | GUARDAR |
+| LOAD | CARGAR |
+| OPTION | OPCIONES |
+| MAIN MENU | MENÚ PRINCIPAL |
+| DRESS UP | PROBADOR |
+| BACKLOG | REGISTRO |
+
+No cambió ningún término del texto en esta versión.
+</details>
+
 ### Novedades de la v2.4 (fork)
 
 * **Palabras destacadas pegadas (capítulo 1)**: el juego no agrega espacios alrededor de las palabras resaltadas, por lo que textos como "delPianista Definitivosabe" aparecían pegados. Esto ya estaba corregido en los capítulos 2 a 6, pero faltaba el capítulo 1: se corrigieron **496 líneas**, incluidas las frases con cambio de tamaño de los debates.
 * **Puntuación**: comas dobles (`Shuichi,,`) y puntos suspensivos incompletos (`Jeje..`, `¡Kh..!`, o partidos por un salto de línea).
 * **Herramientas**: nuevo `tools/separar_etiquetas.py`, que agrega el espacio que falta junto a las etiquetas de formato, y soporte para reglas con expresiones regulares (`~`) en `erratas.tsv`.
+
+<details>
+<summary><b>Correcciones de puntuación de esta versión</b></summary>
+
+El salto de línea se muestra como ⏎.
+
+**Puntuacion duplicada o incompleta** (5)
+
+| Antes | Ahora |
+|---|---|
+| `,,` | `,` |
+| `,..Pero` | `...Pero` |
+| `.⏎.. ` | `...⏎` |
+| `sobrevivir..⏎..Incluso` | `sobrevivir...⏎...Incluso` |
+
+Además, todos los puntos suspensivos de solo dos puntos (`..`) pasaron a tres (`...`). Las 496 líneas con palabras destacadas pegadas solo recibieron el espacio que faltaba; no cambió ninguna palabra.
+</details>
 
 ### Novedades de la v2.3 (fork)
 
@@ -248,6 +1114,429 @@ Esta versión es un fork del [parche original](https://github.com/ManuelCMS/kill
 * **Herramientas para editar los textos (`tools/`)**:
   * `drv3text.py`: extrae los textos de los `.SPC` a un archivo de texto (`dump`) y aplica correcciones (`apply`), sin necesidad de Harmony Tools.
   * `aplicar_erratas.py` + `correcciones/erratas.tsv`: lista de erratas (`texto_erróneo<TAB>texto_correcto`). Para corregir una errata nueva, agrega una línea y ejecuta `python3 tools/aplicar_erratas.py tools/correcciones/erratas.tsv`.
+
+<details>
+<summary><b>Erratas que se corrigieron en esta versión</b></summary>
+
+Cada regla corrige también sus variantes con mayúscula inicial y en MAYÚSCULAS. El salto de línea se muestra como ⏎.
+
+**Letras cambiadas, faltantes o sobrantes** (211)
+
+| Antes | Ahora |
+|---|---|
+| `abilidad` | `habilidad` |
+| `acompñamiento` | `acompañamiento` |
+| `actualiizados` | `actualizados` |
+| `afriman` | `afirman` |
+| `agradble` | `agradable` |
+| `amenzante` | `amenazante` |
+| `ansisosa` | `ansiosa` |
+| `apagueb` | `apaguen` |
+| `arruniaría` | `arruinaría` |
+| `avivava` | `avivaba` |
+| `ayudamre` | `ayudarme` |
+| `ayudaráía` | `ayudaría` |
+| `blancaa` | `blanca` |
+| `buchos` | `bichos` |
+| `burjo` | `brujo` |
+| `cabezasos` | `cabezazos` |
+| `callaa` | `callas` |
+| `captadp` | `captado` |
+| `cargaó` | `cargó` |
+| `castrófica` | `catastrófica` |
+| `causea` | `causa` |
+| `cballeros` | `caballeros` |
+| `ciudadanoa` | `ciudadana` |
+| `colocqué` | `coloqué` |
+| `comparió` | `compartió` |
+| `conentración` | `concentración` |
+| `confudió` | `confundió` |
+| `confuncí` | `confundí` |
+| `conpu` | `compu` |
+| `considereq` | `considere` |
+| `consientidos` | `consentidos` |
+| `consiguido` | `conseguido` |
+| `consistío` | `consistió` |
+| `continurar` | `continuar` |
+| `conviertida` | `convertida` |
+| `cooperamo` | `cooperamos` |
+| `creles` | `crueles` |
+| `cryó` | `creyó` |
+| `cuchila` | `cuchilla` |
+| `dabido` | `sabido` |
+| `ded` | `de` |
+| `dedcidle` | `decidle` |
+| `dedl` | `del` |
+| `dedrribar` | `derribar` |
+| `definitivmante` | `definitivamente` |
+| `definitva` | `definitiva` |
+| `defintiva` | `definitiva` |
+| `defintivo` | `definitivo` |
+| `defnitivo` | `definitivo` |
+| `dehabilitar` | `deshabilitar` |
+| `demasaida` | `demasiada` |
+| `derrana` | `derrama` |
+| `descrubrir` | `descubrir` |
+| `descubieron` | `descubrieron` |
+| `deseperación` | `desesperación` |
+| `deshinibida` | `desinhibida` |
+| `desonciertan` | `desconciertan` |
+| `desperó` | `despertó` |
+| `detner` | `detener` |
+| `devuélbanme` | `devuélvanme` |
+| `diciendoe` | `diciendo` |
+| `difficultad` | `dificultad` |
+| `dormmido` | `dormido` |
+| `dulwe` | `dulce` |
+| `duriante` | `durante` |
+| `encargamre` | `encargarme` |
+| `enegrecido` | `ennegrecido` |
+| `enfrfentarlos` | `enfrentarlos` |
+| `enredadedras` | `enredaderas` |
+| `entendrás` | `entenderás` |
+| `entineda` | `entienda` |
+| `entoncecs` | `entonces` |
+| `equipamento` | `equipamiento` |
+| `esbiros` | `esbirros` |
+| `escúpleo` | `escúpelo` |
+| `esrá` | `está` |
+| `estadfadora` | `estafadora` |
+| `esterlar` | `estelar` |
+| `estrañas` | `extrañas` |
+| `ests` | `esta` |
+| `esuchó` | `escuchó` |
+| `evacución` | `evacuación` |
+| `floclore` | `folclore` |
+| `fuea` | `fue` |
+| `fueraza` | `fuerza` |
+| `habierta` | `abierta` |
+| `himilko` | `Himiko` |
+| `imeginen` | `imaginen` |
+| `imporara` | `importara` |
+| `imporible` | `imposible` |
+| `inconcevible` | `inconcebible` |
+| `inicó` | `inició` |
+| `inimos` | `vinimos` |
+| `inputil` | `inútil` |
+| `insensibile` | `insensible` |
+| `insginia` | `insignia` |
+| `insgnias` | `insignias` |
+| `instructiones` | `instrucciones` |
+| `interfierencias` | `interferencias` |
+| `juguetenado` | `jugueteando` |
+| `kibougmaine` | `Kibougamine` |
+| `kirum` | `Kirumi` |
+| `letero` | `letrero` |
+| `lingística` | `lingüística` |
+| `llamste` | `llamaste` |
+| `llevantar` | `levantar` |
+| `lugat` | `lugar` |
+| `malechor` | `malhechor` |
+| `maneoseadores` | `manoseadores` |
+| `manetner` | `mantener` |
+| `mencionárterlo` | `mencionártelo` |
+| `metalíca` | `metálica` |
+| `mientiendo` | `mintiendo` |
+| `mimso` | `mismo` |
+| `mismísmo` | `mismísimo` |
+| `mmalinterpretar` | `malinterpretar` |
+| `molestida` | `molestia` |
+| `molestémolos` | `molestémoslos` |
+| `monkuma` | `Monokuma` |
+| `monotar` | `Monotaro` |
+| `mononopad` | `Monopad` |
+| `murrieron` | `murieron` |
+| `muucho` | `mucho` |
+| `ncontraste` | `encontraste` |
+| `nostoros` | `nosotros` |
+| `nostros` | `nosotros` |
+| `obetnido` | `obtenido` |
+| `obivamente` | `obviamente` |
+| `obivo` | `obvio` |
+| `ocrrió` | `ocurrió` |
+| `ocultsimo` | `ocultismo` |
+| `opcíón` | `opción` |
+| `orquestrado` | `orquestado` |
+| `orquestrando` | `orquestando` |
+| `orquestrar` | `orquestar` |
+| `ozesnos` | `oseznos` |
+| `paraa` | `para` |
+| `pareche` | `parece` |
+| `pareción` | `pareció` |
+| `parpaedeo` | `parpadeo` |
+| `patéricos` | `patéticos` |
+| `peligroa` | `peligro` |
+| `perobabilidad` | `probabilidad` |
+| `persuadiendos` | `persuadiendo` |
+| `pienese` | `piense` |
+| `pisicna` | `piscina` |
+| `plam` | `Plan` |
+| `pordía` | `podría` |
+| `portunidad` | `oportunidad` |
+| `posibile` | `posible` |
+| `prefrencia` | `preferencia` |
+| `pregunstaste` | `preguntaste` |
+| `preparanos` | `prepararnos` |
+| `preparía` | `prepararía` |
+| `preprara` | `prepara` |
+| `prese` | `preste` |
+| `prisón` | `prisión` |
+| `probrar` | `probar` |
+| `proviniente` | `proveniente` |
+| `pueberto` | `puberto` |
+| `puediera` | `pudiera` |
+| `puntitaa` | `puntita` |
+| `pusto` | `puso` |
+| `quedabass` | `quedabas` |
+| `quee` | `que` |
+| `querdármelo` | `quedármelo` |
+| `querete` | `quererte` |
+| `quq` | `que` |
+| `raguños` | `rasguños` |
+| `ralmente` | `realmente` |
+| `realida` | `realidad` |
+| `referes` | `refieres` |
+| `refrescarmer` | `refrescarme` |
+| `rendirmos` | `rendirnos` |
+| `resisitió` | `resistió` |
+| `respeecta` | `respecta` |
+| `respero` | `respeto` |
+| `reveleador` | `revelador` |
+| `rompien` | `rompían` |
+| `rrealmente` | `realmente` |
+| `sabisdo` | `sabido` |
+| `santurario` | `santuario` |
+| `sguir` | `seguir` |
+| `shuich` | `Shuichi` |
+| `siguea` | `sigue` |
+| `sirviena` | `sirvienta` |
+| `siénese` | `siéntese` |
+| `sobresfuerces` | `sobreesfuerces` |
+| `tencuidado` | `ten cuidado` |
+| `todps` | `todos` |
+| `tonero` | `torneo` |
+| `traciende` | `trasciende` |
+| `tratse` | `tratase` |
+| `tsmugi` | `Tsumugi` |
+| `uns` | `una` |
+| `utela` | `tutela` |
+| `vececs` | `veces` |
+| `veoo` | `veo` |
+| `verdads` | `verdad` |
+| `veredcito` | `veredicto` |
+| `videdomotivo` | `videomotivo` |
+| `videonotivo` | `videomotivo` |
+| `vienesd` | `vienes` |
+| `vieniendo` | `viniendo` |
+| `vivs` | `viva` |
+| `von` | `con` |
+| `voyeourismo` | `voyeurismo` |
+| `vueno` | `bueno` |
+| `vverduras` | `verduras` |
+| `vvamos` | `vamos` |
+| `iniciative` | `iniciativa` |
+
+**Palabras pegadas** (17)
+
+| Antes | Ahora |
+|---|---|
+| `ahoramismo` | `ahora mismo` |
+| `añadidoa` | `añadido a` |
+| `aúnmejor` | `aún mejor` |
+| `buscómatar` | `buscó matar` |
+| `elcuerpo` | `el cuerpo` |
+| `élsupiera` | `él supiera` |
+| `esla` | `es la` |
+| `evidenciaen` | `evidencia en` |
+| `haceralgo` | `hacer algo` |
+| `mismotablón` | `mismo tablón` |
+| `nobiliarioes` | `nobiliario es` |
+| `piezade` | `pieza de` |
+| `títulode` | `título de` |
+| `trucoscon` | `trucos con` |
+| `detela` | `de tela` |
+| `aTenko` | `a Tenko` |
+| `quéte` | `qué te` |
+
+**Tildes y dieresis** (105)
+
+| Antes | Ahora |
+|---|---|
+| `absténte` | `abstente` |
+| `aciérten` | `acierten` |
+| `actua` | `actúa` |
+| `actúar` | `actuar` |
+| `ahogárte` | `ahogarte` |
+| `algúnos` | `algunos` |
+| `apareceran` | `aparecerán` |
+| `aqui` | `aquí` |
+| `asi` | `así` |
+| `avergenzas` | `avergüenzas` |
+| `averigemos` | `averigüemos` |
+| `besuquéandose` | `besuqueándose` |
+| `calmate` | `cálmate` |
+| `casí` | `casi` |
+| `castigame` | `castígame` |
+| `cállanse` | `cállense` |
+| `cómos` | `cómo` |
+| `confíar` | `confiar` |
+| `confíemos` | `confiemos` |
+| `crímen` | `crimen` |
+| `dejemoslo` | `dejémoslo` |
+| `dejáme` | `déjame` |
+| `dejénlo` | `déjenlo` |
+| `desnúdemonos` | `desnudémonos` |
+| `despiérten` | `despierten` |
+| `dáme` | `dame` |
+| `dános` | `danos` |
+| `dáte` | `date` |
+| `déjanmelo` | `déjenmelo` |
+| `dénse` | `dense` |
+| `dés` | `des` |
+| `dínos` | `dinos` |
+| `diós` | `dios` |
+| `dósis` | `dosis` |
+| `emision` | `emisión` |
+| `encontraramos` | `encontráramos` |
+| `encontre` | `encontré` |
+| `entrémos` | `entremos` |
+| `escúchen` | `escuchen` |
+| `estan` | `están` |
+| `estára` | `estará` |
+| `estó` | `esto` |
+| `estóico` | `estoico` |
+| `éstá` | `está` |
+| `excavaciónes` | `excavaciones` |
+| `facilmente` | `fácilmente` |
+| `fenomeno` | `fenómeno` |
+| `físicoculturismo` | `fisicoculturismo` |
+| `guíar` | `guiar` |
+| `hablémos` | `hablemos` |
+| `habria` | `habría` |
+| `haciéndo` | `haciendo` |
+| `hagámos` | `hagamos` |
+| `házlo` | `hazlo` |
+| `házlos` | `hazlos` |
+| `házte` | `hazte` |
+| `hipotésis` | `hipótesis` |
+| `huímos` | `huimos` |
+| `huír` | `huir` |
+| `impreción` | `impresión` |
+| `incluída` | `incluida` |
+| `insinuas` | `insinúas` |
+| `interes` | `interés` |
+| `jovenes` | `jóvenes` |
+| `leiste` | `leíste` |
+| `levantámos` | `levantamos` |
+| `limpiate` | `límpiate` |
+| `malgastándo` | `malgastando` |
+| `manténte` | `mantente` |
+| `matandome` | `matándome` |
+| `mentalizandome` | `mentalizándome` |
+| `miralas` | `míralas` |
+| `muñon` | `muñón` |
+| `omitieramos` | `omitiéramos` |
+| `padré` | `padre` |
+| `pais` | `país` |
+| `páneles` | `paneles` |
+| `pásando` | `pasando` |
+| `percataramos` | `percatáramos` |
+| `ponéos` | `poneos` |
+| `pónte` | `ponte` |
+| `póngamonos` | `pongámonos` |
+| `póngamos` | `pongamos` |
+| `prepárandose` | `preparándose` |
+| `pudieramos` | `pudiéramos` |
+| `quédemonos` | `quedémonos` |
+| `refutalo` | `refútalo` |
+| `refutála` | `refútala` |
+| `reimos` | `reímos` |
+| `relajate` | `relájate` |
+| `reporténse` | `repórtense` |
+| `reuna` | `reúna` |
+| `salámos` | `salimos` |
+| `sonriendome` | `sonriéndome` |
+| `soportenlo` | `sopórtenlo` |
+| `sucedio` | `sucedió` |
+| `tambaléandose` | `tambaleándose` |
+| `tambié` | `también` |
+| `tranquilizate` | `tranquilízate` |
+| `ustéd` | `usted` |
+| `vamonos` | `vámonos` |
+| `vergenza` | `vergüenza` |
+| `virgenes` | `vírgenes` |
+| `véis` | `veis` |
+| `comencémos` | `comencemos` |
+
+**Conjugaciones mal formadas** (22)
+
+| Antes | Ahora |
+|---|---|
+| `abstenimos` | `abstuvimos` |
+| `comienzamos` | `comenzamos` |
+| `comienzó` | `comenzó` |
+| `confiesaré` | `confesaré` |
+| `corrije` | `corrige` |
+| `elegiera` | `eligiera` |
+| `elegió` | `eligió` |
+| `eligido` | `elegido` |
+| `emperoraste` | `empeoraste` |
+| `enamoraía` | `enamoraría` |
+| `entiendos` | `entiendo` |
+| `exudía` | `exudaba` |
+| `hicista` | `hiciste` |
+| `reorganizé` | `reorganicé` |
+| `seguría` | `seguiría` |
+| `transportarté` | `transporté` |
+| `tosé` | `tosí` |
+| `veniste` | `viniste` |
+| `apretan` | `aprietan` |
+| `digos` | `digo` |
+| `dicee` | `dices` |
+| `sabí` | `sabía` |
+
+**Correcciones de frase completa (texto literal exacto)** (37)
+
+| Antes | Ahora |
+|---|---|
+| `Sí,aspi es.` | `Sí, así es.` |
+| `cáda—` | `cadá—` |
+| `¿Q-Aué pasaría?` | `¿Q-Qué pasaría?` |
+| `discusi[on` | `discusión` |
+| `Kibo está siend ocontrolado` | `Kibo está siendo controlado` |
+| `Deber+ias` | `Deberías` |
+| `No tengo ide de` | `No tengo idea de` |
+| `Tal vez fue qen esa época` | `Tal vez fue en esa época` |
+| `hasta quí llegué` | `hasta aquí llegué` |
+| `en su mano entía` | `en su mano tenía` |
+| `¡Wow! ¿¡Tienes caño derebral` | `¡Wow! ¿¡Tienes daño cerebral` |
+| `hacía mí a toda velocidad` | `hacia mí a toda velocidad` |
+| `y desmayó...` | `y se desmayó...` |
+| `Una jaula de insector` | `Una jaula de insectos` |
+| `piezas inborrables` | `piezas irrompibles` |
+| `Culpable Incognisible` | `Culpable Incognoscible` |
+| `No hya forma` | `No hay forma` |
+| `¡Os a digo que` | `¡Os digo que` |
+| `¡Mis habilidad en baloncesto` | `¡Mi habilidad en baloncesto` |
+| `un⏎líbido fuerte` | `una⏎libido fuerte` |
+| `Sentémos en algún lugar` | `Sentémonos en algún lugar` |
+| `sigoestoy vivo` | `sigo vivo` |
+| `Hay una razón p<or la que` | `Hay una razón por la que` |
+| `Tienes muchas huevos` | `Tienes muchos huevos` |
+| `AOS-MAS TARDE` | `AÑOS-MÁS TARDE` |
+| `POBLACIN VIEJA` | `POBLACIÓN VIEJA` |
+| `EJECUCIN EXTERIOR` | `EJECUCIÓN EXTERIOR` |
+| `LA.MENTE-MAESTRA` | `LA-MENTE-MAESTRA` |
+| `<CLT=cltSTRONG>ltimo Pianista` | `<CLT=cltSTRONG>Último Pianista` |
+| `HDD. As requieren` | `HDD. Se requieren` |
+| `No importa⏎si es se está confiando, o estáactuando...` | `No importa⏎si se está confiando, o está actuando...` |
+| `Puedes comenzar casualy mejorar.` | `Puedes comenzar casualmente y mejorar.` |
+| `me pareció rar...` | `me pareció rara...` |
+| `¡Haría<CLT=size2>unamontón` | `¡Haría<CLT=size2>un montón` |
+| `no pudieron conrecoger` | `no pudieron recoger` |
+| `Sí. Parecía undergroundpassage.⏎Gontathoughtitmmaybeexit...` | `Sí. Parecía pasajesubterráneo.⏎Gontapensóqueeralasalida...` |
+| `del estudiantes coucil` | `del consejo estudiantil` |
+</details>
 
 > **Pendiente**: algunos menús que son imágenes (fuera del juicio) todavía están en inglés. Si encuentras uno, o cualquier texto sin traducir, [abre un ticket](https://github.com/bmvargas-751/killer-harmony/issues).
 
