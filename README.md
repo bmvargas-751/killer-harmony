@@ -1,10 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.2
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.3
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
 
-> **Fork v3.2**: esta copia incluye los rótulos del juicio y de los capítulos traducidos, corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v32-fork).
+> **Fork v3.3**: esta copia incluye los rótulos del juicio y de los capítulos traducidos, corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v33-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -28,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.2**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.3**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -90,7 +90,32 @@ En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instala
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
 
-### 🆕 Novedades de la v3.2 (fork)
+### 🆕 Novedades de la v3.3 (fork)
+
+* **Correcciones reportadas con capturas**, traducidas desde el texto original en inglés:
+  * Tres pensamientos de Shuichi (capítulos 1 y 2) empezaban con un "502" que no debía verse.
+  * Una frase de Monokuma en el segundo juicio a la que le faltaba el verbo, y frases de Miu y Gonta que no decían lo mismo que el original.
+  * La descripción del regalo "Helado Duro y Grueso" estaba a medio traducir, y la de la "Brújula de Un Solo Sentido" tenía un "one." de más.
+* **Frases destacadas entre comillas pegadas**: en 16 líneas de los capítulos 0 a 5, las frases resaltadas entre comillas aparecían pegadas al texto (`Kirumi"hacer a este país grande de nuevo"y`). `tools/separar_etiquetas.py` ahora también reconoce las comillas.
+* **README**: cada versión tiene ahora la lista completa de lo que cambió (erratas, puntuación, nombres de la galería, objetos del mapa, textos de la interfaz y rótulos).
+* **Herramientas**: nueva lista `tools/correcciones/capturas.tsv` con las correcciones de esta versión.
+
+<details>
+<summary><b>Textos que cambiaron en esta versión</b></summary>
+
+| Dónde | Antes (v3.2) | Ahora (v3.3) | En inglés |
+|---|---|---|---|
+| Cap. 1 y 2, pensamientos de Shuichi (3 líneas) | 502 Y entonces, de repente... / 502 Pero no había... / 502 Pero... supongo que... | (sin el "502") | — |
+| Cap. 2, Monokuma | ¡Lo siento! ¡Se me olvidó! ¡Definitivamente no me lo para hacer el juicio más interesante! | ¡Perdón! ¡Lo olvidé! ¡De verdad no lo guardé en secreto para hacer el juicio más interesante! | Sorry! Forgot! I definitely didn't keep it a secret to make the trial more interesting! |
+| Cap. 2, Miu | Pensé que me quitaría la ropa para que Gonta estuviera demasiado nervioso para tocarme. | ¡Pensé que me quitaría la ropa para que Gonta estuviera demasiado nervioso para tocarme! | I figured I'd take my clothes off so Gonta would be too flustered to touch me! |
+| Cap. 2, Gonta | ¡Los caballeros, no arrojen cadáveres! | ¡Los caballeros no arrojan cadáveres! | Gentlemen not chuck dead bodies! |
+| Regalo: Helado Duro y Grueso | Puede an be carried around for a long time, even in summer. But it's so hard, ordinary spoons can't penetrate it. | Puede llevarse por mucho tiempo, incluso en verano. Pero es tan duro que las cucharas normales no pueden penetrarlo. | (el mismo texto en inglés) |
+| Regalo: Brújula de Un Solo Sentido | ...la persona amada del dueño. one. | ...la persona amada del dueño. | — |
+
+No cambió ningún término ni rótulo en esta versión.
+</details>
+
+### Novedades de la v3.2 (fork)
 
 * **Tiempo libre con Angie completo**: a uno de los tiempos libres con Angie del capítulo 1 le faltaban las primeras 8 líneas de diálogo. Se agregaron, tomadas de la versión 2.3 del parche original. El resto de la traducción del fork no cambia.
 
@@ -1554,4 +1579,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
-* Fork v2.3 – v3.2: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
+* Fork v2.3 – v3.3: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
