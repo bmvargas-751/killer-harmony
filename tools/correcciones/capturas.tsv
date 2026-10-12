@@ -17,3 +17,45 @@ latest/win/wrd_script/007/chap3_text_US.spc	c03_101_139.stx	23	<CLT=cltSYSTEM>"<
 latest/win/wrd_data/map_obj_name_text_US.SPC	ID138_lab_shinguji_text.stx	7	Katana Batida en Oro	Katana de Pan de Oro
 latest/win/game_resident/game_resident_US.spc	A-Kotodama.stx	64	Katana Batida en Oro	Katana de Pan de Oro
 latest/win/wrd_script/007/chap3_text_US.spc	c03_101_139.stx	0	<CLT=cltMIND>Si no recuerdo mal, katana batida en oro\nviene de...	<CLT=cltMIND>Si no recuerdo mal, la katana de pan de oro\nviene de...
+# --- v3.5: espacio despues de ¿/¡ delante de una palabra destacada ("¿ Abrir cerraduras") ---
+latest/win/wrd_script/007/chap4_text_US.spc	c04_218_001.stx	16	Es<CLT=size2> en realidad no\nes<CLT=size2> imposible<CLT=size1> en absoluto!	¡En realidad<CLT=size2> no es\n<CLT=size2>imposible<CLT=size1> en absoluto!
+latest/win/wrd_script/007/chap4_text_US.spc	c04_219_000.stx	11	Solo significa que hasta+ yo cometo errores.\nNo te preocupes, Shuichi.	Solo significa que hasta yo cometo errores.\nNo te preocupes, Shuichi.
+latest/win/wrd_script/007/chap3_text_US.spc	c03_002_151.stx	16	¡<CLT=cltSTRONG> Neo-Aikido<CLT=cltNORMAL> es un arte marcial súper serio!\n¡En lugar de entrenar, solo luchamos!	¡<CLT=cltSTRONG>Neo-Aikido<CLT=cltNORMAL> es un arte marcial súper serio!\n¡En lugar de entrenar, solo luchamos!
+latest/win/wrd_script/007/chap3_text_US.spc	c03_202_001.stx	4	¡<CLT=size2> Volvió<CLT=size1> a la vida\ny<CLT=size2> mató a dos<CLT=size1> de\n<CLT=size2> nuestros compañeras!	¡<CLT=size2>Volvió<CLT=size1> a la vida\ny<CLT=size2> mató a dos<CLT=size1> de\n<CLT=size2> nuestros compañeras!
+latest/win/wrd_script/007/chap3_text_US.spc	c03_212_001.stx	30	¡<CLT=size2> espera<CLT=size1> un<CLT=size2> segundo!	¡<CLT=size2>espera<CLT=size1> un<CLT=size2> segundo!
+latest/win/wrd_script/007/chap3_text_US.spc	c03_216_001.stx	4	¡<CLT=size2> Sucedió	¡<CLT=size2>Sucedió
+latest/win/wrd_script/007/chap3_text_US.spc	c03_216_001.stx	16	¡<CLT=size2> Metió\n<CLT=size1> la<CLT=size2> cuchilla delgada	¡<CLT=size2>Metió\n<CLT=size1> la<CLT=size2> cuchilla delgada
+latest/win/wrd_script/007/chap3_text_US.spc	c03_222_001.stx	30	¡<CLT=size3> Alguien<CLT=size1> debe	¡<CLT=size3>Alguien<CLT=size1> debe
+latest/win/wrd_script/007/chap3_text_US.spc	c03_234_001.stx	0	¡<CLT=cltWEAK> Korekiyo<CLT=cltNORMAL> mató\na Tenko y a Angie!	¡<CLT=cltWEAK>Korekiyo<CLT=cltNORMAL> mató\na Tenko y a Angie!
+latest/win/wrd_script/007/chap5_text_US.spc	c05_000_131.stx	14	<CLT=cltMIND>¿<CLT=cltSTRONG> Semillas de la esperanza futura<CLT=cltMIND>?\n¿<CLT=cltSTRONG> Encontrar un nuevo mundo<CLT=cltMIND>...?	<CLT=cltMIND>¿<CLT=cltSTRONG>Semillas de la esperanza futura<CLT=cltMIND>?\n¿<CLT=cltSTRONG>Encontrar un nuevo mundo<CLT=cltMIND>...?
+latest/win/wrd_script/007/chap5_text_US.spc	c05_002_131.stx	74	<CLT=cltMIND>¿<CLT=cltSTRONG> Semillas de la esperanza futura<CLT=cltMIND>?\n¿<CLT=cltSTRONG> Encontrar un nuevo mundo<CLT=cltMIND>...?	<CLT=cltMIND>¿<CLT=cltSTRONG>Semillas de la esperanza futura<CLT=cltMIND>?\n¿<CLT=cltSTRONG>Encontrar un nuevo mundo<CLT=cltMIND>...?
+latest/win/wrd_script/007/chap5_text_US.spc	c05_205_000.stx	23	Esa es... ¿¡<CLT=cltSTRONG> la voz de Kaito<CLT=cltNORMAL>!?	Esa es... ¿¡<CLT=cltSTRONG>la voz de Kaito<CLT=cltNORMAL>!?
+latest/win/wrd_script/007/chap5_text_US.spc	c05_210_001.stx	9	¡<CLT=size2> Yo soy<CLT=size1> el sospechoso	¡<CLT=size2>Yo soy<CLT=size1> el sospechoso
+latest/win/wrd_script/007/chap5_text_US.spc	c05_213_000.stx	43	Fue... ¿<CLT=cltSTRONG> Kaito<CLT=cltNORMAL>?	Fue... ¿<CLT=cltSTRONG>Kaito<CLT=cltNORMAL>?
+latest/win/wrd_script/007/chap5_text_US.spc	c05_213_000.stx	129	Por ejemplo, ¿<CLT=cltSTRONG> está Kokichi realmente dentro\nde ese Exisal<CLT=cltNORMAL>? Cosas así...	Por ejemplo, ¿<CLT=cltSTRONG>está Kokichi realmente dentro\nde ese Exisal<CLT=cltNORMAL>? Cosas así...
+latest/win/wrd_script/007/chap5_text_US.spc	c05_216_001.stx	24	¡<CLT=size2> Yo<CLT=size1> traje otra	¡<CLT=size2>Yo<CLT=size1> traje otra
+latest/win/wrd_script/007/chap5_text_US.spc	c05_222_001.stx	6	¿<CLT=size2> Operar\n<CLT=size1> el Exisal...	¿<CLT=size2>Operar\n<CLT=size1> el Exisal...
+latest/win/wrd_script/007/chap5_text_US.spc	c05_228_001.stx	27	¿<CLT=size2> Realmente<CLT=size1> trataste de romper el\n<CLT=size2> panel de control	¿<CLT=size2>Realmente<CLT=size1> trataste de romper el\n<CLT=size2> panel de control
+latest/win/wrd_script/007/chap5_text_US.spc	c05_229_000.stx	66	Sería quien estaba operando la prensa\nhidráulica... ¡<CLT=cltSTRONG> Kokichi<CLT=cltNORMAL>!	Sería quien estaba operando la prensa\nhidráulica... ¡<CLT=cltSTRONG>Kokichi<CLT=cltNORMAL>!
+latest/win/wrd_script/007/chap5_text_US.spc	c05_242_000.stx	94	...¡<CLT=cltSTRONG> Kaito Momota, el Astronauta Definitivo<CLT=cltNORMAL>!	...¡<CLT=cltSTRONG>Kaito Momota, el Astronauta Definitivo<CLT=cltNORMAL>!
+latest/win/wrd_script/007/chap7_text_US.SPC	c07_001_270.stx	64	¿<CLT=cltSTRONG> Definitivos<CLT=cltNORMAL>...? ¿De verdad?	¿<CLT=cltSTRONG>Definitivos<CLT=cltNORMAL>...? ¿De verdad?
+latest/win/wrd_script/007/chap6_text_US.spc	c06_107_027.stx	99	Así que me han dado un nombre especial...\n¡<CLT=cltSTRONG> Motherkuma<CLT=typeNORMAL>!	Así que me han dado un nombre especial...\n¡<CLT=cltSTRONG>Motherkuma<CLT=typeNORMAL>!
+latest/win/wrd_script/007/chap6_text_US.spc	c06_212_001.stx	0	¿<CLT=size1.5> Pueden	¿<CLT=size1.5>Pueden
+latest/win/wrd_script/007/chap6_text_US.spc	c06_212_001.stx	39	¡<CLT=size2> No se sale<CLT=size1> mientras el juicio	¡<CLT=size2>No se sale<CLT=size1> mientras el juicio
+latest/win/wrd_script/007/chap6_text_US.spc	c06_216_001.stx	0	<CLT=size2.2>¡<CLT=size1.1> No\n<CLT=size2.2> 　\n　\n　\n　	<CLT=size2.2>¡<CLT=size1.1>No\n<CLT=size2.2> 　\n　\n　\n　
+latest/win/wrd_script/007/chap6_text_US.spc	c06_216_001.stx	17	<CLT=size2.2>¡<CLT=size1.1> No\n<CLT=size2.2> 　\n　\n　\n　	<CLT=size2.2>¡<CLT=size1.1>No\n<CLT=size2.2> 　\n　\n　\n　
+latest/win/wrd_script/007/chap6_text_US.spc	c06_219_000.stx	131	¿<CLT=cltSTRONG> La Historia Completa de la Academia\nKibougamine<CLT=cltNORMAL>?	¿<CLT=cltSTRONG>La Historia Completa de la Academia\nKibougamine<CLT=cltNORMAL>?
+latest/win/wrd_script/007/chap6_text_US.spc	c06_238_001.stx	4	¡<CLT=size2> Elegir la muerte<CLT=size1> es	¡<CLT=size2>Elegir la muerte<CLT=size1> es
+latest/win/wrd_script/007/chap4_text_US.spc	c04_001_010.stx	118	Dijiste... ¿¡<CLT=cltSTRONG> motivo<CLT=cltNORMAL>!?	Dijiste... ¿¡<CLT=cltSTRONG>motivo<CLT=cltNORMAL>!?
+latest/win/wrd_script/007/chap4_text_US.spc	c04_100_029.stx	278	¿<CLT=cltSTRONG> Programa Neo Mundo<CLT=cltNORMAL>...?\nHmmm, nunca he oído hablar de él.	¿<CLT=cltSTRONG>Programa Neo Mundo<CLT=cltNORMAL>...?\nHmmm, nunca he oído hablar de él.
+latest/win/wrd_script/007/chap4_text_US.spc	c04_213_000.stx	95	¿<CLT=cltSTRONG> Abrir cerraduras<CLT=cltNORMAL> no era tu especialidad?\nDeberías ser capaz de abrir, fácil.	¿<CLT=cltSTRONG>Abrir cerraduras<CLT=cltNORMAL> no era tu especialidad?\nDeberías ser capaz de abrir, fácil.
+latest/win/wrd_script/007/chap4_text_US.spc	c04_238_001.stx	30	\n¡Todo es mentira!\n¡<CLT=cltWEAK> Kokichi<CLT=cltNORMAL> fue el\nque mató a Miu!	\n¡Todo es mentira!\n¡<CLT=cltWEAK>Kokichi<CLT=cltNORMAL> fue el\nque mató a Miu!
+latest/win/wrd_script/007/chap4_text_US.spc	c04_246_000.stx	85	¡Esta es la verdad que has olvidado!\n¡<CLT=cltSTRONG> Gonta Gokuhara, el Entomólogo Definitivo<CLT=cltNORMAL>!	¡Esta es la verdad que has olvidado!\n¡<CLT=cltSTRONG>Gonta Gokuhara, el Entomólogo Definitivo<CLT=cltNORMAL>!
+latest/win/wrd_script/007/chap4_text_US.spc	c04_300_333.stx	30	¡Ta-dá! ¡<CLT=cltSTRONG> Alter Ego Gonta<CLT=cltNORMAL> está completo!	¡Ta-dá! ¡<CLT=cltSTRONG>Alter Ego Gonta<CLT=cltNORMAL> está completo!
+latest/win/wrd_script/007/chap2_text_US.spc	c02_211_000.stx	141	...Gonta piensa que fue tal vez ¿<CLT=cltSTRONG> 8:00 p.m.<CLT=cltNORMAL>?	...Gonta piensa que fue tal vez ¿<CLT=cltSTRONG>8:00 p.m.<CLT=cltNORMAL>?
+latest/win/wrd_script/007/chap0_text_US.spc	c00_004_007.stx	124	¿<CLT=cltSTRONG> Definitivos<CLT=cltNORMAL>...? ¿De verdad?	¿<CLT=cltSTRONG>Definitivos<CLT=cltNORMAL>...? ¿De verdad?
+latest/win/wrd_script/007/chap0_text_US.spc	c00_005_018.stx	66	¿<CLT=cltSTRONG> Academia Definitiva para Jóvenes Dotados<CLT=cltNORMAL>?	¿<CLT=cltSTRONG>Academia Definitiva para Jóvenes Dotados<CLT=cltNORMAL>?
+latest/win/wrd_script/007/chap0_text_US.spc	c00_005_018.stx	71	...¿Eh? ¿¡<CLT=cltSTRONG> Definitivos<CLT=cltNORMAL>!?	...¿Eh? ¿¡<CLT=cltSTRONG>Definitivos<CLT=cltNORMAL>!?
+latest/win/wrd_script/007/chap0_text_US.spc	c00_007_017.stx	18	¿<CLT=cltSTRONG> Robot Definitivo<CLT=cltNORMAL>...?	¿<CLT=cltSTRONG>Robot Definitivo<CLT=cltNORMAL>...?
+latest/win/wrd_script/007/chap1_text_US.spc	c01_279_000.stx	25	<CLT=cltSYSTEM>¡ Gracias, gracias!	<CLT=cltSYSTEM>¡Gracias, gracias!
+latest/win/wrd_script/007/chap4_text_US.spc	c04_213_000.stx	95	¿<CLT=cltSTRONG>Abrir cerraduras<CLT=cltNORMAL> no era tu especialidad?\nDeberías ser capaz de abrir, fácil.	¿<CLT=cltSTRONG>Abrir cerraduras<CLT=cltNORMAL> no era tu especialidad?\nPodrías haberla abierto fácilmente.
