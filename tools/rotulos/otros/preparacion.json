@@ -1,5 +1,5 @@
 {
-  "descripcion": "Preparacion del juicio / Se abre la sesion",
+  "descripcion": "Preparacion del juicio",
   "spc": "flash/briefing/br_title_US.spc",
   "estilos": {
     "pincel": {
@@ -39,42 +39,6 @@
       "usar": "serif_m",
       "texto": "Reanudar preparación",
       "color_inicial": "auto"
-    },
-    "t_start_tx_US_kaitei": {
-      "usar": "pincel_v",
-      "texto": "En sesión"
-    },
-    "t_start_saiban_tx_US_000": {
-      "usar": "pincel",
-      "texto": "Jui"
-    },
-    "t_start_saiban_tx_US_001": {
-      "usar": "pincel",
-      "texto": "cio"
-    },
-    "t_start_saiban_tx_US_002": {
-      "usar": "pincel",
-      "texto": "Esco"
-    },
-    "t_start_saiban_tx_US_003": {
-      "usar": "pincel",
-      "texto": "lar"
-    },
-    "t_start_saiban_tx_US_kaitei_000_DXT1": {
-      "usar": "pincel",
-      "texto": "Jui"
-    },
-    "t_start_saiban_tx_US_kaitei_001_DXT1": {
-      "usar": "pincel",
-      "texto": "cio"
-    },
-    "t_start_saiban_tx_US_kaitei_002_DXT1": {
-      "usar": "pincel",
-      "texto": "Esco"
-    },
-    "t_start_saiban_tx_US_kaitei_003_DXT1": {
-      "usar": "pincel",
-      "texto": "lar"
     }
   }
 }

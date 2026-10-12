@@ -1,10 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.3
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.4
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
 
-> **Fork v3.3**: esta copia incluye los rótulos del juicio y de los capítulos traducidos, corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v33-fork).
+> **Fork v3.4**: esta copia incluye los rótulos de los capítulos y de la interfaz del juicio traducidos (los cut-ins del juicio se dejan en inglés), corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v34-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -28,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.3**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.4**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -90,7 +90,36 @@ En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instala
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
 
-### 🆕 Novedades de la v3.3 (fork)
+### 🆕 Novedades de la v3.4 (fork)
+
+* **Correcciones reportadas con capturas**, traducidas desde el texto original en inglés:
+  * Angie le decía "amado" a Himiko; además decía "Dios" en vez de "Atua", como en el resto del juego.
+  * Una frase de Angie con un salto de línea de más antes de "motivo", una de Maki sin espacio después del punto y una de Miu con un "es" sobrante.
+  * La Munición de Verdad "Katana Batida en Oro" ahora se llama "Katana de Pan de Oro", como ya la llamaba el resto del diálogo.
+* **Cut-ins del juicio otra vez en inglés**: las letras editadas no quedaban bien con el diseño original, así que vuelven las imágenes originales de los cut-ins (Counter, Perjury, GOT IT, Consent...), de los títulos de inicio de fase (Non-Stop Debate, Closing Argument...), de ALL RISE! / Intermission / Resume y del "In Session" al empezar el juicio. La interfaz del juicio (Municiones de Verdad, Votación, Resultados, ¡Golpe final!, ¡Avanza! / ¡Retrocede!...) y "Preparación del juicio" siguen traducidas.
+* **Instalador**: al actualizar, los archivos que instaló la versión anterior y que la nueva ya no trae vuelven al original del juego (antes se quedaban como estaban). Así, al pasar de la v3.3 a la v3.4 los cut-ins vuelven al inglés sin tener que restaurar nada a mano.
+* **Herramientas**: las recetas de los rótulos que se dejaron en inglés se guardan en `tools/rotulos/descartados/`.
+
+<details>
+<summary><b>Textos y rótulos que cambiaron en esta versión</b></summary>
+
+| Dónde | Antes (v3.3) | Ahora (v3.4) | En inglés |
+|---|---|---|---|
+| Cap. 3, Angie | ¡Y eres \*amado\* por Dios también, Himiko! | ¡Y Atua también te ama a ti, Himiko! | And you are loved by Atua in return, Himiko! |
+| Cap. 3, Angie | Probablemente todavía estés preocupado por el<br>motivo,<br>Shuichi, pero está bien. | Probablemente todavía estés preocupado por el<br>motivo, Shuichi, pero está bien. | You're probably still worried about the motive, Shuichi, but it's okay. |
+| Cap. 3, Maki | ...de dónde vino esta arma.Puede que encontremos una pista allí. | ...de dónde vino esta arma. Puede que encontremos una pista allí. | We should investigate where this weapon came from. We might find a clue there. |
+| Cap. 3, Miu | No, sigue siendo es un error pensar que Tenko fue asesinada durante la sesión. | No, sigue siendo un error pensar que Tenko fue asesinada durante la sesión. | No, it's still wrong to think that Tenko was killed during the seance. |
+| Munición de Verdad, objeto del mapa y avisos del Monopad (5 líneas) | Katana Batida en Oro | Katana de Pan de Oro | Gold Leaf Katana |
+| Cut-ins del juicio | Refutado / Objeción / Consenso / Perjurio / Ruptura / Refutación total / ¡Lo tengo! / Fin / Confesando / ¡Monokuma oculto encontrado! | (imagen original en inglés) | Counter / Argue / Consent / Perjury / Break / Full Counter / GOT IT / End / Confessing / Obtained Hidden Monokuma |
+| Inicio de fase | Debate Continuo, Debate de Pánico Masivo, Confrontación Refutadora, Debate de Choque, Paseo Mental, Epifanía Anagrámica, Excavación Cerebral, Armamento Teorético, Clímax Lógico | (imagen original en inglés) | Non-Stop Debate, Mass Panic Debate, Rebuttal Showdown, Debate Scrum, Psyche Taxi, Hangman's Gambit, Mind Mine, Argument Armament, Closing Argument |
+| Juicio Escolar | ¡De pie! / Receso / Se reanuda / En sesión | (imagen original en inglés) | ALL RISE! / Intermission / Resume / In Session |
+
+| Término | Antes | Ahora | Usos | En inglés |
+|---|---|---|---|---|
+| Munición de Verdad del cap. 3 | Katana Batida en Oro | Katana de Pan de Oro | 5 | Gold Leaf Katana |
+</details>
+
+### Novedades de la v3.3 (fork)
 
 * **Correcciones reportadas con capturas**, traducidas desde el texto original en inglés:
   * Tres pensamientos de Shuichi (capítulos 1 y 2) empezaban con un "502" que no debía verse.
@@ -1579,4 +1608,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
-* Fork v2.3 – v3.3: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
+* Fork v2.3 – v3.4: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.

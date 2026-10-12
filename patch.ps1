@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------
 # Versiones del parche disponibles
 # -------------------------------------------------------------------------
-$versionActual   = "v3.3"   # Numero de version mas reciente (solo para mostrar)
+$versionActual   = "v3.4"   # Numero de version mas reciente (solo para mostrar)
 $carpetaActual   = "latest" # Carpeta del parche para la version mas reciente
 $versionBase     = "v0.1"   # Version anterior estable (nombre de carpeta y version)
 
@@ -368,6 +368,7 @@ if ($manifiestoPrevio -and $manifiestoPrevio.Version -ne $etiquetaVersion) {
     }
 }
 
+$enEstaVersion = New-Object 'System.Collections.Generic.HashSet[string]' ([StringComparer]::OrdinalIgnoreCase)
 foreach ($file in $patchFiles) {
     # Obtener ruta relativa respecto a la carpeta 'win' del parche de la version elegida
     $relativePath = $file.FullName.Substring($patchSourceDir.Length).TrimStart('\', '/')
@@ -383,6 +384,7 @@ foreach ($file in $patchFiles) {
 
     try {
         $rel = $relativePath -replace '\\', '/'
+        [void]$enEstaVersion.Add($rel)
         # Guardar el original del juego una sola vez (si el archivo no es de una instalacion anterior del parche)
         if (Test-Path $destinationFilePath) {
             $original = Join-Path (Join-Path $backupDir "original") $rel
@@ -413,6 +415,19 @@ foreach ($file in $patchFiles) {
     } catch {
         $erroresCopia += $relativePath
         Write-Host "  [!] Error al instalar $relativePath : $_" -ForegroundColor Red
+    }
+}
+
+# Archivos que instalo la version anterior y que esta ya no trae: vuelven al original
+foreach ($rel in @($instalados)) {
+    if ($enEstaVersion.Contains($rel)) { continue }
+    try {
+        if (Restaurar-Original $backupDir $winDir $rel $agregados) {
+            [void]$instalados.Remove($rel)
+            Write-Host "  -> Restaurado al original: $rel" -ForegroundColor DarkCyan
+        }
+    } catch {
+        Write-Host "  [!] No se pudo restaurar $rel : $_" -ForegroundColor Red
     }
 }
 
