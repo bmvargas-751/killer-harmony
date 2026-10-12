@@ -39,5 +39,9 @@
   "RajdhaniMedium": {
     "archivo": "Rajdhani-Medium.ttf",
     "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/rajdhani/Rajdhani-Medium.ttf"
+  },
+  "RussoOne": {
+    "archivo": "RussoOne-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/russoone/RussoOne-Regular.ttf"
   }
 }
