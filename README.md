@@ -1,10 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.5
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.6
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
 
-> **Fork v3.5**: esta copia incluye los rótulos de los capítulos y de la interfaz del juicio traducidos (los cut-ins del juicio se dejan en inglés), corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v35-fork).
+> **Fork v3.6**: esta copia incluye los rótulos de los capítulos y de la interfaz del juicio traducidos (los cut-ins del juicio se dejan en inglés), corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v36-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -28,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.5**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.6**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -90,7 +90,44 @@ En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instala
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
 
-### 🆕 Novedades de la v3.5 (fork)
+### 🆕 Novedades de la v3.6 (fork)
+
+* **Preguntas del Debate de Choque en español**: la pregunta que se debate ("Is Shuichi the culprit?", "Vote for Korekiyo?"...) es una imagen y seguía en inglés. Ahora está en español en sus cuatro versiones (normal, en bucle y sus copias borrosas), con los mismos dos estilos de letra del original. Nueva herramienta `tools/rotulos_debate_choque.py`.
+* **"Decide" otra vez en inglés**: el rótulo animado que gira alrededor del personaje al elegir culpable o persona vuelve a la imagen original, como los cut-ins de la v3.4.
+* **Etiquetas convertidas en números**: en 12 textos se veían restos como `(-502`, `(-500)`, `-499` o `(-498)` donde debía ir una etiqueta de formato (pensamiento, fin de resaltado, salto de línea o asterisco). Estaban en pensamientos de Shuichi (capítulos 4, 5 y 6), en el reglamento escolar del Monopad, en la descripción de un regalo y en el menú de la demo.
+* **Correcciones reportadas con capturas (capítulo 4)**, traducidas desde el texto original en inglés:
+  * En el debate de Himiko, el punto débil resaltaba "fue" en vez de "papel higiénico".
+  * Frases de Kokichi: "sabers", "terribles siendo mentidos", "el plan asesinato" y "Gonta y creemos" (faltaba el "yo").
+  * "Eso es cierto para de Gonta" y "jalarlo un para bajarlo".
+  * Los "Matajuegos de Asesinato" ahora son los "Cazajuegos de Asesinato" (*Killing Game Busters*, como *Ghostbusters* / Cazafantasmas).
+* **Epifanía Anagrámica**: la respuesta "DESLIZO DEL TECHO" ahora es "TOBOGAN DEL TECHO" (*slide*, como dice Shuichi justo después), y "AMNESI A" se veía separada por una ficha corrida. Nueva herramienta `tools/anagrama.py`.
+
+<details>
+<summary><b>Textos, términos y rótulos que cambiaron en esta versión</b></summary>
+
+| Dónde | Antes (v3.5) | Ahora (v3.6) | En inglés |
+|---|---|---|---|
+| Cap. 4, debate de Himiko | ¡El papel higiénico **fue** el arma homicida! (resaltado "fue") | **¡El papel higiénico** fue el arma homicida! | **Toilet paper** was the murder weapon! |
+| Cap. 4, Kokichi | Tú también sabers jugar sucio | Tú también sabes jugar sucio | You use underhanded tactics, too |
+| Cap. 4, Kokichi | ...son simplemente terribles siendo mentidos! | ...son simplemente terribles cuando les mienten! | ...you guys are just terrible at being lied to! |
+| Cap. 4, Kokichi | ...se me ocurrió el plan asesinato... | ...se me ocurrió el plan de asesinato... | I came up with the murder plan |
+| Cap. 4, Kokichi | Al menos, Gonta y creemos eso. | Al menos, Gonta y yo creemos eso. | At least, Gonta and I think so. |
+| Cap. 4, Shuichi | Eso es cierto para de Gonta. | Eso es cierto para Gonta. | That's true about Gonta. |
+| Cap. 4 | ...habría tenido que jalarlo un para bajarlo... | ...habría tenido que jalarlo para bajarlo... | ...they would have had to tug on it in order to take it down... |
+| Cap. 4, anagrama | DESLIZO DEL TECHO | TOBOGAN DEL TECHO | — |
+| Anagrama | AMNESI A | AMNESIA | AMNESIA |
+| Caps. 4, 5 y 6, pensamientos de Shuichi | (-502 Hay en su mayoría... / ...pudo haber sido(-499 ese sonido... | Hay en su mayoría... / ...pudo haber sido<br>ese sonido... | — |
+| Reglamento escolar (6 reglas) | ...un Juicio Escolar(-500). | ...un **Juicio Escolar**. | — |
+| Regalo | ...qué es el arte *realmente(-498). | ...qué es el arte *realmente*. | — |
+| Debate de Choque (imagen) | Is Shuichi the culprit? / When was the body put in the piranha tank? / Vote for Korekiyo? / Could Gonta have committed the crime? / Which one is dead? | ¿Es Shuichi el culpable? / ¿Cuándo pusieron el cuerpo en el tanque de pirañas? / ¿Votar por Korekiyo? / ¿Pudo Gonta haber cometido el crimen? / ¿Cuál está muerto? | — |
+| Elegir culpable o persona (imagen) | Decidir | (imagen original en inglés) | Decide |
+
+| Término | Antes | Ahora | Usos | En inglés |
+|---|---|---|---|---|
+| Matajuegos de Asesinato | Matajuegos de Asesinato | Cazajuegos de Asesinato | 2 | Killing Game Busters |
+</details>
+
+### Novedades de la v3.5 (fork)
 
 * **Correcciones reportadas con capturas** (capítulo 4), traducidas desde el texto original en inglés:
   * Una frase de Kokichi tenía un espacio después del "¿" y una segunda línea que no sonaba natural ("Deberías ser capaz de abrir, fácil.").
@@ -1655,4 +1692,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
-* Fork v2.3 – v3.5: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
+* Fork v2.3 – v3.6: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
