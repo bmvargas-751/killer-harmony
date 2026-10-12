@@ -465,6 +465,7 @@ fi
 
 COPIADOS=0
 ERRORES_COPIA=()
+declare -A EN_ESTA_VERSION=()
 for rel in "${PATCH_FILES[@]}"; do
     origen="$PATCH_SOURCE_DIR/$rel"
     destino_rel="$rel"
@@ -479,6 +480,7 @@ for rel in "${PATCH_FILES[@]}"; do
     ok=1
     for destino in "${destinos[@]}"; do
         r="${destino#"$WIN_DIR"/}"
+        EN_ESTA_VERSION["${r,,}"]=1
         # Guardar el original del juego una sola vez (si el archivo no es de una instalacion anterior del parche)
         if [[ -f "$destino" ]]; then
             if [[ -z "${INSTALADOS[${r,,}]:-}" && ! -f "$RESPALDO/original/$r" ]]; then
@@ -507,6 +509,18 @@ for rel in "${PATCH_FILES[@]}"; do
         ERRORES_COPIA+=("$destino_rel")
         say "$C_RED" "  [!] Error al instalar $destino_rel"
     fi
+done
+
+# Archivos que instalo la version anterior y que esta ya no trae: vuelven al original
+for clave in "${!INSTALADOS[@]}"; do
+    [[ -n "${EN_ESTA_VERSION[$clave]:-}" ]] && continue
+    rel="${INSTALADOS[$clave]}"
+    restaurar_original "$RESPALDO" "$WIN_DIR" "$rel" AGREGADOS
+    case $? in
+        0) unset "INSTALADOS[$clave]"; say "$C_CYAN" "  -> Restaurado al original: $rel" ;;
+        2) ;;   # sin respaldo: se queda en la lista para que restaurar.sh lo cuente
+        *) say "$C_RED" "  [!] No se pudo restaurar $rel" ;;
+    esac
 done
 
 escribir_manifiesto "$RESPALDO/instalado.txt" "$ETIQUETA_VERSION" "${INSTALADOS[@]}"
