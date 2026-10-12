@@ -1,10 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.4.2
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.5
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
 
-> **Fork v3.4.2**: esta copia incluye los rótulos de los capítulos y de la interfaz del juicio traducidos (los cut-ins del juicio se dejan en inglés), corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v342-fork).
+> **Fork v3.5**: esta copia incluye los rótulos de los capítulos y de la interfaz del juicio traducidos (los cut-ins del juicio se dejan en inglés), corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v35-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -28,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.4.2**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.5**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -90,7 +90,28 @@ En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instala
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
 
-### 🆕 Novedades de la v3.4.2 (fork)
+### 🆕 Novedades de la v3.5 (fork)
+
+* **Correcciones reportadas con capturas** (capítulo 4), traducidas desde el texto original en inglés:
+  * Una frase de Kokichi tenía un espacio después del "¿" y una segunda línea que no sonaba natural ("Deberías ser capaz de abrir, fácil.").
+  * Una frase en letras grandes no tenía el "¡" inicial y repetía el "es".
+  * Una frase de Kaito tenía un "+" que sobraba.
+* **Espacio después de "¿" y "¡"**: en 38 líneas de los capítulos 0 a 7 quedaba un espacio entre el "¿" o el "¡" y la palabra destacada que lo sigue (`¿ Academia Definitiva para Jóvenes Dotados?`). Ya no queda ninguno.
+
+<details>
+<summary><b>Textos que cambiaron en esta versión</b></summary>
+
+| Dónde | Antes (v3.4.2) | Ahora (v3.5) | En inglés |
+|---|---|---|---|
+| Cap. 4, Kokichi | ¿ Abrir cerraduras no era tu especialidad?<br>Deberías ser capaz de abrir, fácil. | ¿Abrir cerraduras no era tu especialidad?<br>Podrías haberla abierto fácilmente. | But isn't lock picking your specialty?<br>You should've been able to open it, easy. |
+| Cap. 4, letras grandes | Es en realidad no<br>es imposible en absoluto! | ¡En realidad no es<br>imposible en absoluto! | It's not actually<br>impossible at all! |
+| Cap. 4, Kaito | Solo significa que hasta+ yo cometo errores. | Solo significa que hasta yo cometo errores. | It just means even I make mistakes. |
+| Caps. 0 a 7 (38 líneas) | ¿ Definitivos...? / ¿¡ Definitivos!? / ¡ Gracias, gracias! ... | ¿Definitivos...? / ¿¡Definitivos!? / ¡Gracias, gracias! ... | — |
+
+No cambió ningún término ni rótulo en esta versión.
+</details>
+
+### Novedades de la v3.4.2 (fork)
 
 * **Kokichi Oma**: en 26 textos su apellido aparecía como "Ouma" (su nombre en los menús y el Monopad, su habitación en el mapa, los niveles de vínculo, los avisos de afecto, "Conversación con Kokichi Ouma" y su presentación en el prólogo), mientras que en el resto del juego era "Oma". Ahora es "Oma" en todos lados, como se presenta en el original en inglés ("I'm Kokichi Oma").
 
@@ -1634,4 +1655,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
-* Fork v2.3 – v3.4.2: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
+* Fork v2.3 – v3.5: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
