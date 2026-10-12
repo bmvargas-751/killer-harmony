@@ -59,3 +59,35 @@ latest/win/wrd_script/007/chap0_text_US.spc	c00_005_018.stx	71	...¿Eh? ¿¡<CLT
 latest/win/wrd_script/007/chap0_text_US.spc	c00_007_017.stx	18	¿<CLT=cltSTRONG> Robot Definitivo<CLT=cltNORMAL>...?	¿<CLT=cltSTRONG>Robot Definitivo<CLT=cltNORMAL>...?
 latest/win/wrd_script/007/chap1_text_US.spc	c01_279_000.stx	25	<CLT=cltSYSTEM>¡ Gracias, gracias!	<CLT=cltSYSTEM>¡Gracias, gracias!
 latest/win/wrd_script/007/chap4_text_US.spc	c04_213_000.stx	95	¿<CLT=cltSTRONG>Abrir cerraduras<CLT=cltNORMAL> no era tu especialidad?\nDeberías ser capaz de abrir, fácil.	¿<CLT=cltSTRONG>Abrir cerraduras<CLT=cltNORMAL> no era tu especialidad?\nPodrías haberla abierto fácilmente.
+# --- v3.6: etiquetas convertidas en numeros: (-502 = <CLT=cltMIND>, (-500) = <CLT=0>, -499 = salto de linea, (-498) = * ---
+latest/win/wrd_script/007/chap5_text_US.spc	c05_000_026.stx	11	(-502 Hay en su mayoría documentales, pero hay\nhay algunas películas y shows mezclados...	<CLT=cltMIND>Hay en su mayoría documentales, pero\nhay algunas películas y shows mezclados...
+latest/win/wrd_script/007/chap6_text_US.spc	c06_101_100.stx	21	(-502 Está decidido a destruir este terrible\nlugar, y yo respeto eso.	<CLT=cltMIND>Está decidido a destruir este terrible\nlugar, y yo respeto eso.
+latest/win/wrd_script/007/chap4_text_US.spc	c04_227_000.stx	57	<CLT=cltMIND>Tenemos que averiguar qué pudo haber sido(-499 ese sonido...	<CLT=cltMIND>Tenemos que averiguar qué pudo haber sido\nese sonido...
+latest/win/game_resident/game_resident_US.spc	A-PresentSetumei.stx	88	Un ornamento que parece un urinal. Entre más\nlo ves, más empiezas a preguntarte qué es el\narte *realmente(-498).	Un ornamento que parece un urinal. Entre más\nlo ves, más empiezas a preguntarte qué es el\narte *realmente*.
+latest/win/game_resident/game_resident_US.spc	B-TechouKousoku.stx	1	Al ocurrir un asesinato, los sobrevivientes\ndeben participar en un <CLT=5>Juicio Escolar(-500).	Al ocurrir un asesinato, los sobrevivientes\ndeben participar en un <CLT=5>Juicio Escolar<CLT=0>.
+latest/win/game_resident/game_resident_US.spc	B-TechouKousoku.stx	2	Si el ennegrecido es expuesto durante el\nJuicio Escolar, solo <CLT=5>él será ejecutado(-500).	Si el ennegrecido es expuesto durante el\nJuicio Escolar, solo <CLT=5>él será ejecutado<CLT=0>.
+latest/win/game_resident/game_resident_US.spc	B-TechouKousoku.stx	3	Si el ennegrecido no es expuesto, <CLT=5>todos los\nestudiantes restantes serán ejecutados(-500).	Si el ennegrecido no es expuesto, <CLT=5>todos los\nestudiantes restantes serán ejecutados<CLT=0>.
+latest/win/game_resident/game_resident_US.spc	B-TechouKousoku.stx	4	Si el ennegrecido sobrevive al juicio,\nse graduará y <CLT=5>volverá al mundo exterior(-500).	Si el ennegrecido sobrevive al juicio,\nse graduará y <CLT=5>volverá al mundo exterior<CLT=0>.
+latest/win/game_resident/game_resident_US.spc	B-TechouKousoku.stx	6	"<CLT=5>La Noche(-500)" es de 10 p.m. a 8 a.m. El comedor\ny el gimnasio están prohibidos de noche.	"<CLT=5>La Noche<CLT=0>" es de 10 p.m. a 8 a.m. El comedor\ny el gimnasio están prohibidos de noche.
+latest/win/game_resident/game_resident_US.spc	B-TechouKousoku.stx	13	De noche, <CLT=5>nadar en la piscina está prohibido(-500).\nTocar el agua también va contra el reglamento escolar.	De noche, <CLT=5>nadar en la piscina está prohibido<CLT=0>.\nTocar el agua también va contra el reglamento escolar.
+latest/win/game_resident/game_resident_US.spc	D-Menu.stx	63	Como agradecimiento por jugar el Demo,\nrecibirás: -499) ・333 Medallas Monokuma\n・Regalo "Brocha de Uñas"\n・Habilidad "Ametralladora"	Como agradecimiento por jugar el Demo,\nrecibirás:\n・333 Medallas Monokuma\n・Regalo "Brocha de Uñas"\n・Habilidad "Ametralladora"
+latest/win/game_resident/game_resident_US.spc	D-Menu.stx	64	Como agradecimiento por jugar el Demo,\nrecibirás: -499) ・333 Medallas Monokuma\n・Regalo "Brocha de Uñas"\n・Habilidad "A Quema Ropa"	Como agradecimiento por jugar el Demo,\nrecibirás:\n・333 Medallas Monokuma\n・Regalo "Brocha de Uñas"\n・Habilidad "A Quema Ropa"
+# --- v3.6: capturas del capitulo 4 (debate del papel higienico, Kokichi) ---
+latest/win/wrd_script/007/chap4_text_US.spc	c04_236_001.stx	14	<CLT=size2>　\n<CLT=cltWEAK> ¡El	<CLT=size2>　\n<CLT=cltWEAK>¡El
+latest/win/wrd_script/007/chap4_text_US.spc	c04_236_001.stx	16	<CLT=size2>　\n<CLT=cltWEAK> pa	<CLT=size2>　\n<CLT=cltWEAK>pa
+latest/win/wrd_script/007/chap4_text_US.spc	c04_236_001.stx	17	<CLT=size2>　\n<CLT=cltWEAK> pe	<CLT=size2>　\n<CLT=cltWEAK>pel
+latest/win/wrd_script/007/chap4_text_US.spc	c04_236_001.stx	18	<CLT=size2>　\n<CLT=cltWEAK> l 	<CLT=size2>　\n<CLT=cltWEAK>hi
+latest/win/wrd_script/007/chap4_text_US.spc	c04_236_001.stx	19	<CLT=size2>　\n<CLT=cltWEAK> hi	<CLT=size2>　\n<CLT=cltWEAK>gi
+latest/win/wrd_script/007/chap4_text_US.spc	c04_236_001.stx	20	<CLT=size2>　\n<CLT=cltWEAK> gié	<CLT=size2>　\n<CLT=cltWEAK>é
+latest/win/wrd_script/007/chap4_text_US.spc	c04_236_001.stx	21	<CLT=size2>　\n<CLT=cltWEAK> ni	<CLT=size2>　\n<CLT=cltWEAK>ni
+latest/win/wrd_script/007/chap4_text_US.spc	c04_236_001.stx	22	<CLT=size2>　\n<CLT=cltWEAK> co	<CLT=size2>　\n<CLT=cltWEAK>c
+latest/win/wrd_script/007/chap4_text_US.spc	c04_236_001.stx	23	<CLT=size2>　\n<CLT=cltWEAK> fue<CLT=cltNORMAL><CLT=size1> el arma\nhomicida!	<CLT=size2>　\n<CLT=cltWEAK>o<CLT=cltNORMAL><CLT=size1> fue el arma\nhomicida!
+latest/win/wrd_script/007/chap4_text_US.spc	c04_235_000.stx	9	Ya veo... Tú también sabers jugar sucio,\n¿eh, Shuichi?	Ya veo... Tú también sabes jugar sucio,\n¿eh, Shuichi?
+latest/win/wrd_script/007/chap4_text_US.spc	c04_235_000.stx	27	¡Entonces ustedes son simplemente terribles\nsiendo mentidos! ¡En serio, de lo peor!	¡Entonces ustedes son simplemente terribles\ncuando les mienten! ¡En serio, de lo peor!
+latest/win/wrd_script/007/chap4_text_US.spc	c04_235_000.stx	79	Por cierto, a mí se me ocurrió el plan\nasesinato, y Gonta fue quien lo llevó a cabo.	Por cierto, a mí se me ocurrió el plan de\nasesinato, y Gonta fue quien lo llevó a cabo.
+# Anagrama del cap. 4 (minigame/anagram/anagram_US.SPC, answer005.dat): DESLIZO DEL TECHO -> TOBOGAN DEL TECHO, con tools/anagrama.py
+latest/win/wrd_script/007/chap4_text_US.spc	c04_239_000.stx	41	<CLT=cltMIND>"¡Llevas diciendo eso todo este tiempo!"...\nEso es cierto para de Gonta.	<CLT=cltMIND>"¡Llevas diciendo eso todo este tiempo!"...\nEso es cierto para Gonta.
+# Matajuegos de Asesinato -> Cazajuegos de Asesinato (2 lineas, regla en terminos.tsv)
+# Anagrama (answer006.dat): AMNESI A -> AMNESIA (la ultima ficha estaba corrida 30 px)
+latest/win/wrd_script/007/chap4_text_US.spc	c04_245_000.stx	37	Y en ese caso, solo habría tenido que jalarlo\nun para bajarlo...	Y en ese caso, solo habría tenido que jalarlo\npara bajarlo...
+latest/win/wrd_script/007/chap4_text_US.spc	c04_300_333.stx	185	Sí, lo estuvo.\nAl menos, Gonta y creemos eso.	Sí, lo estuvo.\nAl menos, Gonta y yo creemos eso.
