@@ -1,10 +1,10 @@
-# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.4.1
+# Parche de Traducción al Español - Danganronpa V3: Killing Harmony v3.4.2
 
 Este repositorio contiene el script de instalación automática y los archivos correspondientes al parche de traducción al español para **Danganronpa V3: Killing Harmony** (versión de PC). 
 
 > Esta traducción la hice yo solo, para mi comunidad en Youtube. Es mi primera traducción, y estaba originalmente pensada para mi propio uso y el de mi comunidad, comprendiendo que la calidad no es profesional. 
 
-> **Fork v3.4.1**: esta copia incluye los rótulos de los capítulos y de la interfaz del juicio traducidos (los cut-ins del juicio se dejan en inglés), corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v341-fork).
+> **Fork v3.4.2**: esta copia incluye los rótulos de los capítulos y de la interfaz del juicio traducidos (los cut-ins del juicio se dejan en inglés), corrección de erratas y de palabras destacadas pegadas, términos unificados con Danganronpa 1 y 2, la galería y el menú de pausa traducidos, un instalador más seguro con opción para restaurar y soporte para Linux / SteamOS. Mira las [novedades del fork](#-novedades-de-la-v342-fork).
 
 Lee el final de este documento para saber [cómo](#cómo-contribuir-al-proyecto) contribuir. Si descargaste una versión anterior del parche y tienes algún problema, revisa que no haya una versión más reciente. 
 ---
@@ -28,7 +28,7 @@ Antes de ejecutar el script de instalación, necesitas contar con lo siguiente:
    * Ejemplo de ruta habitual: `C:\Program Files (x86)\Steam\steamapps\common\Danganronpa V3 Killing Harmony`
    * Si el script detecta automáticamente tu instalación, puedes simplemente presionar `Enter`.
 4. **Selecciona la versión del parche** que deseas instalar:
-   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.4.1**).
+   * Presiona `S` (o `Enter`) para instalar la versión más reciente (**v3.4.2**).
    * Presiona `N` para instalar la versión previa (**v0.1**).
 5. **Espera a que el proceso termine**:
    * El script extraerá y combinará los archivos `.cpk` de `data/win`. Este proceso puede tardar varios minutos dependiendo de tu disco.
@@ -90,7 +90,19 @@ En Linux se usa `patch.sh` en lugar de `patch.bat`. Hace lo mismo que el instala
   * Incluyen revisiones ortográficas, mejoras en el formateo de texto, fuentes y correcciones de estilo.
   * *Nota*: Estas versiones no han sido probadas exhaustivamente de principio a fin, por lo que si encuentras algún detalle visual o error tipográfico, puedes reportarlo.
 
-### 🆕 Novedades de la v3.4.1 (fork)
+### 🆕 Novedades de la v3.4.2 (fork)
+
+* **Kokichi Oma**: en 26 textos su apellido aparecía como "Ouma" (su nombre en los menús y el Monopad, su habitación en el mapa, los niveles de vínculo, los avisos de afecto, "Conversación con Kokichi Ouma" y su presentación en el prólogo), mientras que en el resto del juego era "Oma". Ahora es "Oma" en todos lados, como se presenta en el original en inglés ("I'm Kokichi Oma").
+
+<details>
+<summary><b>Términos que cambiaron en esta versión</b></summary>
+
+| Antes (v3.4.1) | Ahora (v3.4.2) | Usos | En inglés |
+|---|---|---|---|
+| Kokichi Ouma | Kokichi Oma | 26 | Kokichi Oma |
+</details>
+
+### Novedades de la v3.4.1 (fork)
 
 * **Angie vuelve a decir "Dios"**: en la v3.4, la frase de Angie a Himiko se cambió de más ("¡Y Atua también te ama a ti, Himiko!"). El error reportado era solo el género, así que ahora queda como estaba, pero en femenino. En japonés Angie dice 神さま ("Dios"); "Atua" es como lo llamó la localización al inglés.
 
@@ -1622,4 +1634,4 @@ Si quieres hacer una corrección directa del parche, mira la segunda mitad de es
 
 * Herramientas de extracción y empaquetado: [Harmony Tools](https://github.com/redssu/Harmony-Tools) por **redssu**.
 * Proyecto y traducción hecha por mi cuenta, con ayuda de @blackhawk42 para trabajar con algunos archivos de texto.
-* Fork v2.3 – v3.4.1: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
+* Fork v2.3 – v3.4.2: rótulos del juicio y los capítulos, corrección de erratas y de palabras destacadas pegadas, términos unificados con DR1/DR2, traducción de la galería y del menú de pausa, mejoras del instalador, restauración e instalador para Linux / SteamOS.
